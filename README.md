@@ -26,3 +26,18 @@
     - [Acknowledgements](#acknowledgements)
 
 - [Disclaimer](#disclaimer)
+
+[Back to top](#table-of-contents)
+
+### Acknowledgements
+This project would not be completed without a great support of my family and mentor [Simen Daehlin](https://github.com/Eventyret).
+Their constructive advice delivered valid and well-reasoned opinions. It involved both positive and negative comments which helped 
+me to see my project from a different perspective and amend the content to achieve the ultimate goal, a user-friendly and
+interesting website. 
+
+Also, I would like to thank my fellow [Code Institute](https://codeinstitute.net/) students and tutors who always been there for me, 
+offering a friendly advice when I was having problems with sorting things out. Last but not least [Slack](https://slack.com/signin#/signin) 
+community which I found extremely helpful in resolving code-related issues. 
+
+### Disclaimer  
+This website was created for educational purpose only. 
