@@ -17,7 +17,6 @@
     - [Heroku deployment](#deploying-an-app-to-heroku)
 
 - [Project database structure](#project-database-structure)
-    - [Schema](#schema)
 
 - [Credits](#credits) 
     - [Contents](#content)
@@ -48,6 +47,9 @@ would like to gain more knowledge about this fantastic instrument.
 ### Design Elements
 
 ### Wireframes
+I used [SmartDraw](https://www.smartdraw.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
+what would be a final effect of the written code. 
+
 The wireframes can be found [here]().
 
 ## Features
@@ -189,6 +191,20 @@ Use the following steps to deploy [buzzing-strings]() to Heroku:
 
 
 ## Project database structure
+
+Using the features **MongoDB Atlas** provides, I was able to create the following collections:
+
+1. Guitar Categories
+
+
+2. Guitars 
+
+
+3. Guitar review
+
+
+4. Users
+
 
 ## Credits 
 
