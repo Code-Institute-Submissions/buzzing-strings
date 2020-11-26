@@ -50,7 +50,7 @@ would like to gain more knowledge about this fantastic instrument.
 I used [SmartDraw](https://www.smartdraw.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
 what would be a final effect of the written code. 
 
-The wireframes can be found [here]().
+The wireframes can be found [here](https://github.com/KrisK1978/buzzing-strings/tree/master/wireframes).
 
 ## Features
 
