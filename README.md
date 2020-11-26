@@ -56,13 +56,58 @@ The wireframes can be found [here]().
 
 ## Technologies used
 
-### Other sources used to build the project
+### Languages
+
+1. **HTML**
+
+2. **CSS**
+
+3. **JavaScript**
+
+4. **JSON**
+
+5. **Python**
+
+### Other tools/libraries/platforms used to build the project
+
+1. [GitHub](https://github.com/)
+
+2. [MongoDB Atlas](https://www.mongodb.com/)
+
+3. [Heroku](https://www.heroku.com/)
+
+4. [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+
+5. [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+
+6. [PyMongo](https://pymongo.readthedocs.io/en/stable/index.html)
+
+7. [jQuery](https://jquery.com/)
+
+8. [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
+
+9. [Materialize](https://materializecss.com/)
+
+10. [Font Awesome](https://fontawesome.com/icons?d=gallery)
+
+11. [Google Fonts](https://fonts.google.com/)
+
+12. [Favicon](https://www.favicon-generator.org/)
+
+13. [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+
+14. [Am I Responsive?](http://ami.responsivedesign.is/)
+
+15. [Find Unclosed Tags](https://www.aliciaramirez.com/closing-tags-checker/)
+
+16. [Autoprefixer CSS](https://autoprefixer.github.io/)
+
 
 ## Testing
 The project testing details can be found [here](https://github.com/KrisK1978/buzzing-strings/blob/master/TESTING.md).
 
 ## Project deployment 
-This project was built on [GitPod](https://www.gitpod.io/) using git. [GitHub](https://github.com/login) was used to host the repository.
+This project was built on [GitPod](https://www.gitpod.io/). [GitHub](https://github.com/login) was used to host the repository.
 
 Make sure you have the following tools installed to make the deployment successful:
 
@@ -99,6 +144,7 @@ operating system is being used. The **Python Documentation** can be found [here]
    and create a new database called **buzzing_strings** and set up the required **Collections** for 
 
 8. In your **IDE** create a file where you can store the following information:
+
     - `IP`
     - `PORT`
     - `MONGO_DBNAME`
