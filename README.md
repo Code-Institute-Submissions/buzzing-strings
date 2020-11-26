@@ -14,7 +14,7 @@
 
 - [Project deployment](#project-deployment)
     - [Local deployment](#local-deployment)
-    - [Heroku deployment](#heroku-deployment)
+    - [Heroku deployment](#deploying-an-app-to-heroku)
 
 - [Project database structure](#project-database-structure)
     - [Schema](#schema)
@@ -62,12 +62,52 @@ The wireframes can be found [here]().
 The project testing details can be found [here](https://github.com/KrisK1978/buzzing-strings/blob/master/TESTING.md).
 
 ## Project deployment 
+This project was built on [GitPod](https://www.gitpod.io/) using git. [GitHub](https://github.com/login) was used to host the repository.
+
+Make sure you have the following tools installed to make the deployment successful:
+
+- **PIP**
+- **Python3**
+- **IDE** (pick the most suitable for you)
+- **MongoDB Atlas** account
 
 ### Local deployment
+The following steps need to be used to clone the project from **GitHub**:
 
-#### Additional information
+1. Follow the link to the [project-repository](https://github.com/KrisK1978/buzzing-strings).
 
-### Deployin and app to Heroku 
+2. Go to **Code** tab and use **Clone** to copy the URL `https://github.com/KrisK1978/buzzing-strings.git`
+   from **Clone** with **HTTPs** for the repository.
+
+3. Go to your local **IDE** and open a new command line - terminal.
+
+4. Type in `git clone` in your terminal.
+
+**IMPORTANT:**
+
+Please check the instructions for operating in your virtual environment as they can vary depending on what type
+operating system is being used. The **Python Documentation** can be found [here](https://docs.python.org/3/library/venv.html).
+
+5. Create a file called `.flaskenv` and add the following items:
+    -    *FLASK_APP=run.py*
+    -    *FLASK_ENV=development*
+
+6. Install the required dependencies from **requirements.txt** file using the command below:
+    - `pip3 -r requirements.txt`
+
+7. Register a new account on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) 
+   and create a new database called **buzzing_strings** and set up the required **Collections** for 
+
+8. In your **IDE** create a file where you can store the following information:
+    - `IP`
+    - `PORT`
+    - `MONGO_DBNAME`
+    - `MONGO_URI`
+    - `SECRET_KEY`
+
+9. Run an application using either `python3 app.py` or `flask run` command:
+
+### Deploying an app to Heroku 
 Use the following steps to deploy [buzzing-strings]() to Heroku:
 
 1. Create a **requirements.txt** file using the command below:
