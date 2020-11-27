@@ -78,10 +78,9 @@ I decided to use two type of [Google Fonts](https://fonts.google.com/):
 
 #### Colours
 I used a vivid colours pallete to create a visually positive experience for the users. The following colours 
-have been applied during creation of the project:
+have been applied throughout the website content during the creation of the project. 
 
-
-
+<img src="wireframes/colour-pallete/background.png" alt="background">
 
 
 
@@ -235,16 +234,24 @@ Use the following steps to deploy [buzzing-strings]() to Heroku:
 
 Using the features **MongoDB Atlas** provides, I was able to create the following collections:
 
-1. Guitar Categories
+1. **Guitar Categories**
+
+    <img src="wireframes/mongo-collections/guitar-categories.png" alt="guitar-categories">
 
 
-2. Guitars 
+2. **Guitars** 
+
+    <img src="wireframes/mongo-collections/guitars.png" alt="guitars">
 
 
-3. Guitar review
+3. **Guitar review**
+
+    <img src="wireframes/mongo-collections/guitar-review.png" alt="guitar-review">
 
 
-4. Users
+4. **Users**
+
+    <img src="wireframes/mongo-collections/users.png" alt="users">
 
 
 ## Credits 
