@@ -82,6 +82,8 @@ have been applied throughout the website content during the creation of the proj
 
 <img src="wireframes/colour-pallete/background.png" alt="background">
 
+<img src="wireframes/colour-pallete/top-navbar.png" alt="top-navbar">
+
 
 
 ### Wireframes
