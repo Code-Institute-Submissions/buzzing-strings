@@ -36,7 +36,7 @@ is not only recommended for guitarists who would like to check/add/review the gu
 would like to gain more knowledge about this fantastic instrument. 
 
 ### User Stories
-1. Visiting User
+1. **Visiting User**
 
 - as a visiting user I want to find the website easy to use and navigate
 - as a visiting user I want to find the website content approachable and not overwhelming
@@ -45,7 +45,7 @@ would like to gain more knowledge about this fantastic instrument.
 - as a visiting user I want to find information about a guitar of the month
 - as a visiting user I want to be able to visit social-media sites provided by the website host
 
-2. Registered User
+2. **Registered User**
 
 - as a registered user I want to be log in successfully
 - as a registered user I want to be able to add and delete guitar's type
