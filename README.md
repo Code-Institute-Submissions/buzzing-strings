@@ -65,6 +65,25 @@ would like to gain more knowledge about this fantastic instrument.
 - to create a website which will be intuitive and would anticipate the users' needs;
 
 ### Design Elements
+Being aware of how important it is to built a website reflects designer's idea, I decided to use *eye-catching* colours
+and fonts. My goal was to mix both simplicity and elegance at the same time. I believed it would build a nice connection between 
+the users and the website host.
+
+#### Fonts
+I decided to use two type of [Google Fonts](https://fonts.google.com/):
+
+- **Dancing Script** for the titles
+
+- **Playfair Display** for the website content 
+
+#### Colours
+I used a vivid colours pallete to create a visually positive experience for the users. The following colours 
+have been applied during creation of the project:
+
+
+
+
+
 
 ### Wireframes
 I used [SmartDraw](https://www.smartdraw.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
