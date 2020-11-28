@@ -146,6 +146,7 @@ The wireframes can be found [here](https://github.com/KrisK1978/buzzing-strings/
 
 17. [RandomKeygen](https://randomkeygen.com/)
 
+18. [Free Logo Design](https://www.freelogodesign.org/)
 
 ## Testing
 The project testing details can be found [here](https://github.com/KrisK1978/buzzing-strings/blob/master/TESTING.md).
