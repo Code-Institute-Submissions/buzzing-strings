@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
@@ -16,9 +16,9 @@
 <body>
     <header>
         <!--top navbar-->
-        <nav class="nav-extended green darken-3">
+        <nav class="guitar nav-extended blue-grey lighten-4">
             <div class="nav-wrapper">
-            <a href="#!" class="brand-logo right"><img class="guitar-logo" src="static/images/logo/guitar-logo.png" alt="guitar-logo"></a>
+            <a href="#" class="guitar brand-logo right"><img src="static/images/logo/guitar-logo.png" alt="guitar-logo" class="guitar-logo"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
             <ul class="left hide-on-med-and-down">
                 <li><a href="#">About Us</a></li>
@@ -39,6 +39,21 @@
     </header>
     {% block content %}
     {% endblock %}
+    <!--footer-->
+    <footer class="guitar-footer container-fluid amber lighten-2">
+        <div class="row">
+            <div class="col s12">
+                <div class="social-links">
+                    <a href="https://github.com/KrisK1978" target="_blank" aria-label="Find me on GitHub"><i class="fab fa-github-alt" rel="noopener"></i></a>
+                    <a href="#" aria-label="Find us on Instagram"><i class="fab fa-instagram social-media"></i></a>
+                    <a href="#" aria-label="Find us on Pinterest"><i class="fab fa-pinterest-square"></i></a>
+                </div>
+            </div>
+            <div class="col s12">
+                <p class="copy-right">© 2020 Website designed by Kris K</p>
+            </div>
+        </div>
+    </footer>
     <!--scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>

@@ -1,14 +1,18 @@
-/*importing fonts style*/
+/* importing fonts style */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap');
 
-/*styling body element*/
+/* styling body element */
 body {
     background-color: #81d4fa; 
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
-/*navbar styling*/
+/* navbar styling */
+nav.guitar.nav-extended {
+    min-height: 5rem;
+}
+
 nav ul a {
     font-family: 'Dancing Script', cursive;
     color: #ef6c00;
@@ -19,7 +23,7 @@ nav ul a {
     color: #ef6c00;
 }
 
-/*sidenav styling*/
+/* sidenav styling */
 .side-list {
     background-color: #bbdefb;
 }
@@ -30,6 +34,24 @@ ul.sidenav li a {
 }
 
 .sidenav-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: underline;
+}
+
+/* logo styling */
+nav .guitar.brand-logo.right {
+    margin-right: 3rem;
+    padding: 0;
+}
+
+img.guitar-logo {
+    height: 6rem;
+    width: auto;
+}
+
+/* footer styling */
+.guitar-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

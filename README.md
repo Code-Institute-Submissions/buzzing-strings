@@ -80,9 +80,11 @@ I decided to use two type of [Google Fonts](https://fonts.google.com/):
 I used a vivid colours pallete to create a visually positive experience for the users. The following colours 
 have been applied throughout the website content during the creation of the project. 
 
-<img src="wireframes/colour-pallete/background.png" alt="background">
+<img src="wireframes/colour-pallete/body-background.png" alt="background">
 
 <img src="wireframes/colour-pallete/top-navbar.png" alt="top-navbar">
+
+<img src="wireframes/colour-pallete/footer-background.png" alt="footer">
 
 
 
