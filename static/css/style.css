@@ -8,52 +8,6 @@ body {
     font-weight: 700;
 }
 
-/* navbar styling */
-nav.guitar.nav-extended {
-    min-height: 5rem;
-}
-
-nav ul a {
-    font-family: 'Dancing Script', cursive;
-    color: #ef6c00;
-    font-size: 1.5rem;
-    font-weight: 700;
-    transition: none;
-}
-.fa-bars:before {
-    color: #ef6c00;
-}
-
-.fa-portrait:before {
-    font-size: 1.8rem;
-}
-
-/* sidenav styling */
-.side-list {
-    background-color: #bbdefb;
-}
-ul.sidenav li a {
-    color: #000000;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.sidenav-text {
-    font-size: 1.5rem;
-    text-decoration: underline;
-}
-
-/* logo styling */
-nav .guitar.brand-logo.right {
-    margin-right: 3rem;
-    padding: 0;
-}
-
-img.guitar-logo {
-    height: 6rem;
-    width: auto;
-}
-
 /* footer styling */
 .guitar-footer {
     position: fixed;
@@ -68,7 +22,7 @@ img.guitar-logo {
     background-color: #e6ee9c;
     border: 0.3rem solid #ff3d00;
     border-radius: 0.8rem;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
     padding: 0.5rem;
     cursor: pointer;
     transition: all .4s ease-in-out;
