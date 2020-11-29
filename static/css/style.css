@@ -8,6 +8,19 @@ body {
     font-weight: 700;
 }
 
+/* navbar styling */
+
+/* bars and user icons styling */
+.fa-bars:before {
+    color: #ff3d00;
+}
+
+.fa-portrait:before {
+    display: list-item;
+    font-size: 1.8rem;
+    padding: 0 0.5rem;
+}
+
 /* footer styling */
 .guitar-footer {
     position: fixed;
