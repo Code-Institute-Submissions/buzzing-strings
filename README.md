@@ -86,7 +86,9 @@ have been applied throughout the website content during the creation of the proj
 
 <img src="wireframes/colour-pallete/footer-background.png" alt="footer">
 
+<img src="wireframes/colour-pallete/copyright.png" alt="copyright">
 
+<img src="wireframes/colour-pallete/icon-hover.png" alt="icon-hover">
 
 ### Wireframes
 I used [SmartDraw](https://www.smartdraw.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
