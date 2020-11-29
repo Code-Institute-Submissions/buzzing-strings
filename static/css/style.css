@@ -9,6 +9,9 @@ body {
 }
 
 /* navbar styling */
+nav.top.nav-extended {
+    position: fixed;
+}
 
 /* bars and user icons styling */
 .fa-bars:before {
