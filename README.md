@@ -69,6 +69,12 @@ Being aware of how important it is to built a website reflects designer's idea, 
 and fonts. My goal was to mix both simplicity and elegance at the same time. I believed it would build a nice connection between 
 the users and the website host.
 
+#### Logo 
+[Logo Maker](https://www.freelogodesign.org/) has been used to create a **guitar** related logo. Logo is located in the navbar on the right side.
+Once clicked it redirects the user to **About Us** page.
+
+<img src="static/images/logo/guitar-logo.png" alt="guitar-logo">
+
 #### Fonts
 I decided to use two type of [Google Fonts](https://fonts.google.com/):
 
