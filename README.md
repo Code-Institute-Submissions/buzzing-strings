@@ -10,7 +10,7 @@
     - [Features to be implemented in the future](#features-to-be-implemented-in-the-future)
 
 - [Technologies used](#technologies-used)
-    - [Other sources used to build the project](#other-sources-used-to-build-the-project)
+    - [Other tools used to build the project](#other-tools-used-to-build-the-project)
 
 - [Testing](#testing)
 
@@ -119,7 +119,12 @@ exist in a database already.
 
 This option only allows already registered user to **Log In** (font-awesome icon used).
 
-### Features Visible Only to Registered User
+#### Footer
+
+Basic footer with a copyright text and **Social Links** icons. Once the user clicks on **GitHub** icon it redirects to website host's 
+acccount where other projects can be viewed. Other two icons are disabled and will not redirect the user to external websites. 
+
+### Features Visible Only to Registered Users
 
 #### Guitars 
 
@@ -162,7 +167,7 @@ The following features might be applied to the website in the future:
 
 5. **Python**
 
-### Other tools/libraries/platforms used to build the project
+### Other tools used to build the project
 
 1. [GitHub](https://github.com/)
 
