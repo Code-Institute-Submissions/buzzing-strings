@@ -87,17 +87,21 @@ I decided to use two type of [Google Fonts](https://fonts.google.com/):
 I used a vivid colours pallete to create a visually positive experience for the users. The following colours 
 have been applied throughout the website content during the creation of the project. 
 
-<img src="wireframes/colour-pallete/body-background.png" alt="background">
+<img src="wireframes/colour-pallete/background.png" alt="background">
 
-<img src="wireframes/colour-pallete/top-navbar.png" alt="top-navbar">
+<img src="wireframes/colour-pallete/topnav.png" alt="top-navbar">
 
-<img src="wireframes/colour-pallete/footer-background.png" alt="footer">
+<img src="wireframes/colour-pallete/sidenav.png" alt="sidenav">
 
 <img src="wireframes/colour-pallete/copyright.png" alt="copyright">
 
-<img src="wireframes/colour-pallete/icon-hover.png" alt="icon-hover">
+<img src="wireframes/colour-pallete/hover.png" alt="icon-hover">
 
-<img src="wireframes/colour-pallete/font-colour.png" alt="font-colour">
+<img src="wireframes/colour-pallete/icon.png" alt="icon-colour">
+
+<img src="wireframes/colour-pallete/footer.png" alt="footer">
+
+
 
 ### Wireframes
 I used [SmartDraw](https://www.smartdraw.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
