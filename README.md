@@ -1,10 +1,11 @@
 ## Table of Contents
 [Project Goal](#project-goal)
+
 [User Experience](#user-experience)
-    - [Users Stories](#users-stories)
-    - [Designer Strategy](#designer-strategy)
-    - [Design Elements](#design-elements)
-    - [Wireframes](#wireframes)
+- [Users Stories](#users-stories)
+- [Designer Strategy](#designer-strategy)
+- [Design Elements](#design-elements)
+- [Wireframes](#wireframes)
 
 - [Features](#features)
     - [Features to be implemented in the future](#features-to-be-implemented-in-the-future)
