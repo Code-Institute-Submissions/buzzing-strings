@@ -90,6 +90,8 @@ have been applied throughout the website content during the creation of the proj
 
 <img src="wireframes/colour-pallete/icon-hover.png" alt="icon-hover">
 
+<img src="wireframes/colour-pallete/font-colour.png" alt="font-colour">
+
 ### Wireframes
 I used [SmartDraw](https://www.smartdraw.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
 what would be a final effect of the written code. 
@@ -98,7 +100,53 @@ The wireframes can be found [here](https://github.com/KrisK1978/buzzing-strings/
 
 ## Features
 
+### Features Visible to All Users
+
+#### About Us
+
+This section provides a brief website description to the users. It contains a basic information about the guitars 
+and explains the reasons for creating this website. The users can use an option to **Log In** or **Sign Up!** 
+displayed in a card and placed below the **About Us** content. The last part of the section is called **Guitar Of The Month**.
+It redirects the user to a page where there is a detailed description about a highly recommended guitar.
+
+#### Sign Up!
+
+This section allows to sign up and use the available options on the website. Once registered, the new user would be able to view 
+a list of guitars, add a new guitar, add a review or delete it. Sign up procedure only allows to register a username which does not 
+exist in a database already. 
+
+#### Log In
+
+This option only allows already registered user to **Log In** (font-awesome icon used).
+
+### Features Visible Only to Registered User
+
+#### Guitars 
+
+This section is only available to existing users. It displays a list of different type of guitars (classical, electric and bass) and also 
+provides detailed guitar description. The user would have an opportunity to review a guitar and add it to a favourite list. 
+
+#### Add Guitar 
+
+This option allows the registered user to add a favourite guitar with a description.
+
+#### Add To Favourite
+
+The user can add a several type of guitars and create a favourite list.
+
+#### Delete Guitar 
+
+This option is availablethrough a **Delete** button. Once the user clicks on the button the action cannot be reversed. 
+
 ### Features to be implemented in the future
+
+The following features might be applied to the website in the future:
+
+1. **Pagination**
+
+2. **Adding tutorial videos of how to learn basic guitar chords**
+
+3. **Adding simple users chat functionality**
 
 ## Technologies used
 
