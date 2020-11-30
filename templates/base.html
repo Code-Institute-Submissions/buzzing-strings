@@ -15,27 +15,31 @@
 </head>
 <body>
     <header>
+        <!--top navbar image-->
+        <div class="top-nav-image center-align">
+            <a href="#" class="brand-logo"> <img class="top-responsive-image" src="static/images/logo/guitar-banner.png" alt="top-guitars" /></a>
+        </div>
         <!--top navbar-->
-        <nav class="top nav-extended teal darken-1">
+        <nav>
             <div class="nav-wrapper">
-            <a href="#!" class="guitar brand-logo right"></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-            <ul class="left hide-on-med-and-down">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Guitars</a></li>
+                <li><a class="login-btn tooltipped" data-position="bottom" data-tooltip="Log In!"><i class="fas fa-user"></i></a></li>
                 <li><a href="#">Sign Up!</a></li>
-                <li><a href="#"><i class="fas fa-portrait"></i></a></li>
             </ul>
             </div>
         </nav>
-        <!--mobile sidenav-->
-        <ul class="sidenav " id="mobile-demo">
-            <li><h3 class="center-align deep-orange-text text-accent-3">Buzzing Strings</h3></li>
+        <!--side navbar-->
+        <ul class="sidenav" id="mobile-demo">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Guitars</a></li>
+            <li><a href="#" class="login-btn tooltipped" data-position="bottom" data-tooltip="Log In!"><i class="fas fa-user"></i></a></li>
             <li><a href="#">Sign Up!</a></li>
-            <li><a href="#"><i class="fas fa-portrait"></i></a></li>
         </ul>
+        
     </header>
     {% block content %}
     {% endblock %}

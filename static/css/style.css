@@ -9,9 +9,27 @@ body {
 }
 
 /* navbar styling */
-nav.top.nav-extended {
-    position: fixed;
+.top-responsive-image {
+    width: 100%;
+    height: auto;
 }
+
+/* login button styling */
+.login-btn {
+
+}
+
+/* icon styling */
+.fa-user:before {
+    color: #ef6c00;
+    font-size: 1.5rem;
+    border: 0.3rem solid #eceff1;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* logo styling */
 
 /* bars and user icons styling */
 .fa-bars:before {
@@ -19,9 +37,11 @@ nav.top.nav-extended {
 }
 
 .fa-portrait:before {
-    display: list-item;
+    display: inline-flex;
     font-size: 1.8rem;
     padding: 0 0.5rem;
+    box-sizing: border-box;
+    line-height: 1;
 }
 
 /* footer styling */
