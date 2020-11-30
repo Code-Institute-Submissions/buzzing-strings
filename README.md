@@ -1,6 +1,6 @@
 ## Table of Contents
+[Project Goal](#project-goal)
 [User Experience](#user-experience)
-- [Project Goal](#project-goal)
     - [Users Stories](#users-stories)
     - [Designer Strategy](#designer-strategy)
     - [Design Elements](#design-elements)
@@ -28,12 +28,12 @@
 
 - [Disclaimer](#disclaimer)
 
-## User Experience
-
-### Project Goal
+## Project Goal
 The main goal for creating this website is to deliver interesting information about different type of guitars. This website 
 is not only recommended for guitarists who would like to check/add/review the guitars they like, but to any website user who 
 would like to gain more knowledge about this fantastic instrument. 
+
+## User Experience
 
 ### User Stories
 1. **Visiting User**
