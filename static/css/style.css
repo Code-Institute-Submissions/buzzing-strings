@@ -14,16 +14,12 @@ body {
     height: auto;
 }
 
-/* login button styling */
-.login-btn {
-
-}
-
 /* icon styling */
 .fa-user:before {
-    color: #ef6c00;
+    color: #ff3d00;
+    background-color: #e6ee9c;
     font-size: 1.5rem;
-    border: 0.3rem solid #eceff1;
+    border: 0.3rem solid #ff3d00;
     border-radius: 1rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -36,14 +32,6 @@ body {
     color: #ff3d00;
 }
 
-.fa-portrait:before {
-    display: inline-flex;
-    font-size: 1.8rem;
-    padding: 0 0.5rem;
-    box-sizing: border-box;
-    line-height: 1;
-}
-
 /* footer styling */
 .guitar-footer {
     position: fixed;
@@ -53,10 +41,10 @@ body {
 
 /* social-links styling */
 .social-links i {
-    font-size: 1.3rem;
     color: #ff3d00;
+    font-size: 1.3rem;
     background-color: #e6ee9c;
-    border: 0.3rem solid #ff3d00;
+    border: 0.2rem solid #ff3d00;
     border-radius: 0.8rem;
     margin-top: 1.3rem;
     padding: 0.5rem;
@@ -72,7 +60,7 @@ body {
 
 /* copyright text styling */
 .copyright {
-    color: #1b5e20;
+    color: #1a237e;
     font-size: 1rem;
     font-weight: 600;
     margin: 1.5rem;
