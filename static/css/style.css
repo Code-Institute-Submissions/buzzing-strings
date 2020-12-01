@@ -15,6 +15,23 @@ body {
     height: auto;
 }
 
+/* top navbar styling */
+.top-navbar {
+    display: fixed;
+}
+
+nav ul a {
+    font-family: 'Dancing Script', cursive;
+    color:#1a237e;
+    font-size: 1.8rem;
+    padding-bottom: 0;
+}
+
+/* guitar-logo styling */
+.guitar-logo {
+    
+}
+
 /* sidenav styling */
 .sidenav li>a {
     font-family: 'Dancing Script', cursive;
