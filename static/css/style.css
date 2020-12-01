@@ -10,16 +10,33 @@ body {
 
 /* navbar styling */
 .top-responsive-image {
+    display: flex;
     width: 100%;
     height: auto;
 }
+
+.sidenav-text {
+    font-size: 1.5rem;
+}
+
+.main.sidenav li>a {
+    display: block;
+    color: #ff3d00;
+    font-weight: 600;
+    height: 4.5rem;
+    line-height: 2rem;
+    padding: 2rem 3rem;
+}
+
+/* logo styling */
+
 
 /* icon styling */
 .fa-user:before {
     color: #ff3d00;
     background-color: #e6ee9c;
     font-size: 1.5rem;
-    border: 0.3rem solid #ff3d00;
+    border: 0.2rem solid #ff3d00;
     border-radius: 1rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -60,7 +77,6 @@ body {
 
 /* copyright text styling */
 .copyright {
-    color: #1a237e;
     font-size: 1rem;
     font-weight: 600;
     margin: 1.5rem;
