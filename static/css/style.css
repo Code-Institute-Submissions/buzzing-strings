@@ -8,25 +8,26 @@ body {
     font-weight: 700;
 }
 
-/* navbar styling */
+/* top image styling */
 .top-responsive-image {
     display: flex;
     width: 100%;
     height: auto;
 }
 
-.sidenav-text {
+/* sidenav styling */
+.sidenav li>a {
+    font-family: 'Dancing Script', cursive;
+    color: #ff3d00;
     font-size: 1.5rem;
+    font-weight: 800;
 }
 
-.main.sidenav li>a {
-    display: block;
-    color: #ff3d00;
-    font-weight: 600;
-    height: 4.5rem;
-    line-height: 2rem;
-    padding: 2rem 3rem;
+.sidenav-text {
+    font-size: 1.8rem;
+    font-weight: 900;
 }
+
 
 /* logo styling */
 
