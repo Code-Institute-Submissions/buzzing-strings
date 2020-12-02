@@ -2,7 +2,7 @@
 {% block content %}
 
     <!--new user register form-->
-    <h3 class="register-text center-align indigo-text text-darken-4">Create Your Account</h3>
+    <h3 class="register-text center-align indigo-text text-darken-4">Create your account!</h3>
 
     <div class="row">
         <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('register') }}">
@@ -37,8 +37,10 @@
     <!--redirect user if already registered-->
     <div class="row">
         <div class="col s12">
-            Already Signed Up!?
-            <a href="{{ url_for('login')}}" class="lime-text text-lighten-3">Log In!</a>
+            <p class="redirect-login center-align black-text">
+                Already signed up?
+                <a href="{{ url_for('login')}}" class="indigo-text text-darken-4">Log in here!</a>
+            </p>
         </div>
     </div>
 

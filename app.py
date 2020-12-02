@@ -18,6 +18,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 # Guitars
 
 @app.route("/")
@@ -50,6 +51,13 @@ def register():
         session["user"] = request.form.get("username").lower()
         flash("Well done, your registration was successful!")
     return render_template("register.html")
+
+
+# User login
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    return render_template("login.html")
 
 
 if __name__ == "__main__":

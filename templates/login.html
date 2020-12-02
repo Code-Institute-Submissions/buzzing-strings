@@ -2,7 +2,7 @@
 {% block content %}
 
     <!--user login form-->
-    <h3 class="register-text center-align indigo-text text-darken-4">Log In!</h3>
+    <h3 class="register-text center-align indigo-text text-darken-4">Log in!</h3>
 
     <div class="row">
         <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('login') }}">
@@ -10,7 +10,7 @@
                 <!--username-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="fas fa-user-tie "></i>
+                        <i class="fas fa-user-tie prefix indigo-text text-darken-4"></i>
                         <input id="username" name="username" type="text" minlength="5" 
                             maxlength="15" pattern="^$[a-zA-Z0-9]{5-15}$" class="validate" required>
                         <label for="username">Username</label>
@@ -19,7 +19,7 @@
                 <!--password-->
                 <div class="row">
                     <div class="input-field col s12">
-                    <i class="fas fa-key prefix indigo-text text-darken-4"></i>
+                    <i class="fas fa-key prefix deep-orange-text text-accent-2"></i>
                     <input id="password" name="password" type="password" minlength="5" 
                         maxlength="15" pattern="^$[a-zA-Z0-9]{5-15}$" class="validate" required>
                     <label for="password">Password</label>
@@ -37,8 +37,10 @@
     <!--redirect user if not already registered-->
     <div class="row">
         <div class="col s12">
-            No Account Yet?
-            <a href="{{ url_for('register')}}" class="lime-text text-lighten-3">Sign Up!</a>
+            <p class="redirect-register center-align black-text">
+                No account yet?
+                <a href="{{ url_for('register')}}" class="indigo-text text-darken-4">Sign up here!</a>
+            </p>
         </div>
     </div>
 
