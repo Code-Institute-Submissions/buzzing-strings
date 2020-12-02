@@ -42,8 +42,20 @@
             <li><a href="{{ url_for('register') }}">Sign Up!</a></li>
         </ul>
     </header>
-    {% block content %}
-    {% endblock %}
+
+    <section>
+        <!--flash messages-->
+        {% with messages = get_flashed_messages() %}
+        {% endwith %}
+    </section>
+
+    <!--main container-->
+    <main class="container">#
+        {% block content %}
+        {% endblock %}
+    </main>
+  
+
     <!--footer-->
     <footer class="guitar-footer container-fluid teal lighten-1">
         <div cla ss="row">
