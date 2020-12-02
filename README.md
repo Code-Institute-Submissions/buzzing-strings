@@ -216,6 +216,8 @@ The following features might be applied to the website in the future:
 
 18. [Free Logo Design](https://www.freelogodesign.org/)
 
+19. [PicResize](https://picresize.com/)
+
 ## Testing
 The project testing details can be found [here](https://github.com/KrisK1978/buzzing-strings/blob/master/TESTING.md).
 
