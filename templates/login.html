@@ -2,11 +2,11 @@
 {% block content %}
 
     <!--user login form-->
-    <h3 class="register-text center-align indigo-text text-darken-4">Log in here!</h3>
+    <h3 class="login-text center-align indigo-text text-darken-4">Log in here!</h3>
 
     <div class="row">
         <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('login') }}">
-            <div class="register card-panel teal lighten-1">
+            <div class="login card-panel lime lighten-3">
                 <!--username-->
                 <div class="row">
                     <div class="input-field col s12">
@@ -27,7 +27,7 @@
                 </div>
                 <!--login button-->
                 <div class="row">
-                    <button type="submit" class="col s8 s6 offset-s2 register btn-large">
+                    <button type="submit" class="col s8 s6 offset-s2 login btn-large">
                         Login <i class="fas fa-door-open indigo-text text-darken-4"></i>
                     </button>
                 </div>
@@ -39,7 +39,7 @@
         <div class="col s12">
             <p class="redirect-register center-align black-text">
                 No account yet?
-                <a href="{{ url_for('register')}}" class="indigo-text text-darken-4">Sign up here!</a>
+                <a href="{{ url_for('register')}}" class="red-text text-accent-4">Sign up here!</a>
             </p>
         </div>
     </div>

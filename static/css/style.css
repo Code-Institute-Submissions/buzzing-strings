@@ -56,20 +56,23 @@ nav ul a {
     color: #ff3d00;
 }
 
-/* register text */
-.register-text {
+/* register and login text */
+.register-text,
+.login-text {
     font-family: 'Dancing Script', cursive;
     font-weight: 800;
 }
 
 /* register form styling */
-.register.card-panel {
+.register.card-panel,
+.login.card-panel {
     border: 0.2rem solid #ff3d00;
     border-radius: 0.8rem;
 }
 
-/* register button styling */
-.register.btn-large {
+/* register & login button styling */
+.register.btn-large,
+.login.btn-large {
     color: #ff3d00; 
     font-weight: 800;
     background-color: #b2dfdb;
@@ -78,7 +81,9 @@ nav ul a {
     cursor: pointer;
 }
 
-.register.btn-large:hover {
+/* register & login button hover */
+.register.btn-large:hover,
+.login.btn-large:hover {
     background-color: #ffffff;
 }
 
