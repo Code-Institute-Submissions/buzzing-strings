@@ -48,8 +48,8 @@
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
-                <div class="message row-flashes">
-                    <h4 class="center-align">{{ message }}</h4>
+                <div class="row-flashes">
+                    <h4 class="flash-message center-align red-text text-accent-4">{{ message }}</h4>
                 </div>
                 {% endfor %}
             {% endif %}

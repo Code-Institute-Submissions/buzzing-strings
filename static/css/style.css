@@ -83,10 +83,14 @@ nav ul a {
     background-color: #ffffff;
 }
 
-.message.row-flashes {
-    color: 
-    font-size: 1.5rem;
+/* flashed messages styling */
+.row-flashes {
     line-height: 2;
+}
+
+.flash-message {
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 /* footer styling */
