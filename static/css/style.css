@@ -79,6 +79,16 @@ nav ul a {
 
 }
 
+.register.btn-large:hover {
+    background-color: #ffffff;
+}
+
+.message.row-flashes {
+    color: 
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
 /* footer styling */
 .guitar-footer {
     display: flex;

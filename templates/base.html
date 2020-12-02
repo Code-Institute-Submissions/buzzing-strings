@@ -46,11 +46,18 @@
     <section>
         <!--flash messages-->
         {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                <div class="message row-flashes">
+                    <h4 class="center-align">{{ message }}</h4>
+                </div>
+                {% endfor %}
+            {% endif %}
         {% endwith %}
     </section>
 
     <!--main container-->
-    <main class="container">#
+    <main class="container">
         {% block content %}
         {% endblock %}
     </main>
