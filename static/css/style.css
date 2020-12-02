@@ -42,18 +42,12 @@ nav ul a {
 
 /* icon styling */
 .fa-user:before {
-    color: #ff3d00;
     background-color: #e6ee9c;
     font-size: 1.5rem;
     border: 0.2rem solid #ff3d00;
     border-radius: 1rem;
     cursor: pointer;
     padding: 0.5rem;
-}
-
-/* bars and user icons styling */
-.fa-bars:before {
-    color: #ff3d00;
 }
 
 /* register and login text */
@@ -99,21 +93,20 @@ nav ul a {
 
 /* footer styling */
 .guitar-footer {
-    display: flex;
+    display: fixed;
     overflow: hidden;
-    padding: 0.5rem 0; 
     bottom: 0;
 }
 
 /* social-links styling */
 .social-links i {
-    color: #ff3d00;
+    color: #ff6e40;
     font-size: 1.2rem;
     background-color: #e6ee9c;
-    border: 0.2rem solid #ff3d00;
+    border: 0.2rem solid #ff6e40;
     border-radius: 0.8rem;
-    margin-top: 0.8rem;
-    padding: 0 0.8rem;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
     cursor: pointer;
     transition: all .4s ease-in-out;
 }
@@ -127,6 +120,6 @@ nav ul a {
 /* copyright text styling */
 .copyright {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 800;
     margin: 1.5rem;
 }
