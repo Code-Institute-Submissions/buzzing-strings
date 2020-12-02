@@ -29,9 +29,27 @@ def guitars_list():
 
 # User register 
 
-@app.route("/user_register", methods=["GET", "POST"])
-def user_register():
-    return render_template("user_register.html")
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if request.method == "POST":
+        # check if the username already exists in database
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            flash("Sorry, Username Already Exists!")
+            return redirect(url_for("register"))
+
+        register = {
+            "username": request.form.get("username").lower(),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.users.insert_one(register)
+
+        # put new user into a 'session' cookie
+        session["user"] = request.form.get("username").lower()
+        flash("Well done, your registration was successful!")
+    return render_template("register.html")
 
 
 if __name__ == "__main__":

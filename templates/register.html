@@ -5,13 +5,13 @@
     <h3 class="register-text center-align indigo-text text-darken-4">Create Your Account</h3>
 
     <div class="row">
-        <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('user_register') }}">
+        <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('register') }}">
             <div class="register card-panel lime lighten-3">
                 <!--username-->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-user-plus prefix deep-orange-text text-accent-2"></i>
-                        <input id="username" name="username" type="text" class="validate">
+                        <input id="username" name="username" type="text" class="validate" required>
                         <label for="username">Username</label>
                     </div>
                 </div>
@@ -19,21 +19,13 @@
                 <div class="row">
                     <div class="input-field col s12">
                     <i class="fas fa-key prefix indigo-text text-darken-4"></i>
-                    <input id="password" name="password" type="password" class="validate">
+                    <input id="password" name="password" type="password" class="validate" required>
                     <label for="password">Password</label>
-                    </div>
-                </div>
-                <!---repeat password-->
-                <div class="row">
-                    <div class="input-field col s12">
-                    <i class="fas fa-key prefix deep-orange-text text-accent-2"></i>
-                    <input id="repeat-password" name="repeat-password" type="password" class="validate">
-                    <label for="repeat-password">Repeat Your Password</label>
                     </div>
                 </div>
                 <!--register button-->
                 <div class="row">
-                    <button type="submit" class="col s12 register btn-large">
+                    <button type="submit" class="col s8 s6 offset-s2 register btn-large">
                         Register <i class="fas fa-door-open indigo-text text-darken-4"></i>
                     </button>
                 </div>
