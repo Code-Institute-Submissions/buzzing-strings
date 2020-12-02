@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <!--new user register form-->
-    <h3 class="register-text center-align indigo-text text-darken-4">Create Your Account</h3>
+    <!--user login form-->
+    <h3 class="register-text center-align indigo-text text-darken-4">Log In!</h3>
 
     <div class="row">
-        <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('register') }}">
-            <div class="register card-panel lime lighten-3">
+        <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('login') }}">
+            <div class="register card-panel teal lighten-1">
                 <!--username-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="fas fa-user-plus prefix deep-orange-text text-accent-2"></i>
+                        <i class="fas fa-user-tie "></i>
                         <input id="username" name="username" type="text" minlength="5" 
                             maxlength="15" pattern="^$[a-zA-Z0-9]{5-15}$" class="validate" required>
                         <label for="username">Username</label>
@@ -25,20 +25,20 @@
                     <label for="password">Password</label>
                     </div>
                 </div>
-                <!--register button-->
+                <!--login button-->
                 <div class="row">
                     <button type="submit" class="col s8 s6 offset-s2 register btn-large">
-                        Register <i class="fas fa-door-open indigo-text text-darken-4"></i>
+                        Login <i class="fas fa-door-open indigo-text text-darken-4"></i>
                     </button>
                 </div>
             </div>
         </form>
     </div>
-    <!--redirect user if already registered-->
+    <!--redirect user if not already registered-->
     <div class="row">
         <div class="col s12">
-            Already Signed Up!?
-            <a href="{{ url_for('login')}}" class="lime-text text-lighten-3">Log In!</a>
+            No Account Yet?
+            <a href="{{ url_for('register')}}" class="lime-text text-lighten-3">Sign Up!</a>
         </div>
     </div>
 
