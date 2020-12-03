@@ -103,13 +103,13 @@ have been applied throughout the website content during the creation of the proj
 
 <img src="wireframes/colour-pallete/button-hover.png" alt="button-hover">
 
-
-
 ### Wireframes
 I used [SmartDraw](https://www.smartdraw.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
 what would be a final effect of the written code. 
 
 The wireframes can be found [here](https://github.com/KrisK1978/buzzing-strings/tree/master/wireframes).
+
+[Back to top](#table-of-contents)
 
 ## Features
 
@@ -165,6 +165,8 @@ The following features might be applied to the website in the future:
 2. **Adding tutorial videos of how to learn basic guitar chords**
 
 3. **Adding simple users chat functionality**
+
+[Back to top](#table-of-contents)
 
 ## Technologies used
 
@@ -222,6 +224,8 @@ The following features might be applied to the website in the future:
 
 ## Testing
 The project testing details can be found [here](https://github.com/KrisK1978/buzzing-strings/blob/master/TESTING.md).
+
+[Back to top](#table-of-contents)
 
 ## Project deployment 
 This project was built on [GitPod](https://www.gitpod.io/). [GitHub](https://github.com/login) was used to host the repository.
@@ -304,6 +308,7 @@ Use the following steps to deploy [buzzing-strings](https://buzzing-strings.hero
 9. Remember to click **Deploy Branch** as we have only one branch for this project. **Heroku** will receive the code from
    **GitHub**. When new changes are pushed to **GitHub** next time, our app content should be updated accordingly. 
 
+[Back to top](#table-of-contents)
 
 ## Project database structure
 
@@ -328,6 +333,7 @@ Using the features **MongoDB Atlas** provides, I was able to create the followin
 
     <img src="wireframes/mongo-collections/users.png" alt="users">
 
+[Back to top](#table-of-contents)
 
 ## Credits 
 
