@@ -22,12 +22,12 @@
         </div>
         <!--top navbar-->
         <nav class="top-navbar">
-            <div class="nav-wrapper teal darken-1"><a href="#" class="brand-logo"><img class="guitar-logo" src="static/images/logo/guitar-logo.png" 
+            <div class="nav-wrapper teal darken-1"><a href="{{ url_for('about_us') }}" class="brand-logo"><img class="guitar-logo" src="static/images/logo/guitar-logo.png" 
                 alt="guitar-logo"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars deep-orange-text text-accent-3"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Guitars</a></li>
+                <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+                <li><a href="{{ url_for('guitars_list') }}">Guitars</a></li>
                 <li><a href="{{ url_for('login') }}" class="login-btn tooltipped" data-position="bottom" data-tooltip="Log In!">
                 <i class="fas fa-user deep-orange-text text-accent-3"></i></a></li>
                 <li><a href="{{ url_for('register') }}">Sign Up!</a></li>
@@ -38,8 +38,8 @@
         <ul class="sidenav teal lighten-4" id="mobile-demo">
             <li><h3 class="sidenav-text center-align indigo-text text-darken-4">Buzzing Strings</h3></li>
             <li class="divider indigo darken-4"></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Guitars</a></li>
+            <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+            <li><a href="{{ url_for('guitars_list') }}">Guitars</a></li>
             <li><a href="{{ url_for('login') }}" class="login-btn tooltipped" data-position="bottom" data-tooltip="Log In!">
             <i class="fas fa-user deep-orange-text text-accent-3"></i></a></li>
             <li><a href="{{ url_for('register') }}">Sign Up!</a></li>
