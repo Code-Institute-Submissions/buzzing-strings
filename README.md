@@ -271,7 +271,7 @@ operating system is being used. The **Python Documentation** can be found [here]
 9. Run an application using either `python3 app.py` or `flask run` command:
 
 ### Deploying an app to Heroku 
-Use the following steps to deploy [buzzing-strings]() to Heroku:
+Use the following steps to deploy [buzzing-strings](https://buzzing-strings.herokuapp.com/) to Heroku:
 
 1. Create a **requirements.txt** file using the command below:
 
