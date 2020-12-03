@@ -104,7 +104,7 @@ have been applied throughout the website content during the creation of the proj
 <img src="wireframes/colour-pallete/button-hover.png" alt="button-hover">
 
 ### Wireframes
-I used [SmartDraw](https://www.smartdraw.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
+I used [JustInMind](https://www.justinmind.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
 what would be a final effect of the written code. 
 
 The wireframes can be found [here](https://github.com/KrisK1978/buzzing-strings/tree/master/wireframes).
