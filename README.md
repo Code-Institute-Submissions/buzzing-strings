@@ -101,6 +101,8 @@ have been applied throughout the website content during the creation of the proj
 
 <img src="wireframes/colour-pallete/footer.png" alt="footer">
 
+<img src="wireframes/colour-pallete/button-hover.png" alt="button-hover">
+
 
 
 ### Wireframes

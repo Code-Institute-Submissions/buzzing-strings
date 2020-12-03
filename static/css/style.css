@@ -92,21 +92,14 @@ nav ul a {
 }
 
 /* footer styling */
-.guitar-footer {
-    display: fixed;
-    overflow: hidden;
-    bottom: 0;
-}
-
-/* social-links styling */
 .social-links i {
-    color: #ff6e40;
+    color: #ff3d00;
     font-size: 1.2rem;
     background-color: #e6ee9c;
-    border: 0.2rem solid #ff6e40;
+    border: 0.2rem solid #ff3d00;
     border-radius: 0.8rem;
-    margin: 1rem 0.5rem;
     padding: 0.5rem;
+    margin: 1rem 1rem;
     cursor: pointer;
     transition: all .4s ease-in-out;
 }
@@ -118,8 +111,8 @@ nav ul a {
 }
 
 /* copyright text styling */
-.copyright {
-    font-size: 1rem;
+.copyright-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
     font-weight: 800;
-    margin: 1.5rem;
 }
