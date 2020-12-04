@@ -83,9 +83,9 @@ Once clicked it redirects the user to **About Us** page.
 #### Fonts
 I decided to use two type of [Google Fonts](https://fonts.google.com/):
 
-- **** for the titles
+- **Special Elite** 
 
-- **** for the website content 
+- **Spartan** 
 
 #### Colours
 I have generated a colour pallete using [Coolors](https://coolors.co/) to create a visually positive experience for the users.
