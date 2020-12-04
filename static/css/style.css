@@ -1,1 +1,16 @@
-/* importing fonts style */
+/* Importing fonts style */
+@import url('https://fonts.googleapis.com/css2?family=Spartan&family=Special+Elite&display=swap');
+
+/* HTML styling */
+html {
+    position: relative;
+    min-height: 100vh;
+    font-size: 62.5%;
+}
+
+/* Body styling */
+body {
+    background-color: #e9e3e6;
+    font-family: 'Spartan', sans-serif;
+    font-size: 2rem;
+}
