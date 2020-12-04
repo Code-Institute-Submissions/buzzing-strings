@@ -88,8 +88,10 @@ I decided to use two type of [Google Fonts](https://fonts.google.com/):
 - **** for the website content 
 
 #### Colours
-I used a [coolors](https://coolors.co/) to create a visually positive experience for the users. 
-The following colours have been applied throughout the website content during the creation of the project. 
+I have generated a colour pallete using [Coolors](https://coolors.co/) to create a visually positive experience for the users.
+I opted for calm colours as I did not want to distract the user from the website content by applying overwhelming colour pallete.
+
+<img src="wireframes/colour-pallete/colours.png" alt="colour-pallete">
 
 [Back to top](#table-of-contents)
 
