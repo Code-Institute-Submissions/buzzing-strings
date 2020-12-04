@@ -2,6 +2,7 @@
 [Project Goal](#project-goal)
 
 [User Experience](#user-experience)
+- [User Goal](#user-goal)
 - [Users Stories](#users-stories)
 - [Designer Strategy](#designer-strategy)
 - [Design Elements](#design-elements)
@@ -29,29 +30,32 @@
 
 - [Disclaimer](#disclaimer)
 
+
 ## Project Goal
 The main goal for creating this website is to deliver interesting information about different type of guitars. This website 
 is not only recommended for guitarists who would like to check/add/review the guitars they like, but to any website user who 
 would like to gain more knowledge about this fantastic instrument. 
 
 ## User Experience
+### User Goals
+- I want the website to work properly on different type of devices such mobile phones, tablets, ipads and
+  desktops
+- I want to have an easy access to dashboard where I can see the profile I created
+- I want the website which is simple to use and where I can easily update information 
 
 ### User Stories
-1. **Visiting User**
+- as a User, I want to find the website easy to use and navigate
+- as a User, I want to find the website content approachable and not overwhelming
+- as a User, I want to access the information about the guitars easily
+- as a User, I want to have an ability to register and log in with no obstacles
+- as a User, I want to find information about a guitar of the month
+- as a User, I want to be able to visit social-media sites provided by the website host
+- as a User, I want to be log in successfully
+- as a User, I want to be able to add and delete guitar's type
+- as a User, I want to be able to add a review about the guitars
+- as a User, I want to have an option to remove my profile from the website
 
-- as a visiting user I want to find the website easy to use and navigate
-- as a visiting user I want to find the website content approachable and not overwhelming
-- as a visiting user I want to access the information about the guitars easily
-- as a visiting user I want to have an ability to register and log in with no obstacles
-- as a visiting user I want to find information about a guitar of the month
-- as a visiting user I want to be able to visit social-media sites provided by the website host
-
-2. **Registered User**
-
-- as a registered user I want to be log in successfully
-- as a registered user I want to be able to add and delete guitar's type
-- as a registered user I want to be able to add a review about the guitars
-- as a registered user I want to have an option to remove my profile from the website
+[Back to top](#table-of-contents)
 
 ### Designer's Strategy
 - to create a website which will be a user-friendly and easy to navigate;
@@ -66,7 +70,7 @@ would like to gain more knowledge about this fantastic instrument.
 - to create a website which will be intuitive and would anticipate the users' needs;
 
 ### Design Elements
-Being aware of how important it is to built a website reflects designer's idea, I decided to use *eye-catching* colours
+Being aware of how important it is to built a website which would reflect designer's idea, I decided to use a nice colours pallete
 and fonts. My goal was to mix both simplicity and elegance at the same time. I believed it would build a nice connection between 
 the users and the website host.
 
@@ -79,37 +83,21 @@ Once clicked it redirects the user to **About Us** page.
 #### Fonts
 I decided to use two type of [Google Fonts](https://fonts.google.com/):
 
-- **Dancing Script** for the titles
+- **** for the titles
 
-- **Playfair Display** for the website content 
+- **** for the website content 
 
 #### Colours
-I used a vivid colours pallete to create a visually positive experience for the users. The following colours 
-have been applied throughout the website content during the creation of the project. 
+I used a [coolors](https://coolors.co/) to create a visually positive experience for the users. 
+The following colours have been applied throughout the website content during the creation of the project. 
 
-<img src="wireframes/colour-pallete/background.png" alt="background">
-
-<img src="wireframes/colour-pallete/topnav.png" alt="top-navbar">
-
-<img src="wireframes/colour-pallete/sidenav.png" alt="sidenav">
-
-<img src="wireframes/colour-pallete/copyright.png" alt="copyright">
-
-<img src="wireframes/colour-pallete/hover.png" alt="icon-hover">
-
-<img src="wireframes/colour-pallete/icon.png" alt="icon-colour">
-
-<img src="wireframes/colour-pallete/footer.png" alt="footer">
-
-<img src="wireframes/colour-pallete/button-hover.png" alt="button-hover">
+[Back to top](#table-of-contents)
 
 ### Wireframes
 I used [JustInMind](https://www.justinmind.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
 what would be a final effect of the written code. 
 
 The wireframes can be found [here](https://github.com/KrisK1978/buzzing-strings/tree/master/wireframes).
-
-[Back to top](#table-of-contents)
 
 ## Features
 
@@ -200,7 +188,7 @@ The following features might be applied to the website in the future:
 
 8. [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
 
-9. [Materialize](https://materializecss.com/)
+9. [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 
 10. [Font Awesome](https://fontawesome.com/icons?d=gallery)
 
