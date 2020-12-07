@@ -16,7 +16,7 @@ body {
 }
 
 /* Navbar styling */
-.main-nav {
+nav.main-nav {
     position: relative;
     background-color: #81747D;
 }
