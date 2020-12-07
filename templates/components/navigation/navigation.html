@@ -1,12 +1,11 @@
 <nav class="main-nav">
     <div class="nav-wrapper">
-      <a href="#" class="guitar brand-logo"><img src="static/images/logo/guitar-logo.png" alt="guitar-logo" height="50"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="{{ url_for('about') }}" class="guitar brand-logo"><img src="static/images/logo/guitar-logo.png" alt="guitar-logo" height="50"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="{{ url_for('guitars') }}">Guitars</a></li>
+        <li><a href="#">Sign Up!</a></li>
+        <li><a href="#"></a></li>
       </ul>
     </div>
   </nav>
