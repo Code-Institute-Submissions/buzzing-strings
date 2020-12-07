@@ -3,10 +3,11 @@
 <head>
     {% include 'layout/head.html' %}
 </head>
+    {% include 'components/navigation/navigation.html' %}
 <body>
-    {% block content %}
-    {% endblock %}
+    {% block content %} {% endblock %}
     {% include 'components/footer/footer.html' %}
+    {% block scripts %} {% endblock %}
     {% include 'layout/scripts.html' %}
 </body>
 </html>

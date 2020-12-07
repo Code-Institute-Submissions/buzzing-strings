@@ -15,14 +15,16 @@ body {
     font-size: 2rem;
 }
 
+/* Navbar styling */
+
+
 /* Footer styling */
-#footer {
+.footer {
     position: absolute;
     background-color: #878286;
     text-align: center;
-    height: 6rem;
     width: 100%;
-    line-height: 6rem;
+    line-height: 1rem;
     left: 0;
     bottom: 0;
 }
@@ -32,6 +34,7 @@ body {
     border: 0.3rem solid #ffffff;
     color: #ffffff;
     border-radius: 0.5rem;
+    margin: 1rem;
     padding: 0.4rem;
     cursor: pointer;
     transition: all .4s ease-in-out;
@@ -45,6 +48,6 @@ body {
 /* Copyright text styling */
 .copyright {
     font-family: 'Special Elite', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffffff;
 }
