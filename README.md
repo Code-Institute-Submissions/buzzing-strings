@@ -36,6 +36,8 @@ The main goal for creating this website is to deliver interesting information ab
 is not only recommended for guitarists who would like to check/add/review the guitars they like, but to any website user who 
 would like to gain more knowledge about this fantastic instrument. 
 
+[Back to top](#table-of-contents)
+
 ## User Experience
 ### User Goals
 - I want the website to work properly on different type of devices such mobile phones, tablets, ipads and
@@ -80,6 +82,8 @@ Once clicked it redirects the user to **About Us** page.
 
 <img src="static/images/logo/guitar-logo.png" alt="guitar-logo">
 
+[Back to top](#table-of-contents)
+
 #### Fonts
 I decided to use two type of [Google Fonts](https://fonts.google.com/):
 
@@ -123,6 +127,8 @@ exist in a database already.
 This option only allows already registered user to **Log In** (font-awesome icon used).
 
 #### Footer
+
+[Back to top](#table-of-contents)
 
 Basic footer with a copyright text and **Social Links** icons. Once the user clicks on **GitHub** icon it redirects to website host's 
 acccount where other projects can be viewed. Other two icons are disabled and will not redirect the user to external websites. 
@@ -171,6 +177,8 @@ The following features might be applied to the website in the future:
 4. **JSON**
 
 5. **Python**
+
+[Back to top](#table-of-contents)
 
 ### Other tools used to build the project
 
@@ -263,6 +271,8 @@ operating system is being used. The **Python Documentation** can be found [here]
     - `SECRET_KEY`
 
 9. Run an application using either `python3 app.py` or `flask run` command:
+
+[Back to top](#table-of-contents)
 
 ### Deploying an app to Heroku 
 Use the following steps to deploy [buzzing-strings](https://buzzing-strings.herokuapp.com/) to Heroku:
