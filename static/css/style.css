@@ -26,7 +26,7 @@ nav.main-nav {
 nav ul a {
     font-family: 'Special Elite', cursive;
     font-size: 2.5rem;
-    color: #FFDDAD;
+    color: #F1FFEB;
     font-size: 2.5rem;
     font-weight: 800;
 }
@@ -46,11 +46,11 @@ nav ul a {
 
 /* Sidenav list styling */
 .sidenav {
-    background-color: #9CBED3;
+    background-color: #878286;
 }
 
 .sidenav li>a {
-    color: #F3F5F7;
+    color: #F1FFEB;
     font-size: 1.8rem;
     font-weight: 800;
 }
@@ -59,7 +59,7 @@ nav ul a {
 .sidenav-text {
     font-family: 'Special Elite', cursive;
     font-size: 2.5rem;
-    color: #D7431D;
+    color: #FFDDAD;
     text-align: center;
     font-weight: 800;
 }
@@ -108,6 +108,6 @@ nav ul a {
 .copyright {
     font-family: 'Special Elite', cursive;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #F1FFEB;
     padding-top: 0.5rem;
 }
