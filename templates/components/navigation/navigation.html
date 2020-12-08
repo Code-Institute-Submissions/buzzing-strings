@@ -1,7 +1,7 @@
 <nav class="main-nav">
     <div class="nav-wrapper">
       <a href="{{ url_for('about') }}" class="guitar brand-logo"><img src="static/images/logo/guitar-logo.png" alt="guitar-logo" height="50"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+      <a href="#" data-target="mobile" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="{{ url_for('guitars') }}">Guitars</a></li>
         <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
@@ -10,8 +10,8 @@
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="{{ url_for('about') }}"><i class="fas fa-guitar"></i></a></li>
+  <ul class="sidenav" id="mobile">
+    <h3 class="sidenav-text">Buzzing Strings</h3>
     <li class="divider"></li>
     <li><a href="{{ url_for('guitars') }}">Guitars</a></li>
     <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
