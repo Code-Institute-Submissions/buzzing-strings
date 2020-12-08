@@ -32,6 +32,7 @@ nav.main-nav {
     bottom: 0;
 }
 
+/* Action buttong styling */
 .action-btn {
     position: fixed;
     right: 1rem;
@@ -39,6 +40,11 @@ nav.main-nav {
     margin-bottom: 2.5rem;
 }
 
+.btn-floating.btn-large {
+    background-color: #565A49;
+}
+
+/* Social-media links styling */
 .social-media i {
     font-size: 2rem;
     border: 0.3rem solid #ffffff;
