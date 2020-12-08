@@ -23,7 +23,9 @@ nav.main-nav {
 }
 
 .fa-user-alt {
-    
+    color: #D7431D;
+    border: 0.3rem solid #D7431D;
+    border-radius: 0.5rem;
 }
 
 /* Sidenav list styling */
