@@ -84,7 +84,11 @@ nav ul a {
 }
 
 .btn-floating.btn-large {
-    background-color: #565A49;
+    background-color: #FFDDAD;
+}
+
+.fa-angle-double-up:before {
+    color: #878286;
 }
 
 /* Social-media links styling */

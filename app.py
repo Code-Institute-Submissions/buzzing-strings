@@ -19,15 +19,56 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# Home
+# About
 @app.route('/')
 def about():
+    """
+    The function loads the about page
+    """
     return render_template('pages/about.html')
+
+
+# Register
+@app.route('/register', methods=["GET", "POST"])
+def register():
+    """
+    Allows new user to registe on the webpage
+    It checks if the username already exists in database
+    Redirects the user to guitars page
+    """
+    if request.method == "POST":
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            flash("Sorry, this username already exists!")
+            return redirect(url_for("register"))
+
+        username = request.form.get("username").lower()
+        password = generate_password_hash(request.form.get("pasword"))
+
+        mongo.db.users.insert_one({
+            'username': username,
+            'password': password})
+ 
+        if mongo.db.users.find_one({'username': username}) is not None:
+            user = mongo.db.users.find_one({'username': username})
+            user_id = user['_id']
+            session['user_id'] = str(user_id)
+            guitars = mongo.db.guitars({"user_id": user-id})
+            return redirect("blank_form", user_id=user_id)
+
+    return render_template(url_for(
+            "pages/user_authentication.html", register=True))
 
 
 # Guitars
 @app.route('/guitars')
 def guitars():
+    """
+    It loads the guitars page
+    Allows the user to check a list of guitars
+    """
     guitars = mongo.db.guitars.find()
     return render_template('pages/guitars.html', guitars=guitars)
 
