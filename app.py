@@ -56,8 +56,7 @@ def register():
             guitars = mongo.db.guitars({"user_id": user_id})
             return redirect(url_for("blank_form", user_id=user_id))
 
-    return render_template(url_for(
-            'pages/user_authentication.html', register=True))
+    return render_template('pages/user_authentication.html', register=True)
 
 
 @app.route('/blankform/<user_id>')

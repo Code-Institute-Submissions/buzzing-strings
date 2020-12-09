@@ -10,7 +10,7 @@ html {
 
 /* Body styling */
 body {
-    background-color: #e9e3e6;
+    background-color: #E9E3E6;
     font-family: 'Spartan', sans-serif;
     font-size: 2rem;
     font-weight: 700;
@@ -63,6 +63,44 @@ nav ul a {
     text-align: center;
     font-weight: 800;
 }
+
+/* Register form styling */
+.register.card-panel {
+    border: 0.4rem solid #81747D;
+    border-radius: 0.5rem;
+}
+
+.signup-heading {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.fas {
+    color: #81747D;
+}
+
+.pattern-u,
+.pattern-p {
+    font-size: 1rem;
+}
+
+.submit-button {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+    font-weight: 800;
+    background-color: #FFDDAD;
+    border: 0.4rem solid #81747D;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #B6E0E2;
+}
+
 
 /* Footer styling */
 .footer {
