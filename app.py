@@ -19,7 +19,6 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# About
 @app.route('/')
 def about():
     """
@@ -28,7 +27,6 @@ def about():
     return render_template('pages/about.html')
 
 
-# Register
 @app.route('/register', methods=["GET", "POST"])
 def register():
     """
@@ -56,13 +54,23 @@ def register():
             user_id = user['_id']
             session['user_id'] = str(user_id)
             guitars = mongo.db.guitars({"user_id": user_id})
-            return redirect(user_id=user_id)
+            return redirect(url_for("blank_form", user_id=user_id))
 
     return render_template(url_for(
             'pages/user_authentication.html', register=True))
 
 
-# Guitars
+@app.route('/blankform/<user_id>')
+def blank_form(user_id):
+    """
+    When user does not have a guitar profile added yet
+    Blank form will be displayed
+    """
+    guitars = mongo.db.guitars.find({"user_id": user_id})
+    return render_template("pages/blank_form.html",
+                           user_id=user_id)
+
+
 @app.route('/guitars')
 def guitars():
     """
