@@ -55,11 +55,11 @@ def register():
             user = mongo.db.users.find_one({'username': username})
             user_id = user['_id']
             session['user_id'] = str(user_id)
-            guitars = mongo.db.guitars({"user_id": user-id})
-            return redirect("blank_form", user_id=user_id)
+            guitars = mongo.db.guitars({"user_id": user_id})
+            return redirect(user_id=user_id)
 
     return render_template(url_for(
-            "pages/user_authentication.html", register=True))
+            'pages/user_authentication.html', register=True))
 
 
 # Guitars
