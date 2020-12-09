@@ -1,47 +1,20 @@
-{% extends "base.html" %}
+{% extends 'layout/base.html' %}
 {% block content %}
 
-    <!--new user register form-->
-    <h3 class="register-text center-align indigo-text text-darken-4">Create your account!</h3>
+    {% if register == True %}
 
-    <div class="row">
-        <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('register') }}">
-            <div class="register card-panel lime lighten-3">
-                <!--username-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-user-plus prefix deep-orange-text text-accent-3"></i>
-                        <input id="username" name="username" type="text" minlength="5" 
-                            maxlength="15" pattern="^$[a-zA-Z0-9]{5-15}$" class="validate" required>
-                        <label for="username">Username</label>
-                    </div>
-                </div>
-                <!--password-->
-                <div class="row">
-                    <div class="input-field col s12">
-                    <i class="fas fa-key prefix indigo-text text-darken-4"></i>
-                    <input id="password" name="password" type="password" minlength="5" 
-                        maxlength="15" pattern="^$[a-zA-Z0-9]{5-15}$" class="validate" required>
-                    <label for="password">Password</label>
-                    </div>
-                </div>
-                <!--register button-->
-                <div class="row">
-                    <button type="submit" class="col s8 s6 offset-s2 register btn-large">
-                        Register <i class="fas fa-door-open indigo-text text-darken-4"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
+    <div id="sign-up" class="container">
+        <h3 class="signup-heading">Please register to add your favourite guitar!</h3>
+        {% include 'components/flash_messages/flash_messages.html' %}
+        {% include 'components/forms/user_authentication.html' %}
     </div>
-    <!--redirect user already registered-->
-    <div class="row">
-        <div class="col s12">
-            <p class="redirect-login center-align black-text">
-                Already signed up?
-                <a href="{{ url_for('login')}}" class="red-text text-accent-4">Log in here!</a>
-            </p>
-        </div>
-    </div>
+
+    {% else %}
+
+    <div id="log-in" class="container"></div>
+        <h3 class="login-heading">Please log in to your account!</h3>
+        {% include 'components/flash_messages/flash_messages.html' %}
+        {% include 'components/forms/user_authentication.html' %}
+
 
 {% endblock %}
