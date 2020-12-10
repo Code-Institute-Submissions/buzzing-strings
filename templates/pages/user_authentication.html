@@ -1,20 +1,21 @@
 {% extends 'layout/base.html' %}
 {% block content %}
 
-     {% if register == True %}
+    {% if register == True %}
 
     <div id="sign-up" class="container">
-        <h3 class="signup-heading">Please register to add your favourite guitar!</h3>
+        <h2 class="signup-heading">Please register to add your favourite guitar!</h2>
         {% include 'components/flash_messages/flash_messages.html' %}
         {% include 'components/forms/user_authentication.html' %}
     </div>
 
     {% else %}
 
-    <div id="log-in" class="container"></div>
-        <h3 class="login-heading">Please log in to your account!</h3>
+    <div id="log-in" class="container">
+        <h2 class="login-heading">Please log in to your account!</h2>
         {% include 'components/flash_messages/flash_messages.html' %}
         {% include 'components/forms/user_authentication.html' %}
+    </div>
 
     {% endif %}
 {% endblock %}

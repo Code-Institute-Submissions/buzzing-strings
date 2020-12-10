@@ -30,7 +30,7 @@ def about():
 @app.route('/register', methods=["GET", "POST"])
 def register():
     """
-    Allows new user to registe on the webpage
+    Allows new user to register on the webpage
     It checks if the username already exists in database
     Redirects the user to guitars page
     """
@@ -43,7 +43,7 @@ def register():
             return redirect(url_for("register"))
 
         username = request.form.get("username").lower()
-        password = generate_password_hash(request.form.get("pasword"))
+        password = generate_password_hash(request.form.get("password"))
 
         mongo.db.users.insert_one({
             'username': username,
@@ -56,19 +56,14 @@ def register():
             guitars = mongo.db.guitars({"user_id": user_id})
             return redirect(url_for("blank_form", user_id=user_id))
 
-    return render_template('pages/user_authentication.html', register=True)
+    return render_template("pages/user_authentication.html", register=True)
 
 
-@app.route('/blankform/<user_id>')
-def blank_form(user_id):
+@app.route('/login', methods=["GET", "POST"])
+def login():
     """
-    When user does not have a guitar profile added yet
-    Blank form will be displayed
+    Allows alredy registered user to log in 
     """
-    guitars = mongo.db.guitars.find({"user_id": user_id})
-    return render_template("pages/blank_form.html",
-                           user_id=user_id)
-
 
 @app.route('/guitars')
 def guitars():

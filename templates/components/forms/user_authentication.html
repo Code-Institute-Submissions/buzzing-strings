@@ -1,34 +1,39 @@
-  <div class="row">
+{% if register == True %}
+<form method="POST" action="{{ url_for('register') }}"> 
+{% else %}
+<form method="POST" action="{{ url_for('sign_in') }}">
+{% endif %}
+<div class="row">
+    <!--username-->
+    <div class="col s12 m8 offset-m2 input-field">
+        <i class="fas fa-user-plus prefix"></i>
+		<input id="username" name="username" type="text" minlength="5" 
+            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters (letters or numbers)!" class="validate" required>
+		<label for="username">Username</label>
         {% if register == True %}
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+        <p class="pattern-u">Please note only letters (either case) and numbers can be used. 
+         No special characters!</p>
+         {% endif %}
+	</div> 
+    <!--password-->
+    <div class="col s12 m8 offset-m2 input-field">
+        <i class="fas fa-user-lock prefix"></i>
+        <input id="password" name="password" type="password" minlength="5"
+            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
+        <label for="password">Password</label>
+        {% if register == True %}
+        <p class="pattern-p">Password should have min 5 characters!</p>
         {% endif %}
-            <div class="register card-panel">
-                <!-- username -->
-                <div class="row">
-					<div class="input-field col s12">
-						<i class="fas fa-user-plus prefix"></i>
-						<input id="username" name="username" type="text" minlength="5" 
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
-						<label for="username">Username</label>
-                        <p class="pattern-u">Please note only letters (either case) and numbers can be used. 
-                            No special characters!</p>
-					</div>
-                </div>
-                <!-- password -->
-                <div class="row">
-                    <div class="input-field col s12">
-						<i class="fas fa-user-lock prefix"></i>
-                        <input id="password" name="password" type="password" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
-                        <label for="password">Password</label>
-                    </div>
-                </div>
-                <!-- register -->
-                <div class="row">
-                    <button type="submit" class="col s8 s4 offset-s2 submit-button">
-                        Register <i class="fas fa-sign-in-alt"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
     </div>
+    <!--register/login/homepage buttons-->
+    <div class="col s12 m8 offset-m2">
+        <button type="submit" class="multiaction-btns" action="action"></button>
+    </div>
+    <div class="col s12">
+        {% if register == True %}
+            <h3>Are you registered already?</h3>
+        {% else %}
+            <h3>No account yet?</h3>
+        {% endif %}
+    </div>
+</div>
