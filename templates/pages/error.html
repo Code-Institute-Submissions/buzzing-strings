@@ -5,8 +5,8 @@
             <i class="error-page-icon far fa-sad-tear"></i>
             <p class="error-message-heading">Oops, something went wrong!</p>
         <p>{{ error_message }} Please use the button below to return to homepage safely!</p>
-        <div class="error-message-button">
-            <a href="{{ url_for('about') }}" class="btn btn-primary">Return to Homepage</a>
+        <div class="return-button">
+            <a href="{{ url_for('about') }}" class="return btn-primary">Return to Homepage</a>
         </div>
     </div>
 {% endblock %}

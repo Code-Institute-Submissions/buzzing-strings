@@ -76,6 +76,47 @@ nav ul a {
 
 /* Register form styling */
 
+/* Styling error page */
+.error-page {
+    height:100%;
+    width:100%;
+    background: #EB5C68;
+    position:relative;
+}
+
+.error-page-message {
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.error-page-icon {
+    font-size: 14rem;
+}
+
+.error-message-heading {
+    font-family: 'Special Elite', cursive;;
+    font-size: 4rem;
+}
+
+.error-page p {
+    padding: 1rem 0;
+    color: #ffffff;
+}
+    
+.return-button {
+    margin-top: 0.5rem;
+}
+
+.return.btn-primary {
+    background-color: #00507A;
+    color: #ffffff;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all .4s ease-in-out;
+}
 
 /* Footer styling */
 .footer {
@@ -88,7 +129,7 @@ nav ul a {
     bottom: 0;
 }
 
-/* Action buttong styling */
+/* Action button styling */
 .action-btn {
     position: fixed;
     right: 1rem;
@@ -129,33 +170,3 @@ nav ul a {
     padding-top: 0.5rem;
 }
 
-/* Styling error page */
-.error-page {
-    height:100%;
-    width:100%;
-    background: #EB5C68;
-    position:relative;
-}
-
-.error-page-message {
-    text-align:center;
-    padding: 1rem 1rem;
-}
-
-.error-page-icon {
-    font-size: 14rem;
-}
-
-.error-message-heading {
-    font-family: 'Special Elite', cursive;;
-    font-size: 4rem;
-}
-
-.error-page p {
-    padding: 1rem 0;
-    color: #ffffff;
-}
-    
-.error-page-button {
-    margin-top: 2rem;
-}
