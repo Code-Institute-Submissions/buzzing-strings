@@ -28,20 +28,22 @@ def about():
     return render_template('pages/about.html')
 
 
+# Register
 @app.route('/register', methods=["GET", "POST"])
 def register():
     """
     Allows new user to register on the webpage,
     checks if the username already exists in database
     """
-    
 
 
+# Login
 @app.route('/login', methods=["GET", "POST"])
 def login():
     """
     Allows alredy registered user to log in
     """
+
 
 # Guitars
 @app.route('/guitars')
@@ -56,7 +58,7 @@ def guitars():
 
 # 404 error page
 @app.errorhandler(404)
-def page_not_found():
+def page_not_found(error):
     """
     Renders an error page with 404 message
     """
@@ -67,7 +69,7 @@ def page_not_found():
 
 # 500 error page
 @app.errorhandler(500)
-def server_error():
+def server_error(error):
     """
     Renders an error page with 500 message
     """

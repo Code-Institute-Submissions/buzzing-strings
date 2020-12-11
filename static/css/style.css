@@ -128,3 +128,34 @@ nav ul a {
     color: #F1FFEB;
     padding-top: 0.5rem;
 }
+
+/* Styling error page */
+.error-page {
+    height:100%;
+    width:100%;
+    background: #EB5C68;
+    position:relative;
+}
+
+.error-page-message {
+    text-align:center;
+    padding: 1rem 1rem;
+}
+
+.error-page-icon {
+    font-size: 14rem;
+}
+
+.error-message-heading {
+    font-family: 'Special Elite', cursive;;
+    font-size: 4rem;
+}
+
+.error-page p {
+    padding: 1rem 0;
+    color: #ffffff;
+}
+    
+.error-page-button {
+    margin-top: 2rem;
+}
