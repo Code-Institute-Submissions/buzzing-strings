@@ -75,51 +75,6 @@ nav ul a {
 }
 
 /* Register form styling */
-#sign-up,
-#log-in {
-    background-color: #ffffff;
-    border: 0.4rem solid #81747D;
-    border-radius: 0.5rem;
-    margin-top: 3rem;
-}
-
-.signup-heading,
-.login-heading {
-    font-family: 'Special Elite', cursive;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.fas {
-    color: #81747D;
-}
-
-.input-field>label {
-    font-size: 1.5rem;
-}
-
-.pattern-u,
-.pattern-p {
-    text-align: center;
-    font-size: 1rem;
-}
-
-.multiaction-btns {
-    font-family: 'Special Elite', cursive;
-    font-size: 1.5rem;
-    font-weight: 800;
-    background-color: #FFDDAD;
-    border: 0.4rem solid #81747D;
-    border-radius: 0.5rem;
-    line-height: 2.5rem;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-}
-
-.multiple-buttons:hover {
-    background-color: #B6E0E2;
-}
 
 
 /* Footer styling */
