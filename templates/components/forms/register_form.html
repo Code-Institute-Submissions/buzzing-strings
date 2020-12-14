@@ -1,0 +1,26 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+  <h3 class="register-text">Please Sign Up!</h3>
+  <!--register form-->
+  <div class="row">
+    <form class="register-form" method="POST" action="{{ url_for('register') }}">
+        <!--username-->
+        <div class="col s12 m8 offset-m2 input-field">
+            <i class="fas fa-user-plus prefix"></i>
+            <input id="username" name="username" type="text" minlength="5" 
+             maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters (letters or numbers)!" class="validate" required>
+            <label for="username">Username</label>
+            <p class="pattern-user">Please note only letters (either case) and numbers can be used. 
+             No special characters!</p>
+        </div> 
+        <!--password-->
+        <div class="col s12 m8 offset-m2 input-field">
+        <i class="fas fa-user-lock prefix"></i>
+        <input id="password" name="password" type="password" minlength="5"
+            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
+        <label for="password">Password</label>
+        <p class="pattern-password">Password should have min 5 characters!</p>
+        </div>
+    </form>
+  </div>
+{% endblock %}

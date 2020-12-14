@@ -35,6 +35,7 @@ def register():
     Allows new user to register on the webpage,
     checks if the username already exists in database
     """
+    return render_template("components/forms/register_form.html")
 
 
 # Login
@@ -43,6 +44,7 @@ def login():
     """
     Allows alredy registered user to log in
     """
+    return render_template("components/forms/login_form.html")
 
 
 # Guitars
@@ -64,7 +66,7 @@ def page_not_found(error):
     """
     error_message = str(error)
     return render_template('pages/error.html',
-                           error_message=error_message), 400
+                           error_message=error_message), 404
 
 
 # 500 error page
