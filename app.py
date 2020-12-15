@@ -35,6 +35,21 @@ def register():
     Allows new user to register on the webpage,
     checks if the username already exists in database
     """
+    if request.method == "POST":
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            flash("Sorry, username already exists!")
+            return redirect(url_for("register"))
+
+        username = request.form.get("username").lower()
+        password = generate_password_hash(request.form.get("password"))
+
+        mongo.db.users.insert_one({
+            'users': username,
+            'password': password})
+
     return render_template("components/forms/register_form.html")
 
 

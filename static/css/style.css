@@ -76,21 +76,78 @@ nav ul a {
     margin: 3rem;
 }
 
-.about-text {
+p.about-text {
     text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
 }
 
 /* Register form styling */
-.register-form {
-    border: 1rem solid black;
-    border-radius: 0.5rem;
+form.register-form {
+    background-color: cornsilk;
+    border: 0.3rem solid black;
+    border-radius: 0.8rem;
+    margin: 2rem 4rem 3rem 4rem;
+    padding: 2rem;
 }
 
-.pattern-user,
-.pattern-password {
+h3.register-heading {
     text-align: center;
+    font-family: 'Special Elite', cursive;
+}
+
+label.username,
+label.password {
     font-size: 1.5rem;
+}
+
+p.pattern-user,
+p.pattern-password {
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.register-button {
+    text-align: center;
+}
+
+button.reg-btn,
+button.home-btn {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #00507A;
+    border: 0.3rem solid #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all .4s ease-in-out;
+}
+
+button.reg-btn:hover,
+button.home-btn:hover {
+    background-color: grey;
+}
+
+p.redirect-link {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.8rem;
+}
+
+.link {
+    font-size: 1.8rem;
     color: red;
+}
+
+i.fas.fa-user-plus.prefix {
+    font-size: 2.3rem;
+    color: orangered;
+}
+
+i.fas.fa-user-lock.prefix {
+    font-size: 2.3rem;
+    color: blue;
 }
 
 /* Styling error page */
@@ -117,7 +174,7 @@ nav ul a {
     font-size: 4rem;
 }
 
-.error-page p {
+p.error-page {
     padding: 1rem 0;
     color: #ffffff;
 }
