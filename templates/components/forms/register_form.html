@@ -18,19 +18,20 @@
         <div class="col s12 m8 offset-m2 input-field">
             <i class="fas fa-user-plus prefix"></i>
             <input id="username" name="username" type="text" minlength="5" 
-             maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters (letters or numbers)!" class="validate" required>
+              maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters (letters or numbers)!" class="validate" required>
             <label class="username" for="username">Username</label>
             <p class="pattern-user">Please note only letters (either case) and numbers can be used. 
-             No special characters!</p>
+              No special characters!</p>
         </div> 
         <!--password-->
         <div class="col s12 m8 offset-m2 input-field">
-        <i class="fas fa-user-lock prefix"></i>
-        <input id="password" name="password" type="password" minlength="5"
-            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
-        <label class="password" for="password">Password</label>
-        <p class="pattern-password">Password should have min 5 characters!</p>
+            <i class="fas fa-user-lock prefix"></i>
+            <input id="password" name="password" type="password" minlength="5"
+              maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
+            <label class="password" for="password">Password</label>
+            <p class="pattern-password">Password should have min 5 characters!</p>
         </div>
+        <!--register button-->
         <div class="row">
             <div class="register-button">
                 <div class="col s12">
@@ -39,21 +40,25 @@
                 </div>
             </div>
         </div>
+        <!--login redirect link-->
         <div class="row">
-        <div class="col s12">
-            <p class="redirect-link">Already Registered?
-               <a href="{{ url_for('login') }}" class="link">Log in here!</a>
-            </p>
+            <div class="col s12">
+                <p class="redirect-link">Already Registered?
+                <a href="{{ url_for('login') }}" class="link">Log in here!</a>
+                </p>
+            </div>
         </div>
+        <!--homepage redirect button-->
         <div class="row">
             <div class="homepage-button">
                 <div class="col s12">
-                    <button type="submit" class="home-btn">
-                    Go back to homepage!<i class="fas fa-home"></i></button>
+                    <a href="{{ url_for('about') }}" class="home-btn">
+                      Go back to homepage!<i class="fas fa-home"></i></a>
                 </div>
             </div>
         </div>
-    </div>
     </form>
+  </div>
+     
     
 {% endblock %}
