@@ -20,20 +20,21 @@ mongo = PyMongo(app)
 
 
 # Homepage
-@app.route('/')
+@app.route("/")
 def about():
     """
-    The function lrenders the homepage
+    Renders the homepage
     """
-    return render_template('pages/about.html')
+    return render_template("pages/about.html")
 
 
 # Register
-@app.route('/register', methods=["GET", "POST"])
+@app.route("/register", methods=["GET", "POST"])
 def register():
     """
     Allows new user to register on the webpage,
-    checks if the username already exists in database
+    checks if the username already exists in database,
+    puts the new user into 'session' cookie
     """
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
@@ -43,18 +44,19 @@ def register():
             flash("Sorry, username already exists!")
             return redirect(url_for("register"))
 
-        username = request.form.get("username").lower()
-        password = generate_password_hash(request.form.get("password"))
+        register = {
+            "username": request.form.get("username").lower(),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.users.insert_one(register)
 
-        mongo.db.users.insert_one({
-            'users': username,
-            'password': password})
-
+        session["user"] = request.form.get("username").lower()
+        flash("Your registration was successful!")
     return render_template("components/forms/register_form.html")
 
 
 # Login
-@app.route('/login', methods=["GET", "POST"])
+@app.route("/login", methods=["GET", "POST"])
 def login():
     """
     Allows alredy registered user to log in
@@ -63,14 +65,14 @@ def login():
 
 
 # Guitars
-@app.route('/guitars')
+@app.route("/guitars")
 def guitars():
     """
     It loads the guitars page
     Allows the user to check a list of guitars
     """
     guitars = mongo.db.guitars.find()
-    return render_template('pages/guitars.html', guitars=guitars)
+    return render_template("pages/guitars.html", guitars=guitars)
 
 
 # 404 error page
@@ -80,7 +82,7 @@ def page_not_found(error):
     Renders an error page with 404 message
     """
     error_message = str(error)
-    return render_template('pages/error.html',
+    return render_template("pages/error.html",
                            error_message=error_message), 404
 
 
@@ -91,7 +93,7 @@ def server_error(error):
     Renders an error page with 500 message
     """
     error_message = str(error)
-    return render_template('pages/error.html',
+    return render_template("pages/error.html",
                            error_message=error_message), 500
 
 

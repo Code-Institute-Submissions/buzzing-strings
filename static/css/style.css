@@ -108,7 +108,8 @@ p.pattern-password {
     font-size: 1.3rem;
 }
 
-.register-button {
+.register-button,
+.homepage-button {
     text-align: center;
 }
 
@@ -148,6 +149,12 @@ i.fas.fa-user-plus.prefix {
 i.fas.fa-user-lock.prefix {
     font-size: 2.3rem;
     color: blue;
+}
+
+h4.flashes {
+    text-align: center;
+    color: darkorange;
+    line-height: 1.2;
 }
 
 /* Styling error page */

@@ -4,6 +4,16 @@
   <!--register form-->
   <div class="row">
     <form class="register-form" method="POST" action="{{ url_for('register') }}">
+         <!--flash messages-->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="row-flashes">
+                            <h4 class="flash-message">{{ message }}</h4>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
         <!--username-->
         <div class="col s12 m8 offset-m2 input-field">
             <i class="fas fa-user-plus prefix"></i>
