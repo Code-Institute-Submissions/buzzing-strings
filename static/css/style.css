@@ -96,6 +96,15 @@ p.content-text {
     font-size: 1.8rem;
 }
 
+a.guitars-btn {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.8rem;
+    color: white;
+    border: 0.5rem solid black;
+    border-radius: 0.5rem;
+    transition: all .4s ease-in-out;
+}
+
 /* Register and Login form styling */
 form.register-form, 
 form.login-form {
@@ -132,7 +141,8 @@ p.pattern-password {
 
 button.reg-btn,
 button.login-btn,
-a.home-btn {
+a.home-btn,
+a.guitars-btn {
     font-family: 'Special Elite', cursive;
     font-size: 1.5rem;
     color: #ffffff;
@@ -145,7 +155,8 @@ a.home-btn {
 
 button.reg-btn:hover,
 button.login-btn:hover,
-a.home-btn:hover {
+a.home-btn:hover,
+a.guitars-btn {
     background-color: grey;
 }
 
