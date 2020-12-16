@@ -101,6 +101,7 @@ a.guitars-btn {
     color: white;
     border: 0.5rem solid black;
     border-radius: 0.5rem;
+    padding: 1rem;
     margin-right: 2rem;
     transition: all .4s ease-in-out;
 }
@@ -109,8 +110,9 @@ a.signin-btn {
     font-family: 'Special Elite', cursive;
     font-size: 1.8rem;
     color: white;
-    border: 0.5rem solid greenyellow;
+    border: 0.5rem solid darkblue;
     border-radius: 0.5rem;
+    padding: 1rem;
     margin-right: 2rem;
     transition: all .4s ease-in-out;
 }
