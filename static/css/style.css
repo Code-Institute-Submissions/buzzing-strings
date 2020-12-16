@@ -72,14 +72,28 @@ nav ul a {
 }
 
 /* About page styling */
-.about.card-panel {
+.about.card-panel,
+.list.card-panel {
+    border-radius: 2.5rem;
     margin: 3rem;
 }
 
-p.about-text {
+h4.intro-heading {
     text-align: center;
     font-family: 'Special Elite', cursive;
     font-size: 2rem;
+    font-weight: 800;
+}
+
+.introduction {
+    margin: 2rem;
+    line-height: 2;
+}
+
+p.welcome-text,
+p.content-text {
+    text-align: center;
+    font-size: 1.8rem;
 }
 
 /* Register and Login form styling */
@@ -172,9 +186,11 @@ h4.flash-message {
 
 .error-page-message {
     position: absolute;
-    top: 5%;
     text-align: center;
-    padding: 1rem 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .error-page-icon {
@@ -184,6 +200,7 @@ h4.flash-message {
 .error-message-heading {
     font-family: 'Special Elite', cursive;
     font-size: 4rem;
+    color: #ffffff;
 }
 
 p.error-page {
