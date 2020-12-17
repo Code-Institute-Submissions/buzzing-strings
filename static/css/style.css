@@ -47,6 +47,8 @@ nav ul a {
     border-radius: 0.5rem;
     padding: 0.4rem;
     cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
@@ -94,8 +96,8 @@ p.content-text {
 }
 
 .link.card-action {
+    display: flex;
     text-align: center;
-    margin: 1.5rem;
 }
 
 a.guitars-btn {
@@ -105,6 +107,8 @@ a.guitars-btn {
     border-radius: 0.5rem;
     padding: 1rem;
     margin-right: 2rem;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
@@ -116,6 +120,8 @@ a.signin-btn {
     border-radius: 0.5rem;
     padding: 1rem;
     margin-right: 2rem;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
@@ -173,14 +179,16 @@ a.guitars-btn {
     border-radius: 0.5rem;
     padding: 1rem;
     cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
 button.reg-btn:hover,
 button.login-btn:hover,
 a.home-btn:hover,
-a.guitars-btn {
-    background-color: red;
+a.guitars-btn:hover {
+    background-color: #f5f5f5;
     color: #546e7a;
 }
 
@@ -192,23 +200,16 @@ p.redirect-link {
 
 .link {
     font-size: 1.8rem;
-    color: red;
 }
 
-i.fas.fa-user-plus.prefix {
-    font-size: 2.3rem;
-    color: orangered;
-}
-
+i.fas.fa-user-plus.prefix,
 i.fas.fa-user-lock.prefix {
     font-size: 2.3rem;
-    color: blue;
 }
 
 h4.flash-message {
     text-align: center;
-    color: darkorange;
-    line-height: 1.2;
+    line-height: 2;
 }
 
 /* Styling error page */
@@ -223,7 +224,9 @@ h4.flash-message {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 1;
 }
 
@@ -251,6 +254,8 @@ p.error-page {
     border-radius: 0.5rem;
     padding: 1rem;
     cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
@@ -273,17 +278,22 @@ p.error-page {
 /* Social-media links styling */
 .social-media i {
     font-size: 2rem;
-    border: 0.3rem solid #37474f;
+    color: #546e7a;
+    border: 0.3rem solid #546e7a;
     border-radius: 0.5rem;
     margin: 1rem;
     padding: 0.4rem;
     cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
 /* Icon hover styling */
 .fab:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 /* Copyright text styling */
@@ -292,4 +302,3 @@ p.error-page {
     font-family: 'Special Elite', cursive;
     font-size: 1.5rem;
 }
-
