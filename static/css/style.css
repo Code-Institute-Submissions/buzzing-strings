@@ -1,21 +1,26 @@
 /* Importing fonts style */
 @import url('https://fonts.googleapis.com/css2?family=Spartan&family=Special+Elite&display=swap');
 
-/* HTML styling */
+/* HTML & Body styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
-    position: relative;
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
     font-size: 62.5%;
 }
 
-/* Body styling */
 body {
-    background-color: #E9E3E6;
+    background-color: #eceff1;
     font-family: 'Spartan', sans-serif;
     font-size: 2rem;
     font-weight: 700;
 }
 
+/* Heading styling */
 h3 {
     text-align: center;
     font-family: 'Special Elite', cursive;
@@ -27,20 +32,18 @@ h3 {
 /* Navbar styling */
 nav.main-nav {
     position: relative;
-    background-color: #546E7A;
 }
 
 /* Navbar list styling */
 nav ul a {
     font-family: 'Special Elite', cursive;
     font-size: 2.5rem;
-    color: #F1FFEB;
     font-weight: 800;
+    color: #f5f5f5;
 }
 
 .fa-user-alt:before {
-    color: #FFDDAD;
-    border: 0.4rem solid #FFDDAD;
+    border: 0.4rem solid #ffa726;
     border-radius: 0.5rem;
     padding: 0.4rem;
     cursor: pointer;
@@ -48,32 +51,28 @@ nav ul a {
 }
 
 .fa-bars:before {
-    color: #F1FFEB;
+    color: #f5f5f5;
 }
 
 /* Sidenav list styling */
-.sidenav {
-    background-color: #878286;
-}
-
 .sidenav li>a {
-    color: #F1FFEB;
+    color: #f5f5f5;
     font-size: 1.8rem;
     font-weight: 800;
 }
+
 
 /* Sidenav text styling */
 .sidenav-text {
     font-family: 'Special Elite', cursive;
     font-size: 2.5rem;
-    color: #FFDDAD;
     text-align: center;
     font-weight: 800;
 }
 
 /* About page styling */
-.about.card-panel,
-.list.card-panel {
+.about.card-panel {
+    border: 0.2rem solid #37474f;
     border-radius: 2.5rem;
     margin: 3rem;
 }
@@ -98,8 +97,7 @@ p.content-text {
 a.guitars-btn {
     font-family: 'Special Elite', cursive;
     font-size: 1.8rem;
-    color: white;
-    border: 0.5rem solid black;
+    color: #f5f5f5;
     border-radius: 0.5rem;
     padding: 1rem;
     margin-right: 2rem;
@@ -109,17 +107,24 @@ a.guitars-btn {
 a.signin-btn {
     font-family: 'Special Elite', cursive;
     font-size: 1.8rem;
-    color: white;
-    border: 0.5rem solid darkblue;
+    color: #546e7a;
+    border: 0.3rem solid #546e7a;
     border-radius: 0.5rem;
     padding: 1rem;
     margin-right: 2rem;
     transition: all .4s ease-in-out;
 }
 
-a.guitars-btn:hover,
+a.guitars-btn:hover:hover {
+    background-color: #eceff1;
+    color: #546e7a;
+    border: 0.3rem solid #546e7a;
+}
+
 a.signin-btn:hover {
-    background-color: greenyellow;
+    background-color: #546e7a;
+    color: #f5f5f5;
+
 }
 
 /* Register and Login form styling */
@@ -208,7 +213,6 @@ h4.flash-message {
 .error-page {
     height:100%;
     width:100%;
-    background: #EB5C68;
     position:relative;
 }
 
@@ -227,22 +231,20 @@ h4.flash-message {
 
 .error-message-heading {
     font-family: 'Special Elite', cursive;
-    font-size: 4rem;
-    color: #ffffff;
+    font-size: 3rem;
 }
 
 p.error-page {
     padding: 1rem 0;
-    color: #ffffff;
 }
     
 .return-button {
     margin-top: 0.5rem;
 }
 
-.return.btn-primary {
-    background-color: #00507A;
-    color: #ffffff;
+.return.btn {
+    font-family: 'Special Elite', cursive;
+    color: #f5f5f5;
     font-size: 1.8rem;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -268,19 +270,14 @@ p.error-page {
     margin-bottom: 2.5rem;
 }
 
-.btn-floating.btn-large {
-    background-color: #FFDDAD;
-}
-
 .fa-angle-double-up:before {
-    color: #878286;
+    color: #37474f;
 }
 
 /* Social-media links styling */
 .social-media i {
     font-size: 2rem;
-    border: 0.3rem solid #F1FFEB;
-    color: #F1FFEB;
+    border: 0.3rem solid #f5f5f5;
     border-radius: 0.5rem;
     margin: 1rem;
     padding: 0.4rem;
@@ -297,7 +294,6 @@ p.error-page {
 .copyright {
     font-family: 'Special Elite', cursive;
     font-size: 1.5rem;
-    color: #F1FFEB;
     padding-top: 0.5rem;
 }
 

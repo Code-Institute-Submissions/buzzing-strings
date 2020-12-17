@@ -3,11 +3,11 @@
 
     <div class="row">
         <div class="col s12 m8 offset-m2">
-            <div class="about card-panel">
-                <h4 class="intro-heading">Hello and welcome to Buzzing Strings!</h4>
+            <div class="about card-panel grey lighten-3">
+                <h4 class="intro-heading purple-text text-darken-4">Hello and welcome to Buzzing Strings!</h4>
                     <div class="divider"></div>
                 <div class="introduction">
-                    <p class="welcome-text">
+                    <p class="welcome-text blue-grey-text text-darken-4">
                     If you are a guitar enthusiast you came to a right place. No matter 
                     whether you are a beginner or experienced guitarist, you can now 
                     build a list of your favourite guitars...
@@ -18,23 +18,20 @@
     </div>
     <div class="row">
         <div class="col s12 m8 offset-m2">
-            <div class="list card-panel">
-                <div class="col-sm-12 col-md-8">
-                    <h4 class="intro-heading">Visit our Guitar List!</h4>
-                        <div class="divider"></div>
-                    <div class="guitar-list">
-                        <p class="content-text">
-                           Check out the incredible list of guitars from Buzzing Strings,
-                           Do not be shy and let us know what is your favourite guitar and
-                           share your choice with the guitar community!
-                        </p>
-                        <a href="{{ url_for('register') }}" class="guitars-btn">All Guitars</a>
-                        <a href="{{ url_for('login') }}" class="signin-btn">Log In</a>
-                    </div>
+            <div class="about card-panel grey lighten-3">
+                <h4 class="intro-heading purple-text text-darken-4">Visit our Guitar List!</h4>
+                <div class="divider"></div>
+                <p class="content-text blue-grey-text text-darken-4">
+                    Check out the incredible list of guitars from Buzzing Strings,
+                    Do not be shy and let us know what is your favourite guitar and
+                    share your choice with the guitar community!
+                </p>
+                <div class="links card-action">
+                    <a href="{{ url_for('register') }}" class="guitars-btn blue-grey darken-1">All Guitars</a>
+                    <a href="{{ url_for('login') }}" class="signin-btn blue-grey lighten-5">Log In</a>
                 </div>
             </div>
         </div>
     </div>
-  
-
+        
 {% endblock%}
