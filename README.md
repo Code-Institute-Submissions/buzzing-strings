@@ -92,7 +92,7 @@ I decided to use two type of [Google Fonts](https://fonts.google.com/):
 - **Spartan** 
 
 #### Colours
-I have generated a colour pallete using [Coolors](https://coolors.co/) to create a visually positive experience for the users.
+I have generated a colour pallete using [Materialize](https://materializecss.com/color.html) to create a visually positive experience for the users.
 I opted for calm colours as I did not want to distract the user from the website content by applying overwhelming colour pallete.
 
 <img src="static/images/colour-pallete/copyright.png" alt="colour-pallete">
