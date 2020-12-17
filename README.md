@@ -80,7 +80,7 @@ the users and the website host.
 [Logo Maker](https://www.freelogodesign.org/) has been used to create a **guitar** related logo. Logo is located in the navbar on the right side.
 Once clicked it redirects the user to **About Us** page.
 
-<img src="static/images/logo/guitar-logo.png" alt="guitar-logo">
+<img src="static/images/logo/logo-screenshot.png" alt="logo-screenshot">
 
 [Back to top](#table-of-contents)
 
@@ -95,7 +95,17 @@ I decided to use two type of [Google Fonts](https://fonts.google.com/):
 I have generated a colour pallete using [Coolors](https://coolors.co/) to create a visually positive experience for the users.
 I opted for calm colours as I did not want to distract the user from the website content by applying overwhelming colour pallete.
 
-<img src="wireframes/colour-pallete/colours.png" alt="colour-pallete">
+<img src="static/images/colour-pallete/copyright.png" alt="colour-pallete">
+
+<img src="static/images/colour-pallete/error.png" alt="colour-pallete">
+
+<img src="static/images/colour-pallete/font.png" alt="colour-pallete">
+
+<img src="static/images/colour-pallete/form.png" alt="colour-pallete">
+
+<img src="static/images/colour-pallete/icon.png" alt="colour-pallete">
+
+<img src="static/images/colour-pallete/nav.png" alt="colour-pallete">
 
 [Back to top](#table-of-contents)
 

@@ -95,9 +95,9 @@ p.content-text {
     font-size: 1.5rem;
 }
 
-.link.card-action {
+.links.card-action {
     display: flex;
-    text-align: center;
+    margin-top: 2rem;
 }
 
 a.guitars-btn {
