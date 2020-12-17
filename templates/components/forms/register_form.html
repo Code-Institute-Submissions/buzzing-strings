@@ -1,23 +1,23 @@
 {% extends 'layout/base.html' %}
 {% block content %}
 
-  <h3 class="register-heading">Please Sign Up!</h3>
+  <h3 class="register-heading purple-text text-darken-4">Please Sign Up!</h3>
   <!--register form-->
   <div class="row">
-    <form class="register-form" method="POST" action="{{ url_for('register') }}">
+    <form class="register-form grey lighten-3" method="POST" action="{{ url_for('register') }}">
          <!--flash messages-->
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     {% for message in messages %}
                         <div class="row-flashes">
-                            <h4 class="flash-message">{{ message }}</h4>
+                            <h4 class="flash-message purple-text text-darken-4">{{ message }}</h4>
                         </div>
                     {% endfor %}
                 {% endif %}
             {% endwith %}
         <!--username-->
         <div class="col s12 m8 offset-m2 input-field">
-            <i class="fas fa-user-plus prefix"></i>
+            <i class="fas fa-user-plus prefix blue-grey-text text-darken-2"></i>
             <input id="username" name="username" type="text" minlength="5" 
               maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters (letters or numbers)!" class="validate" required>
             <label class="username" for="username">Username</label>
@@ -26,7 +26,7 @@
         </div> 
         <!--password-->
         <div class="col s12 m8 offset-m2 input-field">
-            <i class="fas fa-user-lock prefix"></i>
+            <i class="fas fa-user-lock prefix blue-grey-text text-darken-2"></i>
             <input id="password" name="password" type="password" minlength="5"
               maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
             <label class="password" for="password">Password</label>
@@ -36,7 +36,7 @@
         <div class="row">
             <div class="register-button">
                 <div class="col s12">
-                    <button type="submit" class="reg-btn">Register here!
+                    <button type="submit" class="reg-btn blue-grey darken-1">Register here!
                     <i class="fas fa-sign-in-alt"></i></button>
                 </div>
             </div>
@@ -44,7 +44,7 @@
         <!--login redirect link-->
         <div class="row">
             <div class="col s12">
-                <p class="redirect-link">Already Registered?
+                <p class="redirect-link purple-text text-darken-4">Already Registered?
                 <a href="{{ url_for('login') }}" class="link">Log in here!</a>
                 </p>
             </div>
@@ -53,7 +53,7 @@
         <div class="row">
             <div class="homepage-button">
                 <div class="col s12">
-                    <a href="{{ url_for('about') }}" class="home-btn">
+                    <a href="{{ url_for('about') }}" class="home-btn blue-grey darken-1">
                       Go back to homepage!<i class="fas fa-home"></i></a>
                 </div>
             </div>

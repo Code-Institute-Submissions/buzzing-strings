@@ -1,25 +1,23 @@
 {% extends 'layout/base.html' %}
 {% block content %}
   
-<h3 class="login-heading">Use Your Login Credentials!</h3>
+<h3 class="login-heading purple-text text-darken-4">Use Your Login Credentials!</h3>
   <!--login form-->
   <div class="row">
-    <form class="login-form" method="POST" action="{{ url_for('login') }}">
+    <form class="login-form grey lighten-3" method="POST" action="{{ url_for('login') }}">
          <!--flash messages-->
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     {% for message in messages %}
-                        <div class="row">
-                            <div class="col s12">
-                                <h4 class="flash-message">{{ message }}</h4>
-                            </div>
+                        <div class="row-flashes">
+                            <h4 class="flash-message purple-text text-darken-4">{{ message }}</h4>
                         </div>
                     {% endfor %}
                 {% endif %}
             {% endwith %}
         <!--username-->
         <div class="col s12 m8 offset-m2 input-field">
-            <i class="fas fa-user-cog prefix"></i>
+            <i class="fas fa-user-cog prefix blue-grey-text text-darken-2"></i>
             <input id="username" name="username" type="text" minlength="5" 
               maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters (letters or numbers)!" class="validate" required>
             <label class="username" for="username">Username</label>
@@ -28,7 +26,7 @@
         </div> 
         <!--password-->
         <div class="col s12 m8 offset-m2 input-field">
-            <i class="fas fa-user-lock prefix"></i>
+            <i class="fas fa-user-lock prefix blue-grey-text text-darken-2"></i>
             <input id="password" name="password" type="password" minlength="5"
               maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
             <label class="password" for="password">Password</label>
@@ -38,7 +36,7 @@
         <div class="row">
             <div class="login-button">
                 <div class="col s12">
-                    <button type="submit" class="login-btn">Login here!
+                    <button type="submit" class="login-btn blue-grey darken-1">Login here!
                     <i class="fas fa-sign-in-alt"></i></button>
                 </div>
             </div>
@@ -46,7 +44,7 @@
         <!--register redirect link-->
         <div class="row">
             <div class="col s12">
-                <p class="redirect-link">No Account Yet?
+                <p class="redirect-link purple-text text-darken-4">No Account Yet?
                 <a href="{{ url_for('register') }}" class="link">Sign Up Here!</a>
                 </p>
             </div>
@@ -55,7 +53,7 @@
         <div class="row">
             <div class="homepage-button">
                 <div class="col s12">
-                    <a href="{{ url_for('about') }}" class="home-btn">
+                    <a href="{{ url_for('about') }}" class="home-btn blue-grey darken-1">
                      Go back to homepage!<i class="fas fa-home"></i></a>
                 </div>
             </div>

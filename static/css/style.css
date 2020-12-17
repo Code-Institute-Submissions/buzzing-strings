@@ -26,7 +26,7 @@ h3 {
     font-family: 'Special Elite', cursive;
     font-size: 2.5rem;
     font-weight: 800;
-    margin: 2rem;
+    margin: 3rem;
 }
 
 /* Navbar styling */
@@ -93,6 +93,11 @@ p.content-text {
     font-size: 1.5rem;
 }
 
+.link.card-action {
+    text-align: center;
+    margin: 1.5rem;
+}
+
 a.guitars-btn {
     font-family: 'Special Elite', cursive;
     font-size: 1.8rem;
@@ -123,14 +128,12 @@ a.guitars-btn:hover {
 a.signin-btn:hover {
     background-color: #546e7a;
     color: #f5f5f5;
-
 }
 
 /* Register and Login form styling */
 form.register-form, 
 form.login-form {
-    background-color: cornsilk;
-    border: 0.3rem solid black;
+    border: 0.3rem solid #546e7a;
     border-radius: 0.8rem;
     margin: 2rem 4rem 3rem 4rem;
     padding: 2rem;
@@ -166,11 +169,10 @@ a.home-btn,
 a.guitars-btn {
     font-family: 'Special Elite', cursive;
     font-size: 1.5rem;
-    color: #ffffff;
-    background-color: #00507A;
-    border: 0.3rem solid #ffffff;
+    color: #f5f5f5;
     border-radius: 0.5rem;
     padding: 1rem;
+    cursor: pointer;
     transition: all .4s ease-in-out;
 }
 
@@ -178,7 +180,8 @@ button.reg-btn:hover,
 button.login-btn:hover,
 a.home-btn:hover,
 a.guitars-btn {
-    background-color: grey;
+    background-color: red;
+    color: #546e7a;
 }
 
 p.redirect-link {
@@ -247,18 +250,8 @@ p.error-page {
     font-size: 1.8rem;
     border-radius: 0.5rem;
     padding: 1rem;
+    cursor: pointer;
     transition: all .4s ease-in-out;
-}
-
-/* Footer styling */
-.footer {
-    position: absolute;
-    background-color: #878286;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    line-height: 1rem;
-    bottom: 0;
 }
 
 /* Action button styling */
@@ -271,6 +264,10 @@ p.error-page {
 
 .fa-angle-double-up:before {
     color: #37474f;
+}
+
+.social-media {
+    text-align: center;
 }
 
 /* Social-media links styling */
