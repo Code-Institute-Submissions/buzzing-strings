@@ -34,11 +34,9 @@
         </div>
         <!--login button-->
         <div class="row">
-            <div class="login-button">
-                <div class="col s12">
-                    <button type="submit" class="login-btn blue-grey darken-1">Login here!
-                    <i class="fas fa-sign-in-alt"></i></button>
-                </div>
+            <div class="col s12">
+                <button type="submit" class="form-buttons" name="action">Login here!
+                <i class="fas fa-sign-in-alt"></i></button>
             </div>
         </div>
         <!--register redirect link-->
@@ -51,11 +49,9 @@
         </div>
         <!--homepage redirect button-->
         <div class="row">
-            <div class="homepage-button">
-                <div class="col s12">
-                    <a href="{{ url_for('about') }}" class="home-btn blue-grey darken-1">
-                     Go back to homepage!<i class="fas fa-home"></i></a>
-                </div>
+            <div class="col s12">
+                <a href="{{ url_for('about') }}" class="form-buttons">
+                 Go back to homepage!<i class="fas fa-home"></i></a>
             </div>
         </div>
     </form>

@@ -161,42 +161,33 @@ p.pattern-password {
     font-size: 1.3rem;
 }
 
-.register-button,
-.login-button,
-.homepage-button {
-    text-align: center;
-}
-
-button.reg-btn,
-button.login-btn,
-a.home-btn,
-a.guitars-btn {
+.form-buttons {
     font-family: 'Special Elite', cursive;
-    font-size: 1.5rem;
-    color: #f5f5f5;
+    background-color: #546e7a;
     border-radius: 0.5rem;
     padding: 1rem;
-    cursor: pointer;
-    -webkit-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    margin: 1rem 0; 
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-width: 0;
 }
 
-button.reg-btn:hover,
-button.login-btn:hover,
-a.home-btn:hover,
-a.guitars-btn:hover {
+.form-buttons:hover {
     background-color: #f5f5f5;
     color: #546e7a;
+    border: 0.3rem solid #546e7a;
+}
+
+.about-buttons {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 p.redirect-link {
     text-align: center;
     font-family: 'Special Elite', cursive;
-    font-size: 1.8rem;
-}
-
-.link {
     font-size: 1.8rem;
 }
 
@@ -246,16 +237,20 @@ h4.flash-message {
 
 p.error-page {
     padding: 1rem 0;
+    margin: 1rem;
 }
     
 .return-button {
-    margin-top: 0.5rem;
+    margin: 1rem;
+    padding: 2rem;
 }
 
-.return.btn {
+a.return-btn {
     font-family: 'Special Elite', cursive;
+    background-color: #4a148c;
     color: #f5f5f5;
     font-size: 1.8rem;
+    border: 0.3rem solid #f5f5f5;
     border-radius: 0.5rem;
     padding: 1rem;
     cursor: pointer;
@@ -263,6 +258,13 @@ p.error-page {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+
+a.return-btn:hover {
+    background-color: #f5f5f5;
+    color: #4a148c;
+    border: 0.3rem solid #4a148c;
+}
+
 
 /* Action button styling */
 .action-btn {
