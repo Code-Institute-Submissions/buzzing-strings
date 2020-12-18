@@ -32,21 +32,26 @@
             <label class="password" for="password">Password</label>
             <p class="pattern-password">Password should have min 5 characters!</p>
         </div>
-        <!--register button-->
-        <div class="col s12">
-            <button type="submit" class="form-buttons" name="action">Register here!
-            <i class="fas fa-sign-in-alt"></i></button>
-        </div>
-        <!--login redirect link-->
-        <div class="col s12">
-            <p class="redirect-link purple-text text-darken-4">Already Registered?
-            <a href="{{ url_for('login') }}" class="link red-text">Log in here!</a>
-            </p>
-        </div>
-        <!--homepage redirect button-->
-        <div class="col s12">
-            <a href="{{ url_for('about') }}" class="form-buttons">
-              Go back to homepage!<i class="fas fa-home"></i></a>
+        <!--form buttons-->
+        <div class="row">
+            <div class="action-buttons">
+                <!--register button-->
+                <div class="col s12">
+                    <button type="submit" class="form-buttons" name="action">Register here!
+                    <i class="fas fa-sign-in-alt"></i></button>
+                </div>
+                <!--login redirect link-->
+                <div class="col s12">
+                    <p class="redirect-link purple-text text-darken-4">Already Registered?
+                    <a href="{{ url_for('login') }}" class="link red-text">Log in here!</a>
+                    </p>
+                </div>
+                <!--homepage redirect button-->
+                <div class="col s12">
+                    <a href="{{ url_for('about') }}" class="form-buttons">
+                    Go back to homepage!<i class="fas fa-home"></i></a>
+                </div>
+            </div>
         </div>
     </form>
   </div>

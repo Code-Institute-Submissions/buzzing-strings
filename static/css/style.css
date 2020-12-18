@@ -96,9 +96,9 @@ p.content-text {
     margin: 1rem;
 }
 
-.links.card-action {
-    display: flex;
-    margin-top: 2rem;
+.redirect-buttons {
+    text-align: center;
+    line-height: 2;
 }
 
 /* Register and Login form styling */
@@ -126,6 +126,11 @@ p.pattern-password {
     font-family: 'Special Elite', cursive;
     text-align: center;
     font-size: 1.3rem;
+}
+
+.action-buttons {
+    text-align: center;
+    line-height: 2;
 }
 
 .form-buttons {
@@ -205,6 +210,10 @@ h4.flash-message {
 p.error-page {
     padding: 1rem 0;
     margin: 1rem;
+}
+
+.homepage-return {
+    margin: 1.5rem;
 }
 
 /* Action button styling */

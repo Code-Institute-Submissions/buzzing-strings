@@ -1,14 +1,15 @@
 {% include 'layout/head.html' %}
 {% block content %}
+
     <div class="error-page red lighten-2">
         <div class="error-page-message">
             <i class="far fa-sad-tear"></i>
             <p class="error-message-heading grey-text text-lighten-4">Sorry, this page doesn't exist!</p>
         <p>{{ error_message }} Please use the button below to return to homepage safely!</p>
-        <div class="row">
-            <div class="col s12">
-                <a href="{{ url_for('about') }}" class="form-buttons">Back to Homepage</a>
+            <div class="homepage-return">
+                 <a href="{{ url_for('about') }}" class="form-buttons">Back to Homepage</a>
             </div>
         </div>
     </div>
+
 {% endblock %}
