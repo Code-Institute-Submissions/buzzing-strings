@@ -93,6 +93,7 @@ p.welcome-text,
 p.content-text {
     text-align: center;
     font-size: 1.5rem;
+    margin: 1rem;
 }
 
 .links.card-action {

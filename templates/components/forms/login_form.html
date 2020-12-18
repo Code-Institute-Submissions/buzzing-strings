@@ -33,26 +33,20 @@
             <p class="pattern-password">Password should have min 5 characters!</p>
         </div>
         <!--login button-->
-        <div class="row">
-            <div class="col s12">
-                <button type="submit" class="form-buttons" name="action">Login here!
-                <i class="fas fa-sign-in-alt"></i></button>
-            </div>
+        <div class="col s12">
+            <button type="submit" class="form-buttons" name="action">Login here!
+            <i class="fas fa-sign-in-alt"></i></button>
         </div>
         <!--register redirect link-->
-        <div class="row">
-            <div class="col s12">
-                <p class="redirect-link purple-text text-darken-4">No Account Yet?
-                <a href="{{ url_for('register') }}" class="link red-text">Sign Up Here!</a>
-                </p>
-            </div>
+        <div class="col s12">
+            <p class="redirect-link purple-text text-darken-4">No Account Yet?
+            <a href="{{ url_for('register') }}" class="link red-text">Sign Up Here!</a>
+            </p>
         </div>
         <!--homepage redirect button-->
-        <div class="row">
-            <div class="col s12">
-                <a href="{{ url_for('about') }}" class="form-buttons">
-                 Go back to homepage!<i class="fas fa-home"></i></a>
-            </div>
+        <div class="col s12">
+            <a href="{{ url_for('about') }}" class="form-buttons">
+             Go back to homepage!<i class="fas fa-home"></i></a>
         </div>
     </form>
 </div>
