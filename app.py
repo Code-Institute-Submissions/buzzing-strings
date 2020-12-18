@@ -118,7 +118,7 @@ def logout():
     """
     flash("Sorry, You have been log out!")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for("about"))
 
 
 # Guitars

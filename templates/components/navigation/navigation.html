@@ -4,8 +4,9 @@
       <a href="{{ url_for('about') }}" class="guitar brand-logo"><img src="static/images/logo/guitar-logo.png" alt="guitar-logo" height="50"></a>
       <a href="#" data-target="mobile" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="{{ url_for('register') }}">Guitars</a></li>
+        <li><a href="{{ url_for('about') }}">About Us...</a></li>
         {% if session.user %}
+        <li><a href="{{ url_for('guitars') }}">Guitars</a></li>
         <li><a href="{{ url_for('logout') }}">Log Out!</a></li>
         {% else %}
         <li><a href="{{ url_for('login') }}"><i class="fas fa-user-alt orange-text text-lighten-1" ></i></a></li>
@@ -18,8 +19,9 @@
   <ul class="sidenav  blue-grey lighten-1" id="mobile">
     <h3 class="sidenav-text orange-text text-lighten-1">Buzzing Strings</h3>
     <li class="divider"></li>
-    <li><a href="{{ url_for('register') }}">Guitars</a></li>
+    <li><a href="{{ url_for('about') }}">About Us...</a></li>
     {% if session.user %}
+    <li><a href="{{ url_for('guitars') }}">Guitars</a></li>
     <li><a href="{{ url_for('logout') }}">Log Out!</a></li>
     {% else %}
     <li><a href="{{ url_for('login') }}"><i class="fas fa-user-alt orange-text text-lighten-1"></i></a></li>

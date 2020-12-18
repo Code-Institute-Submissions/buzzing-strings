@@ -233,13 +233,15 @@ h4.flash-message {
     z-index: 1;
 }
 
-.error-page-icon {
+.fa-sad-tear:before {
     font-size: 14rem;
+    padding: 7rem;
 }
 
 .error-message-heading {
     font-family: 'Special Elite', cursive;
     font-size: 3rem;
+    margin: 2rem;
 }
 
 p.error-page {
