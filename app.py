@@ -53,7 +53,7 @@ def register():
 
         session["user"] = request.form.get("username").lower()
         flash("Your registration was successful!")
-        return redirect(url_for("user_profile", username=session["user"]))
+        return redirect(url_for("guitars", username=session["user"]))
     return render_template("components/forms/register_form.html")
 
 
