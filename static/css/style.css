@@ -11,6 +11,7 @@ html {
     width: 100%;
     height: 100%;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,8 +20,8 @@ body {
     background-position: bottom;
     background-size: cover;
     margin-bottom: 0;
-    width: 99vw;
-    height: 99vh;
+    width: 100vw;
+    height: 100vh;
     z-index: 1;
     font-family: 'Spartan', sans-serif;
     font-size: 2rem;
@@ -47,7 +48,7 @@ nav ul a {
     font-family: 'Special Elite', cursive;
     font-size: 2.5rem;
     font-weight: 800;
-    color: #263238;
+    color: #f5f5f5;
 }
 
 .fa-user-alt:before {
@@ -61,7 +62,7 @@ nav ul a {
 }
 
 .fa-bars:before {
-    color: #263238;
+    color: #f5f5f5;
 }
 
 /* Sidenav list styling */

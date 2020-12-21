@@ -1,99 +1,12 @@
 {% extends 'layout/base.html' %}
 {% block content %}
    <h3 class="all-guitars heading purple-text text-darken-4">Take a peek at our selection!</h3>
-    <div class="row">
-        <div class="col l4 m6 s12">
-            <div class="guitars card medium grey lighten-3">
-                <div class="guitar-name blue-grey-text text-darken-3">Fender Tidepool</div>
-                <div class="guitar card-image">
-                    <img class="responsive-img" src="static/images/guitars/fender-tidepool.jpg" alt="fender-tidepool">
-                </div>
-                <div class="guitar card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="guitar card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col l4 m6 s12">
-            <div class="guitars card medium grey lighten-3">
-                <div class="guitar-name blue-grey-text text-darken-3">Epiphone Fishman</div>
-                <div class="guitar card-image">
-                    <img class="responsive-img" src="static/images/guitars/fishman.jpg" alt="fishman">
-                </div>
-                <div class="guitar card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="guitar card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col l4 m6 s12">
-            <div class="guitars card medium grey lighten-3">
-                <div class="guitar-name blue-grey-text text-darken-3">Dingwall</div>
-                <div class="guitar card-image">
-                    <img class="responsive-img" src="static/images/guitars/dingwall.jpg" alt="dingwall">
-                </div>
-                <div class="guitar card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="guitar card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col l4 m6 s12">
-            <div class="guitars card medium grey lighten-3">
-                <div class="guitar-name blue-grey-text text-darken-3">Epiphone Hummingbird</div>
-                <div class="guitar card-image">
-                    <img class="responsive-img" src="static/images/guitars/epiphone.jpg" alt="hummingbird">
-                </div>
-                <div class="guitar card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="guitar card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col l4 m6 s12">
-            <div class="guitars card medium grey lighten-3">
-                <div class="guitar-name blue-grey-text text-darken-3">Gibson Les Paul</div>
-                <div class="guitar card-image">
-                    <img class="responsive-img" src="static/images/guitars/les-paul.jpg" alt="les-paul">
-                </div>
-                <div class="guitar card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="guitar card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col l4 m6 s12">
-            <div class="guitars card medium grey lighten-3">
-                <div class="guitar-name blue-grey-text text-darken-3">Ibanez Autumn Leaf</div>
-                <div class="guitar card-image">
-                    <img class="responsive-img" src="static/images/guitars/ibanez.jpg" alt="ibanez">
-                </div>
-                <div class="guitar card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="guitar card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+       {% for guitar in guitars %}
+        {{ guitar.guitar_name }}
+        {{ guitar.guitar_body }}
+        {{ guitar.guitar_scale }}
+        {{ guitar.guitar_control }}
+        {{ guitar.guitar_description }}
+        {{ guitar.guitar_image }}
+    {% endfor %}
 {% endblock %}

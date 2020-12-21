@@ -79,7 +79,7 @@ def login():
                     flash("Hello, {}".format(
                         request.form.get("username")))
                     return redirect(url_for(
-                        "user_list", username=session["user"]))
+                        "guitars", username=session["user"]))
             else:
                 # invalid password match
                 flash("Sorry, Your Username and/or Password is incorrect!")
@@ -91,23 +91,6 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("components/forms/login_form.html")
-
-
-# User's Profile
-@app.route("/user_list/<username>", methods=["GET", "POST"])
-def user_list(username):
-    """
-    Renders user's profile,
-    grabs the session user's username from database
-    """
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-
-    if session["user"]:
-        return render_template(
-                "pages/user_list.html", username=username)
-
-    return redirect(url_for("login"))
 
 
 # User Log Out
