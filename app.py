@@ -79,7 +79,7 @@ def login():
                     flash("Hello, {}".format(
                         request.form.get("username")))
                     return redirect(url_for(
-                        "user_profile", username=session["user"]))
+                        "user_list", username=session["user"]))
             else:
                 # invalid password match
                 flash("Sorry, Your Username and/or Password is incorrect!")
@@ -94,8 +94,8 @@ def login():
 
 
 # User's Profile
-@app.route("/user_profile/<username>", methods=["GET", "POST"])
-def user_profile(username):
+@app.route("/user_list/<username>", methods=["GET", "POST"])
+def user_list(username):
     """
     Renders user's profile,
     grabs the session user's username from database
@@ -104,7 +104,8 @@ def user_profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("pages/user_profile.html", username=username)
+        return render_template(
+                "pages/user_list.html", username=username)
 
     return redirect(url_for("login"))
 
@@ -121,17 +122,6 @@ def logout():
     return redirect(url_for("about"))
 
 
-# Guitars
-@app.route("/guitars")
-def guitars():
-    """
-    It loads the guitars page
-    Allows the user to check a list of guitars
-    """
-    guitars = mongo.db.guitars.find()
-    return render_template("pages/guitars.html", guitars=guitars)
-
-
 # 404 error page
 @app.errorhandler(404)
 def page_not_found(error):
@@ -141,6 +131,12 @@ def page_not_found(error):
     error_message = str(error)
     return render_template("pages/error.html",
                            error_message=error_message), 404
+
+
+@app.route("/guitars")
+def guitars():
+    guitars = mongo.db.guitars.find()
+    return render_template("pages/guitars.html", guitars=guitars)
 
 
 # 500 error page
