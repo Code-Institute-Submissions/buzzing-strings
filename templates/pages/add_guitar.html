@@ -9,7 +9,7 @@
         <!--guitar category selection-->
         <div class="row">
              <div class="col s12 m8 offset-m2 input-field">
-                 <i class="fas fa-guitar prefix blue-grey-text text-darken-2"></i>
+                 <i class="fas fa-guitar prefix orange-text text-lighten-1"></i>
                 <select id="guitar_type" name="guitar_type" class="validate" required>
                     <option value="" disabled selected>Choose Guitar Type</option>
                     {% for guitar_category in guitar_categories %}
@@ -28,13 +28,40 @@
                 <label for="guitar_name">Guitar Name:</label>
             </div>
         </div>
+        <!--guitar body-->
+         <div class="row">
+            <div class="col s12 m8 offset-m2 input-field">
+                <i class="fas fa-shapes prefix blue-grey-text text-darken-2"></i>
+                <input id="guitar_body" name="guitar_body" type="text" 
+                    class="validate" required>
+                <label for="guitar_body">Guitar Body:</label>
+            </div>
+        </div>
+        <!--guitar scale-->
+         <div class="row">
+            <div class="col s12 m8 offset-m2 input-field">
+                <i class="fas fa-music prefix blue-grey-text text-darken-2"></i>
+                <input id="guitar_scale" name="guitar_scale" type="text" 
+                    class="validate" required>
+                <label for="guitar_scale">Guitar Scale:</label>
+            </div>
+        </div>
         <!--guitar description-->
         <div class="row">
             <div class="col s12 m8 offset-m2 input-field">
-                <i class="fas fa-text-width prefix blue-grey-text text-darken-2"></i>
+                <i class="fas fa-file-signature prefix blue-grey-text text-darken-2"></i>
                 <textarea id="guitar_description" name="guitar_description" minlength="5" maxlength="200" 
                     class="materialize-textarea validate" required></textarea>
                 <label for="guitar_description">Guitar Description:</label>
+            </div>
+        </div>
+        <!--guitar image-->
+        <div class="row">
+            <div class="col s12 m8 offset-m2 input-field">
+                <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
+                <input id="guitar_image" name="guitar_image" type="text" 
+                    class="validate" required>
+                <label for="guitar_image">Guitar Image:</label>
             </div>
         </div>
         <!--guitar added date picker-->
