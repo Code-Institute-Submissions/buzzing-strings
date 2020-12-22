@@ -118,9 +118,13 @@ def guitars():
 @app.route("/add_guitar")
 def add_guitar():
     """
-    Enables the user to add a new guitar
+    Enables the user to choose the guitar type,
+    allows the user to add a new guitar
     """
-    return render_template("pages/add_guitar.html")
+    guitar_categories = mongo.db.guitar_categories.find().sort(
+            "guitar_type", 1)
+    return render_template(
+            "pages/add_guitar.html", guitar_categories=guitar_categories)
 
 
 # User page

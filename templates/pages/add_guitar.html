@@ -6,6 +6,19 @@
 <!--add new guitar form-->
 <div class="row">
     <form class="add-guitar grey lighten-3" method="POST" action="">
+        <!--guitar category selection-->
+        <div class="row">
+             <div class="col s12 m8 offset-m2 input-field">
+                 <i class="fas fa-guitar prefix blue-grey-text text-darken-2"></i>
+                <select id="guitar_type" name="guitar_type" class="validate" required>
+                    <option value="" disabled selected>Choose Guitar Type</option>
+                    {% for guitar_category in guitar_categories %}
+                    <option value="{{ guitar_category.guitar_type }}">{{ guitar_category.guitar_type }}</option>
+                    {% endfor %}
+                </select>
+                <label for="guitar_type">Guitar Type:</label>
+            </div>
+        </div>
         <!--guitar name-->
         <div class="row">
             <div class="col s12 m8 offset-m2 input-field">
