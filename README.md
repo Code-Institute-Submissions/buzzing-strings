@@ -80,7 +80,7 @@ the users and the website host.
 [Logo Maker](https://www.freelogodesign.org/) has been used to create a **guitar** related logo. Logo is located in the navbar on the right side.
 Once clicked it redirects the user to **About Us** page.
 
-<img src="static/images/logo/guitar-logo.png" alt="guitar-logo">
+<img src="static/images/logo/logo-screenshot.png" alt="logo-screenshot">
 
 [Back to top](#table-of-contents)
 
