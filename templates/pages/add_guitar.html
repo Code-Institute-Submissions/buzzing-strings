@@ -4,8 +4,8 @@
 <h3 class="all-guitars heading purple-text text-darken-4">Add your guitar</h3>
 
 <div class="row">
-    <!--add guitar-->
     <form class="add-guitar grey lighten-3" method="POST" action="">
+        <!--guitar name-->
         <div class="row">
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-pencil-alt prefix"></i>
@@ -14,6 +14,7 @@
                 <label for="guitar_name">Guitar Name:</label>
             </div>
         </div>
+        <!--guitar description-->
         <div class="row">
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-text-width prefix"></i>
@@ -22,11 +23,12 @@
                 <label for="guitar_description">Guitar Description:</label>
             </div>
         </div>
+        <!--guitar date added-->
         <div class="row">
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-calendar-alt prefix"></i>
                 <input id="date_added" name="date_added" type="text" 
-                    class="date_picker validate" required>
+                    class="datepicker validate" required>
                 <label for="date_added">Date Added:</label>
             </div>
         </div>
