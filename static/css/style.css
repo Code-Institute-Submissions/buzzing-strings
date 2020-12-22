@@ -153,7 +153,8 @@ ul.guitar-menu.collapsible {
 
 /* Register and Login form styling */
 form.register-form, 
-form.login-form {
+form.login-form,
+form.add-guitar {
     border: 0.3rem solid #546e7a;
     border-radius: 0.8rem;
     margin: 2rem 4rem 3rem 4rem;

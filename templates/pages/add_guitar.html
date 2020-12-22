@@ -3,4 +3,34 @@
 
 <h3 class="all-guitars heading purple-text text-darken-4">Add your guitar</h3>
 
+<div class="row">
+    <!--add guitar-->
+    <form class="add-guitar grey lighten-3" method="POST" action="">
+        <div class="row">
+            <div class="col s12 m8 offset-m2 input-field">
+                <i class="fas fa-pencil-alt prefix"></i>
+                <input id="guitar_name" name="guitar_name" type="text" 
+                    class="validate" required>
+                <label for="guitar_name">Guitar Name:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 input-field">
+                <i class="fas fa-text-width prefix"></i>
+                <textarea id="guitar_description" name="guitar_description" minlength="5" maxlength="200" 
+                    class="materialize-textarea validate" required></textarea>
+                <label for="guitar_description">Guitar Description:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 input-field">
+                <i class="fas fa-calendar-alt prefix"></i>
+                <input id="date_added" name="date_added" type="text" 
+                    class="date_picker validate" required>
+                <label for="date_added">Date Added:</label>
+            </div>
+        </div>
+    </form>
+</div>
+
 {% endblock %}
