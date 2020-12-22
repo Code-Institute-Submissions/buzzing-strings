@@ -130,6 +130,27 @@ p.content-text {
     padding: 1rem;
 }
 
+/* User List styling */
+ul.guitar-menu.collapsible {
+    border: 0.3rem solid #37474f;
+    border-radius: 0.5rem;
+    margin: 2rem;
+}
+
+.guitar.collapsible-header {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+}
+
+.guitar.collapsible-body {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.fa-guitar:before {
+    font-size: 2.5rem;
+}
+
 /* Register and Login form styling */
 form.register-form, 
 form.login-form {
