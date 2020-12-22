@@ -114,6 +114,15 @@ def guitars():
     return render_template("pages/guitars.html")
 
 
+# Add Guitar
+@app.route("/add_guitar")
+def add_guitar():
+    """
+    Enables the user to add a new guitar
+    """
+    return render_template("pages/add_guitar.html")
+
+
 # User page
 @app.route("/user")
 def user():
