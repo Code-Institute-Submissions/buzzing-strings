@@ -8,8 +8,9 @@
         <li><a href="{{ url_for('about') }}">About Us...</a></li>
         {% if session.user %}
         <li><a href="{{ url_for('guitars') }}">All Guitars</a></li>
-        <li><a href="#">Add Guitar</a></li>
-        <li><a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt orange-text text-lighten-1"></i></a></li>
+        <li><a href="{{ url_for('user') }}">Add Guitar!</a></li>
+        <li><a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt orange-text text-lighten-1 tooltipped"
+                 data-position="bottom" data-tooltip="Log Out!"></i></a></li>
         {% else %}
         <li><a href="{{ url_for('login') }}"><i class="fas fa-user-alt orange-text text-lighten-1 tooltipped" 
                 data-position="bottom" data-tooltip="Log In!"></i></a></li>
@@ -25,10 +26,12 @@
     <li><a href="{{ url_for('about') }}">About Us...</a></li>
     {% if session.user %}
     <li><a href="{{ url_for('guitars') }}">All Guitars</a></li>
-    <li><a href="#">Add Guitar</a></li>
-    <li><a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt orange-text text-lighten-1"></i></a></li>
+    <li><a href="{{ url_for('user') }}">Add Guitar</a></li>
+    <li><a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt orange-text text-lighten-1 tooltipped"
+            data-position="bottom" data-tooltip="Log Out!"></i></a></li>
     {% else %}
-    <li><a href="{{ url_for('login') }}"><i class="fas fa-user-alt orange-text text-lighten-1"></i></a></li>
+    <li><a href="{{ url_for('login') }}"><i class="fas fa-user-alt orange-text text-lighten-1 tooltipped"
+            data-position="bottom" data-tooltip="Log In!"></i></a></li>
     <li><a href="{{ url_for('register') }}">Sign Up!</a></li>
     {% endif %}
   </ul>
