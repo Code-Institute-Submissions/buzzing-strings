@@ -105,9 +105,20 @@ def logout():
     return redirect(url_for("about"))
 
 
+# All Guitars
+@app.route("/guitars")
+def guitars():
+    """
+    Renders all guitars page
+    """
+    return render_template("pages/guitars.html")
+
+
+# User page
 @app.route("/user")
 def user():
-    return render_template("pages/user_list.html")
+    guitars = list(mongo.db.guitars.find())
+    return render_template("pages/user_list.html", guitars=guitars)
 
 
 # 404 error page
@@ -119,12 +130,6 @@ def page_not_found(error):
     error_message = str(error)
     return render_template("pages/error.html",
                            error_message=error_message), 404
-
-
-@app.route("/guitars")
-def guitars():
-    guitars = mongo.db.guitars.find()
-    return render_template("pages/guitars.html", guitars=guitars)
 
 
 # 500 error page
