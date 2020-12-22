@@ -105,6 +105,11 @@ def logout():
     return redirect(url_for("about"))
 
 
+@app.route("/user")
+def user():
+    return render_template("pages/user_list.html")
+
+
 # 404 error page
 @app.errorhandler(404)
 def page_not_found(error):

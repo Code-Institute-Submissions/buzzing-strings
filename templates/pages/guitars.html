@@ -1,12 +1,5 @@
 {% extends 'layout/base.html' %}
 {% block content %}
    <h3 class="all-guitars heading purple-text text-darken-4">Take a peek at our selection!</h3>
-       {% for guitar in guitars %}
-        {{ guitar.guitar_name }}
-        {{ guitar.guitar_body }}
-        {{ guitar.guitar_scale }}
-        {{ guitar.guitar_control }}
-        {{ guitar.guitar_description }}
-        {{ guitar.guitar_image }}
-    {% endfor %}
+       
 {% endblock %}
