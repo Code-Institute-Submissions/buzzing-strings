@@ -148,7 +148,7 @@ ul.guitar-menu.collapsible {
 }
 
 .fa-guitar:before {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 /* Register and Login form styling */
@@ -197,6 +197,8 @@ p.pattern-password {
     font-size: 1.5rem;
     line-height: 2rem;
     border-width: 0;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
 }
 
 .form-buttons:hover {

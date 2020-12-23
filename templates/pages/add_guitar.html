@@ -5,7 +5,7 @@
 
 <!--add new guitar form-->
 <div class="row">
-    <form class="add-guitar grey lighten-3" method="POST" action="">
+    <form class="add-guitar grey lighten-3" method="POST" action="{{ url_for('add_guitar') }}">
         <!--guitar category selection-->
         <div class="row">
              <div class="col s12 m8 offset-m2 input-field">
@@ -59,7 +59,7 @@
         <div class="row">
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
-                <input id="guitar_image" name="guitar_image" type="text" 
+                <input id="guitar_image" name="guitar_image" type="url" 
                     class="validate" required>
                 <label for="guitar_image">Guitar Image:</label>
             </div>
@@ -71,6 +71,12 @@
                 <input id="date_added" name="date_added" type="text" 
                     class="datepicker validate" required>
                 <label for="date_added">Date Added:</label>
+            </div>
+        </div>
+        <!--submit button-->
+        <div class="row">
+            <div class="col s12 m8 offset-m2 center-align">
+                <button type="submit" class="form-buttons"><i class="fas fa-plus-square right"></i>Add Your Guitar</button>
             </div>
         </div>
     </form>

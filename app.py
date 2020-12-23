@@ -115,12 +115,24 @@ def guitars():
 
 
 # Add Guitar
-@app.route("/add_guitar")
+@app.route("/add_guitar", methods=["GET", "POST"])
 def add_guitar():
     """
     Enables the user to choose the guitar type,
     allows the user to add a new guitar
     """
+    if request.method == "POST":
+        guitar = {
+            "guitar_type": request.form.get("guitar_type"),
+            "guitar_name": request.form.get("guitar_name"),
+            "guitar_body": request.form.get("guitar_body"),
+            "guitar_scale": request.form.get("guitar_scale"),
+            "guitar_description": request.form.get("guitar_description"),
+            "guitar_image": request.form.get("guitar_image"),
+            "date_added": request.form.get("date_added")
+        }
+        mongo.db.guitars.insert_one(guitar)
+        return redirect(url_for("user"))
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(

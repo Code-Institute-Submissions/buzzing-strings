@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %}
 {% block content %}
   
-    {% for guitar in guitars %}
+    <!--{% for guitar in guitars %}
         {{ guitar.guitar_type }}
         {{ guitar.guitar_name }}
         {{ guitar.guitar_body }}
@@ -9,9 +9,9 @@
         {{ guitar.guitar_description }}
         {{ guitar.date_added }}
         {{ guitar.guitar_image }}
-    {% endfor %}
+    {% endfor %}-->
        
-        <h3 class="all-guitars heading purple-text text-darken-4">Add your guitar</h3>
+        <h3 class="all-guitars heading purple-text text-darken-4">My Guitars!</h3>
         <div class="row">
             <div class="col s12 m8 offset-m2">
                 <ul class="guitar-menu collapsible">
@@ -26,8 +26,8 @@
                             <p>{{ guitar.guitar_body }}</p>
                             <p>{{ guitar.guitar_scale }}</p>
                             <p>{{ guitar.guitar_description }}</p>
-                            <p>{{ guitar.date_added }}</p>
                             <p>{{ guitar.guitar_image }}</p>
+                            <p>{{ guitar.date_added }}</p>
                         </div>
                     </li>
                 {% endfor %}
