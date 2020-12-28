@@ -125,11 +125,11 @@ def add_guitar():
         guitar = {
             "guitar_type": request.form.get("guitar_type"),
             "guitar_name": request.form.get("guitar_name"),
-            "guitar_body": request.form.get("guitar_body"),
-            "guitar_scale": request.form.get("guitar_scale"),
+            "guitar_shape": request.form.get("guitar_shape"),
             "guitar_description": request.form.get("guitar_description"),
             "guitar_image": request.form.get("guitar_image"),
-            "date_added": request.form.get("date_added")
+            "date_added": request.form.get("date_added"),
+            "created_by": request.form.get("created_by")
         }
         mongo.db.guitars.insert_one(guitar)
         return redirect(url_for("user"))

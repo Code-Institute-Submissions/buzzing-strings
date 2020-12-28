@@ -12,27 +12,27 @@
     {% endfor %}-->
        
         <h3 class="all-guitars heading purple-text text-darken-4">My Guitars!</h3>
-        <div class="row">
-            <div class="col s12 m8 offset-m2">
-                <ul class="guitar-menu collapsible">
-                {% for guitar in guitars %}
-                    <li>
-                        <div class="guitar collapsible-header grey-text text-lighten-4 blue-grey lighten-2">
-                            <i class="fas fa-guitar"></i>Add Your Guitar:
-                        </div>
-                        <div class="guitar collapsible-body grey lighten-2">
-                            <strong> {{ guitar.guitar_type }}</strong>
-                            <p> {{ guitar.guitar_name }}</p>
-                            <p>{{ guitar.guitar_body }}</p>
-                            <p>{{ guitar.guitar_scale }}</p>
-                            <p>{{ guitar.guitar_description }}</p>
-                            <p>{{ guitar.guitar_image }}</p>
-                            <p>{{ guitar.date_added }}</p>
-                        </div>
-                    </li>
-                {% endfor %}
-                </ul>
+        <!--user's guitars-->
+         <div class="row">
+            <div class="col s12 m4">
+                <div class="card-panel blue-grey lighten-2 center-align">
+                    {% for guitar in guitars %}
+                    <p class="guitar-type">{{ guitar.guitar_type }}</p>
+                    <div class="divider"></div>
+                    <p class="guitar-name"> {{ guitar.guitar_name }}</p>
+                    <div class="divider"></div>
+                    <p class="guitar-shape"> {{ guitar.guitar_shape }}</p>
+                    <div class="divider"></div>
+                    <p class="guitar-description">{{ guitar.guitar_description }}</p>
+                    <div class="divider"></div>
+                    <p class="guitar-image">{{ guitar.guitar_image }}</p>
+                    <div class="divider"></div>
+                    <p class="date-added">{{ guitar.date_added }}</p>
+                    <div class="divider"></div>
+                    <p class="created_by">{{ guitar.created_by }}</p>
+                    {% endfor %}
+                </div>
             </div>
         </div>
-        
+
 {% endblock %}
