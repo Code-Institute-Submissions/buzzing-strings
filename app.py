@@ -79,7 +79,7 @@ def login():
                     flash("Hello, {}".format(
                         request.form.get("username")))
                     return redirect(url_for(
-                        "guitars", username=session["user"]))
+                        "all_guitars", username=session["user"]))
             else:
                 # invalid password match
                 flash("Sorry, Your Username and/or Password is incorrect!")
@@ -106,12 +106,12 @@ def logout():
 
 
 # All Guitars
-@app.route("/guitars")
-def guitars():
+@app.route("/all_guitars")
+def all_guitars():
     """
     Renders all guitars page
     """
-    return render_template("pages/guitars.html")
+    return render_template("pages/all_guitars.html")
 
 
 # Add Guitar
@@ -129,7 +129,7 @@ def add_guitar():
             "guitar_description": request.form.get("guitar_description"),
             "guitar_image": request.form.get("guitar_image"),
             "date_added": request.form.get("date_added"),
-            "created_by": request.form.get("created_by")
+            "added_by": request.form.get("added_by")
         }
         mongo.db.guitars.insert_one(guitar)
         return redirect(url_for("user"))

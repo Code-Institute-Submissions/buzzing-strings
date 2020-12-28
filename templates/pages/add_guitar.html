@@ -32,18 +32,9 @@
          <div class="row">
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-shapes prefix blue-grey-text text-darken-2"></i>
-                <input id="guitar_body" name="guitar_body" type="text" 
+                <input id="guitar_shape" name="guitar_shape" type="text" 
                     class="validate" required>
-                <label for="guitar_body">Guitar Body:</label>
-            </div>
-        </div>
-        <!--guitar scale-->
-         <div class="row">
-            <div class="col s12 m8 offset-m2 input-field">
-                <i class="fas fa-music prefix blue-grey-text text-darken-2"></i>
-                <input id="guitar_scale" name="guitar_scale" type="text" 
-                    class="validate" required>
-                <label for="guitar_scale">Guitar Scale:</label>
+                <label for="guitar_shape">Guitar Shape:</label>
             </div>
         </div>
         <!--guitar description-->
@@ -61,7 +52,7 @@
                 <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
                 <input id="guitar_image" name="guitar_image" type="url" 
                     class="validate" required>
-                <label for="guitar_image">Guitar Image:</label>
+                <label for="guitar_image">Add Guitar Image (use small image):</label>
             </div>
         </div>
         <!--guitar added date picker-->
@@ -71,6 +62,15 @@
                 <input id="date_added" name="date_added" type="text" 
                     class="datepicker validate" required>
                 <label for="date_added">Date Added:</label>
+            </div>
+        </div>
+        <!--guitar added by-->
+        <div class="row">
+            <div class="col s12 m8 offset-m2 input-field">
+                <i class="far fa-user prefix blue-grey-text text-darken-2"></i>
+                <input id="added_by" name="added_by" type="text" 
+                    class="validate" required>
+                <label for="added_by">Added By:</label>
             </div>
         </div>
         <!--submit button-->

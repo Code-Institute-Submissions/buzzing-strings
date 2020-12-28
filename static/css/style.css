@@ -151,8 +151,10 @@ h3.login-heading {
 label.username,
 label.password,
 label.guitar_name,
+label.guitar_shape,
 label.guitar_description,
-label.date_added {
+label.date_added,
+label.added_by {
     font-size: 1.5rem;
 }
 

@@ -17,19 +17,17 @@
             <div class="col s12 m4">
                 <div class="card-panel blue-grey lighten-2 center-align">
                     {% for guitar in guitars %}
-                    <p class="guitar-type">{{ guitar.guitar_type }}</p>
+                    <p class="guitar-type">Guitar Type: 
                     <div class="divider"></div>
-                    <p class="guitar-name"> {{ guitar.guitar_name }}</p>
+                       {{ guitar.guitar_type }}
+                    </p>
+                    <p class="guitar-name"> Guitar Name: {{ guitar.guitar_name }}</p>
+                    <p class="guitar-shape"> Guitar Shape: {{ guitar.guitar_shape }}</p>
+                    <p class="guitar-description"> Description: {{ guitar.guitar_description }}</p>
+                    <p class="guitar-image">Guitar Image: {{ guitar.guitar_image }}</p>
+                    <p class="date-added"> Date Added: {{ guitar.date_added }}</p>
                     <div class="divider"></div>
-                    <p class="guitar-shape"> {{ guitar.guitar_shape }}</p>
-                    <div class="divider"></div>
-                    <p class="guitar-description">{{ guitar.guitar_description }}</p>
-                    <div class="divider"></div>
-                    <p class="guitar-image">{{ guitar.guitar_image }}</p>
-                    <div class="divider"></div>
-                    <p class="date-added">{{ guitar.date_added }}</p>
-                    <div class="divider"></div>
-                    <p class="created_by">{{ guitar.created_by }}</p>
+                    <p class="added_by">Created by: {{ guitar.added_by }}</p>
                     {% endfor %}
                 </div>
             </div>
