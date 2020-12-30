@@ -45,10 +45,13 @@ nav.main-nav {
 
 /* Navbar list styling */
 nav ul a {
+    display: inline-flex;
     font-family: 'Special Elite', cursive;
     font-size: 2.5rem;
     font-weight: 800;
     color: #f5f5f5;
+    margin-right: 1.5rem;
+    padding: 0 1.5rem;
 }
 
 .fa-user-alt:before {
@@ -111,15 +114,10 @@ p.content-text {
 }
 
 /* All Guitars list styling */
-.guitars.card.medium {
-    border: 0.2rem solid #37474f;
-    border-radius: 0.5rem;
+p.info-text {
+    text-align: center;
     margin: 2rem;
-}
-
-.responsive-img {
-    height: auto;
-    max-width: 100%
+    padding: 2rem;
 }
 
 .guitar-name {
@@ -202,8 +200,9 @@ p.redirect-link {
     font-size: 1.8rem;
 }
 
-i.fas.fa-user-plus.prefix,
-i.fas.fa-user-lock.prefix {
+.fas.fa-user-cog:before,
+.fas.fa-user-plus:before,
+.fas.fa-user-lock:before {
     font-size: 2.3rem;
 }
 
@@ -260,7 +259,7 @@ p.error-page {
     position: fixed;
     right: 1rem;
     bottom: 3rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.3rem;
 }
 
 .fa-angle-double-up:before {
