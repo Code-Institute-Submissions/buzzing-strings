@@ -117,8 +117,13 @@ p.content-text {
 /* All Guitars list styling */
 p.info-text {
     text-align: center;
+    font-weight: 900;
+    background-color: #e0e0e0;
+    border: 0.2rem solid #546e7a;
+    border-radius: 0.5;
     margin: 2rem;
     padding: 2rem;
+    opacity: 0.8;
 }
 
 .guitar-name {
@@ -256,7 +261,7 @@ p.error-page {
 }
 
 /* Footer styling */
-.web-footer {
+footer.web-footer {
    position: absolute;
    width: 100%;
    margin: auto;
