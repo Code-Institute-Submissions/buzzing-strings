@@ -14,22 +14,13 @@
         <h3 class="all-guitars heading purple-text text-darken-4">My Guitars!</h3>
         <!--user's guitars-->
          <div class="row">
-            <div class="col s12 m4">
-                <div class="card-panel blue-grey lighten-2 center-align">
-                    {% for guitar in guitars %}
-                    <p class="guitar-type">Guitar Type: 
-                    <div class="divider"></div>
-                       {{ guitar.guitar_type }}
-                    </p>
-                    <p class="guitar-name"> Guitar Name: {{ guitar.guitar_name }}</p>
-                    <p class="guitar-shape"> Guitar Shape: {{ guitar.guitar_shape }}</p>
-                    <p class="guitar-description"> Description: {{ guitar.guitar_description }}</p>
-                    <p class="guitar-image">Guitar Image: {{ guitar.guitar_image }}</p>
-                    <p class="date-added"> Date Added: {{ guitar.date_added }}</p>
-                    <div class="divider"></div>
-                    <p class="added_by">Created by: {{ guitar.added_by }}</p>
-                    {% endfor %}
-                </div>
+            <div class="col s12 m8 offset-m2">
+               {% for guitar in guitars %}
+                {% include 'components/card/guitar_card.html' %}
+                {% else %}
+                    <p class="info-text">Sorry, but currently there are no guitars to display!
+                    <br>Please <a href="{{ url_for('add_guitar') }}">add</a> your favourite guitar now!</p>
+            {% endfor %}
             </div>
         </div>
 
