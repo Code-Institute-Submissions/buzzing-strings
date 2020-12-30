@@ -85,6 +85,7 @@ nav ul a {
 
 /* About page styling */
 .about.card-panel {
+    background-color: ;
     border: 0.2rem solid #37474f;
     border-radius: 2.5rem;
     margin: 3rem;
@@ -252,6 +253,14 @@ p.error-page {
 
 .homepage-return {
     margin: 1.5rem;
+}
+
+/* Footer styling */
+.web-footer {
+   position: absolute;
+   width: 100%;
+   margin: auto;
+   bottom: 0;
 }
 
 /* Action button styling */
