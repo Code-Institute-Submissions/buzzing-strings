@@ -132,7 +132,7 @@ def add_guitar():
             "added_by": request.form.get("added_by")
         }
         mongo.db.guitars.insert_one(guitar)
-        return redirect(url_for("user"))
+        return redirect(url_for("all_guitars"))
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(

@@ -110,7 +110,7 @@ I opted for calm colours as I did not want to distract the user from the website
 [Back to top](#table-of-contents)
 
 ### Wireframes
-I used [JustInMind](https://www.justinmind.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
+I used [Balsamiq](https://balsamiq.com/) software to create the wireframes. The wireframes allowed me to carefully plan what I wanted to achieve, and
 what would be a final effect of the written code. 
 
 The wireframes can be found [here](https://github.com/KrisK1978/buzzing-strings/tree/master/wireframes).
@@ -208,7 +208,7 @@ The following features might be applied to the website in the future:
 
 8. [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
 
-9. [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+9. [Materialize](https://materializecss.com/)
 
 10. [Font Awesome](https://fontawesome.com/icons?d=gallery)
 
@@ -229,6 +229,8 @@ The following features might be applied to the website in the future:
 18. [Free Logo Design](https://www.freelogodesign.org/)
 
 19. [PicResize](https://picresize.com/)
+
+20. [Balsamiq](https://balsamiq.com/)
 
 ## Testing
 The project testing details can be found [here](https://github.com/KrisK1978/buzzing-strings/blob/master/TESTING.md).
