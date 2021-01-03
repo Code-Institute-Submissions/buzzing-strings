@@ -161,7 +161,7 @@ The user would also have an opportunity to update already existing content, usin
 #### Add Guitar 
 
 This option allows the registered/logged user to add a favourite guitar with a description. The user is required to fill in all fields in the form 
-provided. No form can be submitted if there is a missing information. 
+provided before **Add Your Guitar** button is used.  No form can be submitted if there is a missing information. 
 
 ### Features to be implemented in the future
 
@@ -173,7 +173,7 @@ The following features might be applied to the website in the future:
 
 3. **Adding simple users chat functionality**
 
-4. **Creating a favourite list**
+4. **Creating a user's list of favourite guitars**
 
 [Back to top](#table-of-contents)
 
@@ -234,6 +234,14 @@ The following features might be applied to the website in the future:
 19. [PicResize](https://picresize.com/)
 
 20. [Balsamiq](https://balsamiq.com/)
+
+21. [PEP8](http://pep8online.com/)
+
+22. [JSHint](https://jshint.com/)
+
+23. [Markup Validation Service](https://validator.w3.org/)
+
+24. [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 
 ## Testing
 The project testing details can be found [here](https://github.com/KrisK1978/buzzing-strings/blob/master/TESTING.md).
