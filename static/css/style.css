@@ -192,8 +192,8 @@ p.pattern-password {
 }
 
 .about-buttons {
-    padding: 1rem 2rem;
     text-decoration: none;
+    margin: 0.5rem;
 }
 
 p.redirect-link {

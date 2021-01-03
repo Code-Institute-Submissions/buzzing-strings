@@ -33,7 +33,7 @@
 
 ## Project Goal
 The main goal for creating this website is to deliver interesting information about different type of guitars. This website 
-is not only recommended for guitarists who would like to check/add/review the guitars they like, but to any website user who 
+is not only recommended for guitarists who would like to add their favourite guitars, but to any website user who 
 would like to gain more knowledge about this fantastic instrument. 
 
 [Back to top](#table-of-contents)
@@ -42,7 +42,7 @@ would like to gain more knowledge about this fantastic instrument.
 ### User Goals
 - I want the website to work properly on different type of devices such mobile phones, tablets, ipads and
   desktops
-- I want to have an easy access to dashboard where I can see the profile I created
+- I want to have an easy access to dashboard where I can see the guitar I added
 - I want the website which is simple to use and where I can easily update information 
 
 ### User Stories
@@ -50,12 +50,10 @@ would like to gain more knowledge about this fantastic instrument.
 - as a User, I want to find the website content approachable and not overwhelming
 - as a User, I want to access the information about the guitars easily
 - as a User, I want to have an ability to register and log in with no obstacles
-- as a User, I want to find information about a guitar of the month
+- as a User, I want to be easily redirected to external guitar shops websites 
 - as a User, I want to be able to visit social-media sites provided by the website host
-- as a User, I want to be log in successfully
-- as a User, I want to be able to add and delete guitar's type
-- as a User, I want to be able to add a review about the guitars
-- as a User, I want to have an option to remove my profile from the website
+- as a User, I want to be log out successfully
+- as a User, I want to be able to add, update and delete guitar's details
 
 [Back to top](#table-of-contents)
 
@@ -121,20 +119,28 @@ The wireframes can be found [here](https://github.com/KrisK1978/buzzing-strings/
 
 #### About Us
 
-This section provides a brief website description to the users. It contains a basic information about the guitars 
-and explains the reasons for creating this website. The users can use an option to **Log In** or **Sign Up!** 
-displayed in a card and placed below the **About Us** content. The last part of the section is called **Guitar Of The Month**.
-It redirects the user to a page where there is a detailed description about a highly recommended guitar.
+The following content will be seen by the user in this section:
 
-#### Sign Up!
+- a welcoming text 
 
-This section allows to sign up and use the available options on the website. Once registered, the new user would be able to view 
-a list of guitars, add a new guitar, add a review or delete it. Sign up procedure only allows to register a username which does not 
-exist in a database already. 
+- an invitation to visit **All Guitars** (redirects new user to Sign Up/Register page) or redirect to **Log In** page
+
+- an opportunity to check guitar shops recommended by the website host
 
 #### Log In
 
-This option only allows already registered user to **Log In** (font-awesome icon used).
+This option only allows already registered user to **Log In**. A warning text will display if the user submits a wrong username and/or
+password.
+
+#### Sign Up!
+
+This section allows to register and use the available options on the website. Once registered, the new user would be able to view 
+a list of guitars, add a new guitar, update or delete the information. Sign up procedure only allows to register a username which does not 
+exist in a database already. There is also a requirement for a specific number of characters to be used when registering new user. 
+
+#### Log Out 
+
+This option allows the user to successfully log out from the page. 
 
 #### Footer
 
@@ -145,22 +151,17 @@ acccount where other projects can be viewed. Other two icons are disabled and wi
 
 ### Features Visible Only to Registered Users
 
-#### Guitars 
+#### All Guitars 
 
 This section is only available to existing users. It displays a list of different type of guitars (classical, electric and bass) and also 
-provides detailed guitar description. The user would have an opportunity to review a guitar and add it to a favourite list. 
+provides detailed guitar description. If there are no guitars to display, the user can use a link provided which will redirect to **Add Guitar** page.
+The user would also have an opportunity to update already existing content, using **Update** button, and be able to remove it completely by using
+**Delete** button (this action cannot be reversed). 
 
 #### Add Guitar 
 
-This option allows the registered user to add a favourite guitar with a description.
-
-#### Add To Favourite
-
-The user can add a several type of guitars and create a favourite list.
-
-#### Delete Guitar 
-
-This option is availablethrough a **Delete** button. Once the user clicks on the button the action cannot be reversed. 
+This option allows the registered/logged user to add a favourite guitar with a description. The user is required to fill in all fields in the form 
+provided. No form can be submitted if there is a missing information. 
 
 ### Features to be implemented in the future
 
@@ -171,6 +172,8 @@ The following features might be applied to the website in the future:
 2. **Adding tutorial videos of how to learn basic guitar chords**
 
 3. **Adding simple users chat functionality**
+
+4. **Creating a favourite list**
 
 [Back to top](#table-of-contents)
 
@@ -328,22 +331,17 @@ Using the features **MongoDB Atlas** provides, I was able to create the followin
 
 1. **Guitar Categories**
 
-    <img src="wireframes/mongo-collections/guitar-categories.png" alt="guitar-categories">
+    <img src="static/images/mongo-collections/guitar-categories.png" alt="guitar-categories">
 
 
 2. **Guitars** 
 
-    <img src="wireframes/mongo-collections/guitars.png" alt="guitars">
+    <img src="static/images/mongo-collections/guitars.png" alt="guitars">
 
 
-3. **Guitar review**
+3. **Users**
 
-    <img src="wireframes/mongo-collections/guitar-review.png" alt="guitar-review">
-
-
-4. **Users**
-
-    <img src="wireframes/mongo-collections/users.png" alt="users">
+    <img src="static/images/mongo-collections/users.png" alt="users">
 
 [Back to top](#table-of-contents)
 
