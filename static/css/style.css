@@ -168,8 +168,8 @@ p.pattern-password {
 }
 
 .form-buttons,
-.shop-one.button,
-.shop-two.button {
+.shop-one,
+.shop-two {
     font-family: 'Special Elite', cursive;
     background-color: #546e7a;
     border-radius: 0.5rem;
@@ -184,8 +184,8 @@ p.pattern-password {
 }
 
 .form-buttons:hover,
-.shop-one.button:hover,
-.shop-two.button:hover  {
+.shop-one:hover,
+.shop-two:hover  {
     background-color: #f5f5f5;
     color: #546e7a;
     border: 0.3rem solid #546e7a;
