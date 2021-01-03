@@ -183,8 +183,8 @@ a.shop-two.button {
 }
 
 .form-buttons:hover,
-a.shop-one.button,
-a.shop-two.button  {
+a.shop-one.button:hover,
+a.shop-two.button:hover  {
     background-color: #f5f5f5;
     color: #546e7a;
     border: 0.3rem solid #546e7a;
