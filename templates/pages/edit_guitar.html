@@ -11,10 +11,14 @@
              <div class="col s12 m8 offset-m2 input-field">
                  <i class="fas fa-guitar prefix orange-text text-lighten-1"></i>
                 <select id="guitar_type" name="guitar_type" class="validate" required>
-                    <option value="" disabled selected>Choose Guitar Type</option>
-                    {% for guitar_category in guitar_categories %}
-                    <option value="{{ guitar_category.guitar_type }}">{{ guitar_category.guitar_type }}</option>
-                    {% endfor %}
+                    <option value="" disabled>Choose Guitar Type</option>
+                        {% for guitar_category in guitar_categories %}
+                            {% if guitar_category.guitar_type == guitar.guitar_type %}
+                                <option value="{{ guitar_category.guitar_type }}" selected>{{ guitar_category.guitar_type }}</option>
+                            {% else %}
+                                <option value="{{ guitar_category.guitar_type }}">{{ guitar_category.guitar_type }}</option>
+                            {% endif %}
+                        {% endfor %}
                 </select>
                 <label for="guitar_type">Guitar Type:</label>
             </div>
@@ -24,7 +28,7 @@
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-pencil-alt prefix blue-grey-text text-darken-2"></i>
                 <input id="guitar_name" name="guitar_name" type="text" 
-                    class="validate" required>
+                    value="{{ guitar.guitar_name }}" class="validate" required>
                 <label for="guitar_name">Guitar Name:</label>
             </div>
         </div>
@@ -33,7 +37,7 @@
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-shapes prefix blue-grey-text text-darken-2"></i>
                 <input id="guitar_shape" name="guitar_shape" type="text" 
-                    class="validate" required>
+                     value="{{ guitar.guitar_shape }}" class="validate" required>
                 <label for="guitar_shape">Guitar Shape:</label>
             </div>
         </div>
@@ -42,7 +46,9 @@
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-file-signature prefix blue-grey-text text-darken-2"></i>
                 <textarea id="guitar_description" name="guitar_description" minlength="5" maxlength="200" 
-                    class="materialize-textarea validate" required></textarea>
+                    class="materialize-textarea validate" required>
+                    {{- guitar.guitar_description -}}
+                </textarea>
                 <label for="guitar_description">Guitar Description:</label>
             </div>
         </div>
@@ -51,7 +57,7 @@
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
                 <input id="guitar_image" name="guitar_image" type="url" 
-                    class="validate" required>
+                    value="{{ guitar.guitar_image }}" class="validate" required>
                 <label for="guitar_image">Add Guitar Image (use small image):</label>
             </div>
         </div>
@@ -60,7 +66,7 @@
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="fas fa-calendar-alt prefix blue-grey-text text-darken-2"></i>
                 <input id="date_added" name="date_added" type="text" 
-                    class="datepicker validate" required>
+                     value="{{ guitar.date_added }}" class="datepicker validate" required>
                 <label for="date_added">Date Added:</label>
             </div>
         </div>
@@ -69,14 +75,18 @@
             <div class="col s12 m8 offset-m2 input-field">
                 <i class="far fa-user prefix blue-grey-text text-darken-2"></i>
                 <input id="added_by" name="added_by" type="text" 
-                    class="validate" required>
+                     value="{{ guitar.added_by }}" class="validate" required>
                 <label for="added_by">Added By:</label>
             </div>
         </div>
         <!--edit button-->
         <div class="row">
             <div class="col s12 m8 offset-m2 center-align">
-                <button type="submit" class="form-buttons edit-guitar-button"><i class="fas fa-edit right"></i>Edit Your Guitar</button>
+                <!--cancel button -->
+                <a href="{{ url_for('user') }}" class="form-buttons cancel-button">
+                    Cancel<i class="fas fa-times-circle right"></i></a>
+                <button type="submit" class="form-buttons edit-guitar-button">
+                    Edit Your Guitar<i class="fas fa-edit right"></i></button>
             </div>
         </div>
     </form>
