@@ -78,7 +78,7 @@ sure the created content had no major defects:
 
 #### 6. Add Guitar!/All Guitars Page
 
-**C in CRUD - Creating**
+`C in CRUD - Creating`
 
 **6.1 Test type:** The logged in/registered user can use Add Guitar! option in the navbar/sidenav.
     Does the Add Guitar! page render correctly? 
@@ -95,25 +95,25 @@ sure the created content had no major defects:
 **Result:** Positive. The form is successfully submitted. 
 
 
-**R in CRUD - Reading/Viewing**
+`R in CRUD - Reading/Viewing`
 
 **6.4 Test type:** The user clicks on guitar card. Does the image upload correctly (using url)?
 
 **Result:** Positive. The image uploads the way it should. Other details about the added guitar display too.
 
 
-**U in CRUD - Updating**
+`U in CRUD - Updating`
 
-**6.5 Test type:** The update button is clicked by the user. Does the update option appear in the correct way?
+**6.5 Test type:** The edit button is clicked by the user. Does the edit option appear in the correct way?
 
-**Result:** Positive. The user can update the info on the guitar card. 
+**Result:** Positive. The user can edit the info on the guitar card. 
 
 **6.6 Test type:** The user clicks on save button. Does the user record the changes by clicking the save button?
 
 **Result:** Positive. The changes are saved successfully and displayed correctly in the updated guitar card. 
 
 
-**D in CRUD - Delete** 
+`D in CRUD - Delete`
 
 **6.7 Test type:** The user clicks on delete button in All Guitars page. Does the delete button remove the guitar
     information card completely?

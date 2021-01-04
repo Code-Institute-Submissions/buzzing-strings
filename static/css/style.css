@@ -117,6 +117,13 @@ p.content-text {
     line-height: 2;
 }
 
+.divider {
+    height: 0.3rem;
+    overflow: hidden;
+    background-color: #546e7a;
+}
+
+
 /* All Guitars list styling */
 p.info-text {
     text-align: center;
@@ -129,7 +136,7 @@ p.info-text {
     opacity: 0.8;
 }
 
-/* Register and Login form/buttons styling */
+/* Register/login/Add Guitar forms/buttons styling */
 form.register-form, 
 form.login-form,
 form.add-guitar {
@@ -217,10 +224,13 @@ h4.flash-message {
     line-height: 2;
 }
 
-/* User Profile styling */
-.user.card-panel {
-    margin-top: 3rem;
+.guitar-card {
+    line-height: 2;
+    border: 0.3rem solid #546e7a;
+    border-radius: 1rem;
+    padding: 2rem;
 }
+
 
 /* Styling error page */
 .error-page {

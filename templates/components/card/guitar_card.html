@@ -2,22 +2,23 @@
 
     <!--guitar card-->
     <div class="col s12 m8 offset-m2">
-        <div class="guitar card blue-grey lighten-2 center-align">
-             <div class="card blue-grey lighten-2 center-align">
-                    {% for guitar in guitars %}
-                    <p class="guitar-type">Guitar Type: 
-                    <div class="divider"></div>
-                       {{ guitar.guitar_type }}
-                    </p>
-                    <p class="guitar-name"> Guitar Name: {{ guitar.guitar_name }}</p>
-                    <p class="guitar-shape"> Guitar Shape: {{ guitar.guitar_shape }}</p>
-                    <p class="guitar-description"> Description: {{ guitar.guitar_description }}</p>
-                    <p class="guitar-image">Guitar Image:   {{ guitar.guitar_image }}</p>
-                    <p class="date-added"> Date Added:  {{ guitar.date_added }}</p>
-                    <div class="divider"></div>
-                    <p class="added_by">Created by: {{ guitar.added_by }}</p>
-                    {% endfor %}
-                </div>
+        <div class="guitar-card blue-grey lighten-4 center-align">
+            {% for guitar in guitars %}
+            <p class="guitar-type">Guitar Type: 
+            <div class="divider"></div>
+            {{ guitar.guitar_type }}
+            </p>
+            <p class="guitar-name"> Guitar Name: {{ guitar.guitar_name }}</p>
+            <p class="guitar-shape"> Guitar Shape: {{ guitar.guitar_shape }}</p>
+            <p class="guitar-description"> Description: {{ guitar.guitar_description }}</p>
+            <p class="guitar-image">Guitar Image:   {{ guitar.guitar_image }}</p>
+            <p class="date-added"> Date Added:  {{ guitar.date_added }}</p>
+            <div class="divider"></div>
+            <p class="added_by">Created by: {{ guitar.added_by }}</p>
+            {% endfor %}
+            <div class="divider"></div>
+            <a href="#"  class="form-buttons about-buttons">Edit</a>
+            <a href="#"  class="form-buttons about-buttons">Delete</a>
         </div>
     </div>
 

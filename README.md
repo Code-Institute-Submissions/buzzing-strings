@@ -55,7 +55,7 @@ would like to gain more knowledge about this fantastic instrument.
 - as a User, I want to be easily redirected to external guitar shops websites 
 - as a User, I want to be able to visit social-media sites provided by the website host
 - as a User, I want to be log out successfully
-- as a User, I want to be able to add, update and delete guitar's details
+- as a User, I want to be able to add, edit and delete guitar's details
 
 [Back to top](#table-of-contents)
 
@@ -157,7 +157,7 @@ acccount where other projects can be viewed. Other two icons are disabled and wi
 
 This section is only available to existing users. It displays a list of different type of guitars (classical, electric and bass) and also 
 provides detailed guitar description. If there are no guitars to display, the user can use a link provided which will redirect to **Add Guitar** page.
-The user would also have an opportunity to update already existing content, using **Update** button, and be able to remove it completely by using
+The user would also have an opportunity to update already existing content, using **Edit** button, and be able to remove it completely by using
 **Delete** button (this action cannot be reversed). 
 
 #### Add Guitar 
