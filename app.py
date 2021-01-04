@@ -132,6 +132,7 @@ def add_guitar():
             "added_by": request.form.get("added_by")
         }
         mongo.db.guitars.insert_one(guitar)
+        flash("Well done, Your Guitar was successfully added!")
         return redirect(url_for("all_guitars"))
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
@@ -143,8 +144,21 @@ def add_guitar():
 @app.route("/edit_guitar/<guitar_id>", methods=["GET", "POST"])
 def edit_guitar(guitar_id):
     """
-    Allows to edit guitar added by the user
+    Allows to edit guitar content added by the user
     """
+    if request.method == "POST":
+        submit = {
+            "guitar_type": request.form.get("guitar_type"),
+            "guitar_name": request.form.get("guitar_name"),
+            "guitar_shape": request.form.get("guitar_shape"),
+            "guitar_description": request.form.get("guitar_description"),
+            "guitar_image": request.form.get("guitar_image"),
+            "date_added": request.form.get("date_added"),
+            "added_by": request.form.get("added_by")
+        }
+        mongo.db.guitars.update({"_id": ObjectId(guitar_id)}, submit)
+        flash("Well done, your guitar was successfully updated!")
+
     guitar = mongo.db.guitars.find_one({"_id": ObjectId(guitar_id)})
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
