@@ -1,13 +1,12 @@
 ## Project Testing
 
-Testing is a very important tool and has a lot of benefits in terms of achieving  
-a successfull final effect. Having testing in my project helped to find the 
-errors I made while building the website. I was aware that I had to come up with a simple
-but effective testing plan. I decided that each line of my code had to be carefully 
-scrutinised to make sure all was working properly. Using [Balsamiq](https://balsamiq.com/) 
-I created the wireframes which allowed me deliver a clear outcome by conducting a number of 
-tests using website selected features. I also used the popular validation tools to make sure 
-the created content had no major defects: 
+Testing is a very important tool and has a lot of benefits in terms of achieving a successfull final effect. 
+Having testing in my project helped to find the errors I made while building the website. 
+I was aware that I had to come up with a simple but effective testing plan. I decided that each line of 
+my code had to be carefully scrutinised to make sure all was working properly. 
+Using [Balsamiq](https://balsamiq.com/) I created the wireframes which allowed me deliver a clear outcome by conducting 
+a number of tests using website selected features. I also used the popular validation tools to make 
+sure the created content had no major defects: 
 
 1. [Markup Validation Service](https://validator.w3.org/) - to validate HTML
 
@@ -20,109 +19,117 @@ the created content had no major defects:
 
 ### Features Testing
 
-1. **About Us... Page**
+#### 1. About Us... Page
 
-    1.1 Test type: Check the buttons functionality available for the user.
+**1.1 Test type:** Check the buttons functionality available for the user.
         Do they redirect the user to specific website sections as initially designed?
 
-    Result: Positive. All buttons working properly and redirect the user as 
-            planned (Sign Up/Log In/Guitar Guitar shop, etc.)
+**Result:** Positive. All buttons working properly and redirect the user as 
+            planned (Sign Up/Log In/Guitar Guitar shop, etc.).
 
-2. **Log In Page** 
 
-    2.1 Test type: Submit an empty login form. Does the error message pop up 
+#### 2. Log In Page
+
+**2.1 Test type:** Submit an empty login form. Does the error message pop up 
         informing to fill in all requested fields?
 
-    Result: Positive. Short message appears reminding the user to fill in
+**Result:** Positive. Short message appears reminding the user to fill in
             each field. 
 
-    2.2 Test type: Fill in the username and password fields using wrong username
+**2.2 Test type:** Fill in the username and password fields using wrong username
         or password. Does the system come up with a warning message?
 
-    Result: Positive. Message appears on screen informing the user a wrong username 
+**Result:** Positive. Message appears on screen informing the user a wrong username 
             and/or Password was incorrect. 
 
-3. **Sign Up! Page** 
 
-    3.1 Test type: Fill in the form leaving one of the fields blank and try submit the request.
+#### 3. Sign Up! Page
+
+**3.1 Test type:** Fill in the form leaving one of the fields blank and try submit the request.
         Does the system remind the user not to leave the form with blank fields?
     
-    Result: Positive. Message appears to remind the user that no field can be left blank.
+**Result:** Positive. Message appears to remind the user that no field can be left blank.
+
+**3.2 Test type:** Click on Log In link. Does it redirect the user to Log In page?
+
+**Result:** Positive. Once the link is clicked it redirects the user to Log In page. 
 
 
-    3.2 Test type: Click on Log In link. Does it redirect the user to Log In page?
+#### 4. All Guitars
 
-    Result: Positive. Once the link is clicked it redirects the user to Log In page. 
-
-4. **All Guitars** 
-
-    4.1 Test type: Use the link provided to add a guitar if the the guitar list does not 
+**4.1 Test type:** Use the link provided to add a guitar if the the guitar list does not 
         display any guitars. Does the link redirect the user to correct place?
 
-    Result: Positive. Once the user clicks on the link it redirects to Add Guitar page. 
+**Result:** Positive. Once the user clicks on the link it redirects to Add Guitar page. 
 
-    4.2 Test type: View the guitars list. Can the user view and check the guitars displayed on
+**4.2 Test type:** View the guitars list. Can the user view and check the guitars displayed on
         the page?
     
-    Result: Positive. The user can view the added guitars. 
+**Result:** Positive. The user can view the added guitars. 
 
-5. **Log Out Page**
 
-    5.1 Test type: Click on Log Out icon placed either in top navbar or mobile sidenav. Does the user
+#### 4. Log Out Page
+
+**5.1 Test type:** Click on Log Out icon placed either in top navbar or mobile sidenav. Does the user
     log out successfully?
 
-    Result: Positive. The user can log out using log out icon. 
+**Result:** Positive. The user can log out using log out icon. 
 
-6. **Add Guitar!/All Guitars Page**
 
-    **C in CRUD - Creating**
+#### 6. Add Guitar!/All Guitars Page
 
-    6.1 Test type: The logged in/registered user can use Add Guitar! option in the navbar/sidenav.
+**C in CRUD - Creating**
+
+**6.1 Test type:** The logged in/registered user can use Add Guitar! option in the navbar/sidenav.
     Does the Add Guitar! page render correctly? 
 
-    Result: Positive. The page renders correctly. The user can see Add Guitar form.
+**Result:** Positive. The page renders correctly. The user can see Add Guitar form.
 
-    6.2 Test type: The user submits an empty form. Does the system come back with an error?
+**6.2 Test type:** The user submits an empty form. Does the system come back with an error?
 
-    Result: Positive. The user sees a reminder no field can be left blank. 
+**Result:** Positive. The user sees a reminder no field can be left blank. 
 
-    6.3 Test type: The user completes all required fields in the form and hits Add Your Guitar button.
+**6.3 Test type:** The user completes all required fields in the form and hits Add Your Guitar button.
         Does the user submit the form successfully?
 
-    Result: Positive. The form is successfully submitted. 
+**Result:** Positive. The form is successfully submitted. 
 
-    **R in CRUD - Reading/Viewing**
 
-    6.4 Test type: The user clicks on guitar card. Does the image upload correctly (using url)?
+**R in CRUD - Reading/Viewing**
 
-    Result: Positive. The image uploads the way it should. Other details about the added guitar display too.
+**6.4 Test type:** The user clicks on guitar card. Does the image upload correctly (using url)?
 
-    **U in CRUD - Updating**
+**Result:** Positive. The image uploads the way it should. Other details about the added guitar display too.
 
-    6.5 Test type: The update button is clicked by the user. Does the update option appear in the correct way?
 
-    Result: Positive. The user can update the info on the guitar card. 
+**U in CRUD - Updating**
 
-    6.6 Test type: The user clicks on save button. Does the user record the changes by clicking the save button?
+**6.5 Test type:** The update button is clicked by the user. Does the update option appear in the correct way?
 
-    Result: Positive. The changes are saved successfully and displayed correctly in the updated guitar card. 
+**Result:** Positive. The user can update the info on the guitar card. 
 
-    **D in CRUD - Delete** 
+**6.6 Test type:** The user clicks on save button. Does the user record the changes by clicking the save button?
 
-    6.7 Test type: The user clicks on delete button in All Guitars page. Does the delete button remove the guitar
-        information card completely?
+**Result:** Positive. The changes are saved successfully and displayed correctly in the updated guitar card. 
+
+
+**D in CRUD - Delete** 
+
+**6.7 Test type:** The user clicks on delete button in All Guitars page. Does the delete button remove the guitar
+    information card completely?
     
-    Result: Positive. The guitar card is removed. 
+**Result:** Positive. The guitar card is removed. 
 
-7. **Error Page**
 
-    7.1 Test type: User typed the wrong url name. Does the error message appear?
+#### 7. Error Page
 
-    Result: Positive. The error page appears.
+**7.1 Test type:** User typed the wrong url name. Does the error message appear?
 
-    7.2 Test type: User clicks on Back to Homepage button. Does the button action redirect the user to homepage (About Us...)?
+**Result:** Positive. The error page appears.
 
-    Result: Positive. The user is redirected to About Us... page (homepage).
+**7.2 Test type:** User clicks on Back to Homepage button. Does the button action redirect the user to homepage (About Us...)?
+
+**Result:** Positive. The user is redirected to About Us... page (homepage).
 
 ### Bugs 
 
