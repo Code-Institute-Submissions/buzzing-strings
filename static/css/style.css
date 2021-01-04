@@ -162,7 +162,8 @@ p.pattern-password {
     font-size: 1.3rem;
 }
 
-.action-buttons {
+.action-buttons,
+.about-buttons {
     text-align: center;
     line-height: 2;
 }
@@ -191,7 +192,10 @@ p.pattern-password {
     border: 0.3rem solid #546e7a;
 }
 
-.about-buttons {
+.about-buttons,
+.login-button,
+.register-button,
+.add-guitar-button {
     text-decoration: none;
     margin: 0.5rem;
 }
@@ -258,7 +262,7 @@ p.error-page {
 
 /* Footer styling */
 footer.web-footer {
-   position: relative;
+   position: absolute;
    width: 100%;
    margin: auto;
    bottom: 0;
