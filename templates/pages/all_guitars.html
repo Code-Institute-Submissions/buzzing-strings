@@ -4,12 +4,14 @@
     <!--list of added guitars-->
     <div class="guitars-list">
         <div class="container">
-            {% for guitar in guitars %}
-                {% include 'components/card/guitar_card.html' %}
-                {% else %}
-                    <p class="info-text">Sorry, but currently there are no guitars to display!
-                    <br>Please <a href="{{ url_for('add_guitar') }}">add</a> your favourite guitar now!</p>
-            {% endfor %}
+            <div class="row pt-5 pb-5">
+                {% for guitar in guitars %}
+                    {% include 'components/card/guitar_card.html' %}
+                    {% else %}
+                        <p class="info-text">Sorry, but currently there are no guitars to display!
+                        <br>Please <a href="{{ url_for('add_guitar') }}">add</a> your favourite guitar now!</p>
+                {% endfor %}
+            </div>
         </div>
     </div>
        

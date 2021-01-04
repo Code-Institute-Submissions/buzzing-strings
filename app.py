@@ -139,6 +139,20 @@ def add_guitar():
             "pages/add_guitar.html", guitar_categories=guitar_categories)
 
 
+# Edit guitar
+@app.route("/edit_guitar/<guitar_id>", methods=["GET", "POST"])
+def edit_guitar(guitar_id):
+    """
+    Allows to edit guitar added by the user
+    """
+    guitar = mongo.db.guitars.find_one({"_id": ObjectId(guitar_id)})
+    guitar_categories = mongo.db.guitar_categories.find().sort(
+            "guitar_type", 1)
+    return render_template(
+            "pages/edit_guitar.html", guitar=guitar,
+            guitar_categories=guitar_categories)
+
+
 # User page
 @app.route("/user")
 def user():

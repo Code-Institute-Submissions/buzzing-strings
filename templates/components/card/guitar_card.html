@@ -17,7 +17,7 @@
             <p class="added_by">Created by: {{ guitar.added_by }}</p>
             {% endfor %}
             <div class="divider"></div>
-            <a href="#"  class="form-buttons about-buttons">Edit</a>
+            <a href="{{ url_for('edit_guitar', guitar_id=guitar._id) }}"  class="form-buttons about-buttons">Edit</a>
             <a href="#"  class="form-buttons about-buttons">Delete</a>
         </div>
     </div>

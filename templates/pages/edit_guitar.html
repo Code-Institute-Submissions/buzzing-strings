@@ -1,11 +1,11 @@
 {% extends 'layout/base.html' %}
 {% block content %}
 
-<h3 class="all-guitars heading purple-text text-darken-4">Add your guitar!</h3>
+<h3 class="all-guitars heading purple-text text-darken-4">Edit your guitar!</h3>
 
-<!--add new guitar form-->
+<!--edit guitar-->
 <div class="row">
-    <form class="add-guitar grey lighten-3" method="POST" action="{{ url_for('add_guitar') }}">
+    <form class="add-guitar grey lighten-3" method="POST" action="{{ url_for('edit_guitar', guitar_id=guitar._id) }}">
         <!--guitar category selection-->
         <div class="row">
              <div class="col s12 m8 offset-m2 input-field">
@@ -73,10 +73,10 @@
                 <label for="added_by">Added By:</label>
             </div>
         </div>
-        <!--submit button-->
+        <!--edit button-->
         <div class="row">
             <div class="col s12 m8 offset-m2 center-align">
-                <button type="submit" class="form-buttons add-guitar-button"><i class="fas fa-plus-square right"></i>Add Your Guitar</button>
+                <button type="submit" class="form-buttons edit-guitar-button"><i class="fas fa-edit right"></i>Edit Your Guitar</button>
             </div>
         </div>
     </form>
