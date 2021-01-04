@@ -6,6 +6,16 @@
 <!--edit guitar-->
 <div class="row">
     <form class="add-guitar grey lighten-3" method="POST" action="{{ url_for('edit_guitar', guitar_id=guitar._id) }}">
+        <!--flash messages-->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="row-flashes">
+                            <h4 class="flash-message purple-text text-darken-4">{{ message }}</h4>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
         <!--guitar category selection-->
         <div class="row">
              <div class="col s12 m8 offset-m2 input-field">

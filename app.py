@@ -144,7 +144,9 @@ def add_guitar():
 @app.route("/edit_guitar/<guitar_id>", methods=["GET", "POST"])
 def edit_guitar(guitar_id):
     """
-    Allows to edit guitar content added by the user
+    Allows to edit guitar content added by the user,
+    enables the user to submit the changes,
+    allows the user to cancel the updated changes
     """
     if request.method == "POST":
         submit = {
@@ -165,6 +167,17 @@ def edit_guitar(guitar_id):
     return render_template(
             "pages/edit_guitar.html", guitar=guitar,
             guitar_categories=guitar_categories)
+
+
+# Delete guitar
+@app.route("/delete_guitar/<guitar_id>")
+def delete_guitar(guitar_id):
+    """
+    Allows the user to delete guitar content
+    """
+    mongo.db.guitars.remove({"_id": ObjectId(guitar_id)})
+    flash("Your Guitar was successfully deleted!")
+    return redirect(url_for("user"))
 
 
 # User page

@@ -204,7 +204,8 @@ p.pattern-password {
 .register-button,
 .add-guitar-button,
 .cancel-button,
-.edit-guitar-button {
+.edit-guitar-button,
+.delete-guitar-button {
     text-decoration: none;
     margin: 0.5rem;
 }
