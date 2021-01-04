@@ -1,3 +1,5 @@
+<img src="static/images/logo/responsive.png" alt="responsive">
+
 ## Table of Contents
 [Project Goal](#project-goal)
 
