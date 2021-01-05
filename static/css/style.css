@@ -137,12 +137,13 @@ p.info-text {
 }
 
 /* Register/login/Add Guitar forms/buttons styling */
-form.register-form, 
-form.login-form,
-form.add-guitar {
+.register-form.card, 
+.login-form.card,
+.add-guitar.card {
+    line-height: 2;
     border: 0.3rem solid #546e7a;
     border-radius: 0.8rem;
-    margin: 2rem 4rem 3rem 4rem;
+    margin: 1rem;
     padding: 2rem;
 }
 
@@ -207,7 +208,8 @@ p.pattern-password {
 .edit-guitar-button,
 .delete-guitar-button {
     text-decoration: none;
-    margin: 0.5rem;
+    margin: 1rem 1rem;
+    padding: 0.3rem;
 }
 
 p.redirect-link {
@@ -275,7 +277,7 @@ p.error-page {
 
 /* Footer styling */
 footer.web-footer {
-   position: absolute;
+   position: relative;
    width: 100%;
    margin: auto;
    bottom: 0;

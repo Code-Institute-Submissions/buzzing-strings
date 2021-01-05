@@ -4,7 +4,7 @@
 <h3 class="login-heading purple-text text-darken-4">Use Your Login Credentials!</h3>
   <!--login form-->
   <div class="row">
-    <form class="login-form grey lighten-3" method="POST" action="{{ url_for('login') }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
          <!--flash messages-->
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
@@ -15,40 +15,42 @@
                     {% endfor %}
                 {% endif %}
             {% endwith %}
-        <!--username-->
-        <div class="col s12 m8 offset-m2 input-field">
-            <i class="fas fa-user-cog prefix blue-grey-text text-darken-2"></i>
-            <input id="username" name="username" type="text" minlength="5" 
-              maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters (letters or numbers)!" class="validate" required>
-            <label class="username" for="username">Username</label>
-            <p class="pattern-user">Please note only letters (either case) and numbers can be used. 
-              No special characters!</p>
-        </div> 
-        <!--password-->
-        <div class="col s12 m8 offset-m2 input-field">
-            <i class="fas fa-user-lock prefix blue-grey-text text-darken-2"></i>
-            <input id="password" name="password" type="password" minlength="5"
-              maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
-            <label class="password" for="password">Password</label>
-            <p class="pattern-password">Password should have min 5 characters!</p>
-        </div>
-        <div class="row">
-            <div class="action-buttons">
-                <!--login button-->
-                <div class="col s12">
-                    <button type="submit" class="form-buttons login-button">Login here!
-                    <i class="fas fa-sign-in-alt"></i></button>
-                </div>
-                <!--register redirect link-->
-                <div class="col s12">
-                    <p class="redirect-link purple-text text-darken-4">No Account Yet?
-                    <a href="{{ url_for('register') }}" class="link red-text">Sign Up Here!</a>
-                    </p>
-                </div>
-                <!--homepage redirect button-->
-                <div class="col s12">
-                    <a href="{{ url_for('about') }}" class="form-buttons">
-                    Go back to homepage!<i class="fas fa-home"></i></a>
+        <div class="login-form card-panel grey lighten-3">
+             <!--username-->
+            <div class="col s12 m8 offset-m2 input-field">
+                <i class="fas fa-user-cog prefix blue-grey-text text-darken-2"></i>
+                <input id="username" name="username" type="text" minlength="5" 
+                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters (letters or numbers)!" class="validate" required>
+                <label class="username" for="username">Username</label>
+                <p class="pattern-user">Please note only letters (either case) and numbers can be used. 
+                No special characters!</p>
+            </div> 
+            <!--password-->
+            <div class="col s12 m8 offset-m2 input-field">
+                <i class="fas fa-user-lock prefix blue-grey-text text-darken-2"></i>
+                <input id="password" name="password" type="password" minlength="5"
+                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
+                <label class="password" for="password">Password</label>
+                <p class="pattern-password">Password should have min 5 characters!</p>
+            </div>
+            <div class="row">
+                <div class="action-buttons">
+                    <!--login button-->
+                    <div class="col s12">
+                        <button type="submit" class="form-buttons login-button">Login here!
+                        <i class="fas fa-sign-in-alt"></i></button>
+                    </div>
+                    <!--register redirect link-->
+                    <div class="col s12">
+                        <p class="redirect-link purple-text text-darken-4">No Account Yet?
+                        <a href="{{ url_for('register') }}" class="link red-text">Sign Up Here!</a>
+                        </p>
+                    </div>
+                    <!--homepage redirect button-->
+                    <div class="col s12">
+                        <a href="{{ url_for('about') }}" class="form-buttons">
+                        Go back to homepage!<i class="fas fa-home"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,98 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+
+<h3 class="all-guitars heading purple-text text-darken-4">Add your guitar!</h3>
+
+<!--add new guitar form-->
+<div class="row">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_guitar') }}">
+        <!--flash messages-->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="row-flashes">
+                            <h4 class="flash-message purple-text text-darken-4">{{ message }}</h4>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        <div class="add-guitar card-panel grey lighten-3 ">
+             <!--guitar category selection-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-guitar prefix orange-text text-lighten-1"></i>
+                    <select id="guitar_type" name="guitar_type" class="validate" required>
+                        <option value="" disabled selected>Choose Guitar Type</option>
+                        {% for guitar_category in guitar_categories %}
+                        <option value="{{ guitar_category.guitar_type }}">{{ guitar_category.guitar_type }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="guitar_type">Guitar Type:</label>
+                </div>
+            </div>
+            <!--guitar name-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-pencil-alt prefix blue-grey-text text-darken-2"></i>
+                    <input id="guitar_name" name="guitar_name" type="text" 
+                        class="validate" required>
+                    <label for="guitar_name">Guitar Name:</label>
+                </div>
+            </div>
+            <!--guitar body-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-shapes prefix blue-grey-text text-darken-2"></i>
+                    <input id="guitar_shape" name="guitar_shape" type="text" 
+                        class="validate" required>
+                    <label for="guitar_shape">Guitar Shape:</label>
+                </div>
+            </div>
+            <!--guitar description-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-file-signature prefix blue-grey-text text-darken-2"></i>
+                    <textarea id="guitar_description" name="guitar_description" minlength="5" maxlength="200" 
+                        class="materialize-textarea validate" required></textarea>
+                    <label for="guitar_description">Guitar Description:</label>
+                </div>
+            </div>
+            <!--guitar image-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
+                    <input id="guitar_image" name="guitar_image" type="url" 
+                        class="validate" required>
+                    <label for="guitar_image">Add Guitar Image (use small image):</label>
+                </div>
+            </div>
+            <!--guitar added date picker-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-calendar-alt prefix blue-grey-text text-darken-2"></i>
+                    <input id="date_added" name="date_added" type="text" 
+                        class="datepicker validate" required>
+                    <label for="date_added">Date Added:</label>
+                </div>
+            </div>
+            <!--guitar added by-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="far fa-user prefix blue-grey-text text-darken-2"></i>
+                    <input id="added_by" name="added_by" type="text" 
+                        class="validate" required>
+                    <label for="added_by">Added By:</label>
+                </div>
+            </div>
+            <!--add guitar button-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 center-align">
+                    <button type="submit" class="form-buttons add-guitar-button"><i class="fas fa-plus-square right">
+                    </i>Add Your Guitar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
