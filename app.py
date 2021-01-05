@@ -75,11 +75,11 @@ def login():
             # ensure hashed password matches user input
             if check_password_hash(
                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Hello, {}".format(
-                        request.form.get("username")))
-                    return redirect(url_for(
-                        "all_guitars", username=session["user"]))
+                   session["user"] = request.form.get("username").lower()
+                   flash("Hello, {}".format(
+                       request.form.get("username")))
+                   return redirect(url_for(
+                       "all_guitars", username=session["user"]))
             else:
                 # invalid password match
                 flash("Sorry, Your Username and/or Password is incorrect!")
@@ -111,7 +111,8 @@ def all_guitars():
     """
     Renders all guitars page
     """
-    return render_template("pages/all_guitars.html")
+    guitars = list(mongo.db.guitars.find())
+    return render_template("pages/all_guitars.html", guitars=guitars)
 
 
 # Add Guitar
@@ -137,7 +138,8 @@ def add_guitar():
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(
-            "components/forms/add_guitar.html", guitar_categories=guitar_categories)
+            "components/forms/add_guitar.html",
+            guitar_categories=guitar_categories)
 
 
 # Edit guitar
@@ -177,14 +179,7 @@ def delete_guitar(guitar_id):
     """
     mongo.db.guitars.remove({"_id": ObjectId(guitar_id)})
     flash("Your Guitar was successfully deleted!")
-    return redirect(url_for("user"))
-
-
-# User page
-@app.route("/user")
-def user():
-    guitars = list(mongo.db.guitars.find())
-    return render_template("pages/user_list.html", guitars=guitars)
+    return redirect(url_for("all_guitars"))
 
 
 # 404 error page

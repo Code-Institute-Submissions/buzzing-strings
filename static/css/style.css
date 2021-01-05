@@ -227,6 +227,7 @@ p.redirect-link {
 h4.flash-message {
     text-align: center;
     line-height: 2;
+    padding: 0.5rem;
 }
 
 .guitar-card {
