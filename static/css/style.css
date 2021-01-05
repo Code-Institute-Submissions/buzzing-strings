@@ -170,6 +170,7 @@ p.pattern-password {
     font-size: 1.3rem;
 }
 
+.shop-buttons,
 .action-buttons,
 .about-buttons {
     text-align: center;
@@ -200,7 +201,6 @@ p.pattern-password {
     border: 0.3rem solid #546e7a;
 }
 
-.about-buttons,
 .login-button,
 .register-button,
 .add-guitar-button,
