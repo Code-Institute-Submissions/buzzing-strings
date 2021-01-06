@@ -162,6 +162,7 @@ def edit_guitar(guitar_id):
         }
         mongo.db.guitars.update({"_id": ObjectId(guitar_id)}, submit)
         flash("Well done, your guitar was successfully updated!")
+        return redirect(url_for("all_guitars"))
 
     guitar = mongo.db.guitars.find_one({"_id": ObjectId(guitar_id)})
     guitar_categories = mongo.db.guitar_categories.find().sort(

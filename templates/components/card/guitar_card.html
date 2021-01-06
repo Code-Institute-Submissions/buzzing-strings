@@ -1,36 +1,32 @@
 {% block card %}
 
-    <!--flash messages-->
-            {% with messages = get_flashed_messages() %}
-                {% if messages %}
-                    {% for message in messages %}
-                        <div class="row-flashes">
-                            <h4 class="flash-message purple-text text-darken-4">{{ message }}</h4>
-                        </div>
-                    {% endfor %}
-                {% endif %}
-            {% endwith %}
     <!--guitar card-->
-    <div class="col s12 m8 offset-m2">
+    <div class="col s12 m6">
         <div class="guitar-card blue-grey lighten-4 center-align">
             <!--guitar details-->
             {% for guitar in guitars %}
-            <p class="guitar-type">Guitar Type: 
-            {{ guitar.guitar_type }}
-            </p>
+            <p class="guitar-type">{{ guitar.guitar_type }}</p>
             <div class="divider"></div>
-            <p class="guitar-name"> Guitar Name: {{ guitar.guitar_name }}</p>
-            <p class="guitar-shape"> Guitar Shape: {{ guitar.guitar_shape }}</p>
-            <p class="guitar-description"> Description: {{ guitar.guitar_description }}</p>
-            <p class="guitar-image">Guitar Image:   {{ guitar.guitar_image }}</p>
-            <p class="date-added"> Date Added:  {{ guitar.date_added }}</p>
+            <p class="guitar-name">Guitar Name:<span class="name">
+                {{ guitar.guitar_name }}</span></p>
+            <p class="guitar-shape">Guitar Shape: <span class="shape">
+                {{ guitar.guitar_shape }}</span></p>
+            <p class="guitar-description">Description:<span class="description>">
+                {{ guitar.guitar_description }}</span></p>
             <div class="divider"></div>
-            <p class="added_by">Created by: {{ guitar.added_by }}</p>
+            <p class="guitar-image">{{ guitar.guitar_image }}</p>
+            <p class="date-added"> Date Added:<span class="date">
+                {{ guitar.date_added }}</span></p>
+            <div class="divider"></div>
+            <p class="added-by">Created by:<span class="added">
+                {{ guitar.added_by }}</span></p>
             {% endfor %}
             <div class="divider"></div>
             <!--edit and delete button-->
-            <a href="{{ url_for('edit_guitar', guitar_id=guitar._id) }}"  class="form-buttons edit-guitar-button">Edit</a>
-            <a href="{{ url_for('delete_guitar', guitar_id=guitar._id) }}"  class="form-buttons delete-guitar-button">Delete</a>
+            <a href="{{ url_for('edit_guitar', guitar_id=guitar._id) }}"  
+               class="form-buttons edit-guitar-button">Edit</a>
+            <a href="{{ url_for('delete_guitar', guitar_id=guitar._id) }}"  
+               class="form-buttons delete-guitar-button">Delete</a>
         </div>
     </div>
 

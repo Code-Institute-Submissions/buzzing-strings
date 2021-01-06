@@ -1,6 +1,16 @@
 {% extends 'layout/base.html' %}
 {% block content %}
    <h3 class="all-guitars heading purple-text text-darken-4">Take a peek at our selection!</h3>
+    <!--flash messages-->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="row-flashes">
+                            <h4 class="flash-message purple-text text-darken-4">{{ message }}</h4>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
     <!--list of added guitars-->
     <div class="guitars-list">
         <div class="container">

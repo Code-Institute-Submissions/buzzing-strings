@@ -136,6 +136,33 @@ p.info-text {
     opacity: 0.8;
 }
 
+p.guitar-type {
+    font-family: 'Special Elite', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+p.guitar-name,
+p.guitar-shape,
+p.guitar-description,
+p.guitar-image,
+p.date-added,
+p.added-by {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+span.name,
+span.shape,
+span.description,
+span.date,
+span.added {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+
 /* Register/login/Add Guitar forms/buttons styling */
 .register-form.card-panel, 
 .login-form.card-panel,
@@ -184,7 +211,7 @@ p.pattern-password {
     display: inline-flex;
     background-color: #546e7a;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 1rem 0; 
     color: #f5f5f5;
     font-size: 1.5rem;
@@ -210,7 +237,6 @@ p.pattern-password {
 .delete-guitar-button {
     text-decoration: none;
     margin: 1rem 1rem;
-    padding: 1rem;
 }
 
 p.redirect-link {
