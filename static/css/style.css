@@ -137,9 +137,9 @@ p.info-text {
 }
 
 /* Register/login/Add Guitar forms/buttons styling */
-.register-form.card, 
-.login-form.card,
-.add-guitar.card {
+.register-form.card-panel, 
+.login-form.card-panel,
+.add-guitar.card-panel {
     line-height: 2;
     border: 0.3rem solid #546e7a;
     border-radius: 0.8rem;
@@ -181,6 +181,7 @@ p.pattern-password {
 .shop-one,
 .shop-two {
     font-family: 'Special Elite', cursive;
+    display: inline-flex;
     background-color: #546e7a;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -209,7 +210,7 @@ p.pattern-password {
 .delete-guitar-button {
     text-decoration: none;
     margin: 1rem 1rem;
-    padding: 0.3rem;
+    padding: 1rem;
 }
 
 p.redirect-link {
