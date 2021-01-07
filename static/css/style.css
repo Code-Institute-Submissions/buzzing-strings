@@ -163,7 +163,7 @@ span.added {
 }
 
 
-/* Register/login/Add Guitar forms/buttons styling */
+/* Register/login/Add Guitar forms styling */
 .register-form.card-panel, 
 .login-form.card-panel,
 .add-guitar.card-panel {
@@ -197,11 +197,21 @@ p.pattern-password {
     font-size: 1.3rem;
 }
 
+/* Buttons styling */
 .shop-buttons,
 .action-buttons,
 .about-buttons {
     text-align: center;
     line-height: 2;
+}
+
+a.btn.waves-effect.waves-light,
+button.btn.waves-effect.waves-light {
+    font-family: 'Special Elite', cursive;
+    background-color: #546e7a;
+    color: #f5f5f5;
+    margin: 0.8rem;
+    border-radius: 0.8rem;
 }
 
 .form-buttons,
@@ -231,7 +241,6 @@ p.pattern-password {
 
 .login-button,
 .register-button,
-.add-guitar-button,
 .cancel-button,
 .edit-guitar-button,
 .delete-guitar-button {
