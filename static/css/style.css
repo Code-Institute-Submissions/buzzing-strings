@@ -54,20 +54,6 @@ nav ul a {
     padding: 0 1.5rem;
 }
 
-.fa-user-alt:before {
-    border: 0.4rem solid #ffa726;
-    border-radius: 0.5rem;
-    padding: 0.4rem;
-    cursor: pointer;
-    -webkit-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
-.fa-bars:before {
-    color: #f5f5f5;
-}
-
 /* Sidenav list styling */
 .sidenav li>a {
     color: #f5f5f5;
@@ -122,7 +108,6 @@ p.content-text {
     overflow: hidden;
     background-color: #546e7a;
 }
-
 
 /* All Guitars list styling */
 p.info-text {
@@ -197,67 +182,10 @@ p.pattern-password {
     font-size: 1.3rem;
 }
 
-/* Buttons styling */
-.shop-buttons,
-.action-buttons,
-.about-buttons {
-    text-align: center;
-    line-height: 2;
-}
-
-a.btn.waves-effect.waves-light,
-button.btn.waves-effect.waves-light {
-    font-family: 'Special Elite', cursive;
-    background-color: #546e7a;
-    color: #f5f5f5;
-    margin: 0.8rem;
-    border-radius: 0.8rem;
-}
-
-.form-buttons,
-.shop-one,
-.shop-two {
-    font-family: 'Special Elite', cursive;
-    display: inline-flex;
-    background-color: #546e7a;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    margin: 1rem 0; 
-    color: #f5f5f5;
-    font-size: 1.5rem;
-    line-height: 3;
-    border-width: 0;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-}
-
-.form-buttons:hover,
-.shop-one:hover,
-.shop-two:hover  {
-    background-color: #f5f5f5;
-    color: #546e7a;
-    border: 0.3rem solid #546e7a;
-}
-
-.login-button,
-.register-button,
-.cancel-button,
-.edit-guitar-button,
-.delete-guitar-button {
-    text-decoration: none;
-    margin: 1rem 1rem;
-}
-
 p.redirect-link {
     text-align: center;
     font-family: 'Special Elite', cursive;
     font-size: 1.8rem;
-}
-
-.fas.fa-user-cog:before,
-.fas.fa-user-plus:before,
-.fas.fa-user-lock:before {
-    font-size: 2.3rem;
 }
 
 h4.flash-message {
@@ -273,6 +201,59 @@ h4.flash-message {
     padding: 2rem;
 }
 
+/* Buttons styling */
+a.btn.waves-effect.waves-light,
+button.btn.waves-effect.waves-light {
+    font-family: 'Special Elite', cursive;
+    background-color: #546e7a;
+    color: #f5f5f5;
+    margin: 0.8rem;
+    border-radius: 0.8rem;
+}
+
+.action-btn {
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    margin-bottom: 3.3rem;
+}
+
+/* Icons styling */
+
+.fa-user-alt:before {
+    border: 0.4rem solid #ffa726;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.fa-bars:before {
+    color: #f5f5f5;
+}
+
+.fas.fa-user-cog:before,
+.fas.fa-user-plus:before,
+.fas.fa-user-lock:before {
+    font-size: 2.3rem;
+}
+
+.fa-angle-double-up:before {
+    color: #f5f5f5;
+}
+
+.fa-sad-tear:before {
+    font-size: 14rem;
+    padding: 7rem;
+}
+
+.fab:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
 
 /* Styling error page */
 .error-page {
@@ -290,11 +271,6 @@ h4.flash-message {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     z-index: 1;
-}
-
-.fa-sad-tear:before {
-    font-size: 14rem;
-    padding: 7rem;
 }
 
 .error-message-heading {
@@ -320,18 +296,6 @@ footer.web-footer {
    bottom: 0;
 }
 
-/* Action button styling */
-.action-btn {
-    position: fixed;
-    right: 1rem;
-    bottom: 3rem;
-    margin-bottom: 3.3rem;
-}
-
-.fa-angle-double-up:before {
-    color: #f5f5f5;
-}
-
 .social-media {
     text-align: center;
 }
@@ -348,13 +312,6 @@ footer.web-footer {
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-}
-
-/* Icon hover styling */
-.fab:hover {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
 }
 
 /* Copyright text styling */

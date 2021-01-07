@@ -19,7 +19,8 @@
                     {% include 'components/card/guitar_card.html' %}
                     {% else %}
                         <p class="info-text">Sorry, but currently there are no guitars to display!
-                        <br>Please <a href="{{ url_for('add_guitar') }}">add</a> your favourite guitar now!</p>
+                        <br>Please <a href="{{ url_for('add_guitar') }}" class="btn waves-effect waves-light">
+                            add<i class="far fa-plus-square right"></i></a> your favourite guitar now!</p>
                 {% endfor %}
             </div>
         </div>
