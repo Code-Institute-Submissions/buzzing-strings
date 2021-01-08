@@ -128,12 +128,13 @@ p.guitar-type {
 p.guitar-name,
 p.guitar-shape,
 p.guitar-description,
-p.guitar-image,
 p.date-added,
 p.added-by {
     font-size: 1.7rem;
     text-align: center;
 }
+
+
 
 span.name,
 span.shape,

@@ -14,7 +14,10 @@
             <p class="guitar-description">Description:<span class="description">
                 {{ guitar.guitar_description }}</span></p>
             <div class="divider"></div>
-            <p class="guitar-image">{{ guitar.guitar_image }}</p>
+            <div class="card-image">
+                <img src="{{ guitar.guitar_image }}" class="img-responsive" alt="">
+            </div>
+            <div class="divider"></div>
             <p class="date-added"> Date Added:<span class="date">
                 {{ guitar.date_added }}</span></p>
             <div class="divider"></div>
