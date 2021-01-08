@@ -5,7 +5,7 @@
 
 <!--edit guitar-->
 <div class="row">
-    <form class="add-guitar grey lighten-3" method="POST" action="{{ url_for('edit_guitar', guitar_id=guitar._id) }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_guitar', guitar_id=guitar._id) }}">
         <!--flash messages-->
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
@@ -16,87 +16,89 @@
                     {% endfor %}
                 {% endif %}
             {% endwith %}
-        <!--guitar category selection-->
-        <div class="row">
-             <div class="col s12 m8 offset-m2 input-field">
-                 <i class="fas fa-guitar prefix orange-text text-lighten-1"></i>
-                <select id="guitar_type" name="guitar_type" class="validate" required>
-                    <option value="" disabled>Choose Guitar Type</option>
-                        {% for guitar_category in guitar_categories %}
-                            {% if guitar_category.guitar_type == guitar.guitar_type %}
-                                <option value="{{ guitar_category.guitar_type }}" selected>{{ guitar_category.guitar_type }}</option>
-                            {% else %}
-                                <option value="{{ guitar_category.guitar_type }}">{{ guitar_category.guitar_type }}</option>
-                            {% endif %}
-                        {% endfor %}
-                </select>
-                <label for="guitar_type">Guitar Type:</label>
+        <div class="edit-guitar card-panel grey lighten-3 ">
+            <!--guitar category selection-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-guitar prefix orange-text text-lighten-1"></i>
+                    <select id="guitar_type" name="guitar_type" class="validate" required>
+                        <option value="" disabled>Choose Guitar Type</option>
+                            {% for guitar_category in guitar_categories %}
+                                {% if guitar_category.guitar_type == guitar.guitar_type %}
+                                    <option value="{{ guitar_category.guitar_type }}" selected>{{ guitar_category.guitar_type }}</option>
+                                {% else %}
+                                    <option value="{{ guitar_category.guitar_type }}">{{ guitar_category.guitar_type }}</option>
+                                {% endif %}
+                            {% endfor %}
+                    </select>
+                    <label for="guitar_type">Guitar Type:</label>
+                </div>
             </div>
-        </div>
-        <!--guitar name-->
-        <div class="row">
-            <div class="col s12 m8 offset-m2 input-field">
-                <i class="fas fa-pencil-alt prefix blue-grey-text text-darken-2"></i>
-                <input id="guitar_name" name="guitar_name" type="text" 
-                    value="{{ guitar.guitar_name }}" class="validate" required>
-                <label for="guitar_name">Guitar Name:</label>
+            <!--guitar name-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-pencil-alt prefix blue-grey-text text-darken-2"></i>
+                    <input id="guitar_name" name="guitar_name" type="text" 
+                        value="{{ guitar.guitar_name }}" class="validate" required>
+                    <label for="guitar_name">Guitar Name:</label>
+                </div>
             </div>
-        </div>
-        <!--guitar body-->
-         <div class="row">
-            <div class="col s12 m8 offset-m2 input-field">
-                <i class="fas fa-shapes prefix blue-grey-text text-darken-2"></i>
-                <input id="guitar_shape" name="guitar_shape" type="text" 
-                     value="{{ guitar.guitar_shape }}" class="validate" required>
-                <label for="guitar_shape">Guitar Shape:</label>
+            <!--guitar body-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-shapes prefix blue-grey-text text-darken-2"></i>
+                    <input id="guitar_shape" name="guitar_shape" type="text" 
+                        value="{{ guitar.guitar_shape }}" class="validate" required>
+                    <label for="guitar_shape">Guitar Shape:</label>
+                </div>
             </div>
-        </div>
-        <!--guitar description-->
-        <div class="row">
-            <div class="col s12 m8 offset-m2 input-field">
-                <i class="fas fa-file-signature prefix blue-grey-text text-darken-2"></i>
-                <textarea id="guitar_description" name="guitar_description" minlength="5" maxlength="200" 
-                    class="materialize-textarea validate" required>
-                    {{- guitar.guitar_description -}}
-                </textarea>
-                <label for="guitar_description">Guitar Description:</label>
+            <!--guitar description-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-file-signature prefix blue-grey-text text-darken-2"></i>
+                    <textarea id="guitar_description" name="guitar_description" minlength="5" maxlength="200" 
+                        class="materialize-textarea validate" required>
+                        {{- guitar.guitar_description -}}
+                    </textarea>
+                    <label for="guitar_description">Guitar Description:</label>
+                </div>
             </div>
-        </div>
-        <!--guitar image-->
-        <div class="row">
-            <div class="col s12 m8 offset-m2 input-field">
-                <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
-                <input id="guitar_image" name="guitar_image" type="url" 
-                    value="{{ guitar.guitar_image }}" class="validate" required>
-                <label for="guitar_image">Add Guitar Image (use small image):</label>
+            <!--guitar image-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
+                    <input id="guitar_image" name="guitar_image" type="url" 
+                        value="{{ guitar.guitar_image }}" class="validate" required>
+                    <label for="guitar_image">Add Guitar Image (use small image):</label>
+                </div>
             </div>
-        </div>
-        <!--guitar added date picker-->
-        <div class="row">
-            <div class="col s12 m8 offset-m2 input-field">
-                <i class="fas fa-calendar-alt prefix blue-grey-text text-darken-2"></i>
-                <input id="date_added" name="date_added" type="text" 
-                     value="{{ guitar.date_added }}" class="datepicker validate" required>
-                <label for="date_added">Date Added:</label>
+            <!--guitar added date picker-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="fas fa-calendar-alt prefix blue-grey-text text-darken-2"></i>
+                    <input id="date_added" name="date_added" type="text" 
+                        value="{{ guitar.date_added }}" class="datepicker validate" required>
+                    <label for="date_added">Date Added:</label>
+                </div>
             </div>
-        </div>
-        <!--guitar added by-->
-        <div class="row">
-            <div class="col s12 m8 offset-m2 input-field">
-                <i class="far fa-user prefix blue-grey-text text-darken-2"></i>
-                <input id="added_by" name="added_by" type="text" 
-                     value="{{ guitar.added_by }}" class="validate" required>
-                <label for="added_by">Added By:</label>
+            <!--guitar added by-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 input-field">
+                    <i class="far fa-user prefix blue-grey-text text-darken-2"></i>
+                    <input id="added_by" name="added_by" type="text" 
+                        value="{{ guitar.added_by }}" class="validate" required>
+                    <label for="added_by">Added By:</label>
+                </div>
             </div>
-        </div>
-        <!--edit button-->
-        <div class="row">
-            <div class="col s12 m8 offset-m2 center-align">
-                <!--cancel button -->
-                <a href="{{ url_for('all_guitars') }}" class="btn waves-effect waves-light">
-                 Cancel<i class="far fa-window-close right"></i></a>
-                <button class="btn waves-effect waves-light" type="submit" name="action">Edit Your Guitar
-                <i class="far fa-trash-alt right"></i></button>
+            <!--edit button-->
+            <div class="row">
+                <div class="col s12 m8 offset-m2 center-align">
+                    <!--cancel button -->
+                    <a href="{{ url_for('all_guitars') }}" class="btn waves-effect waves-light">
+                    Cancel<i class="far fa-window-close right"></i></a>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Edit Your Guitar
+                    <i class="far fa-trash-alt right"></i></button>
+                </div>
             </div>
         </div>
     </form>

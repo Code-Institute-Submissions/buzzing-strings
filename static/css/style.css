@@ -150,7 +150,8 @@ span.added {
 /* Register/login/Add Guitar forms styling */
 .register-form.card-panel, 
 .login-form.card-panel,
-.add-guitar.card-panel {
+.add-guitar.card-panel,
+.edit-guitar.card-panel {
     line-height: 2;
     border: 0.3rem solid #546e7a;
     border-radius: 0.8rem;
@@ -218,7 +219,6 @@ button.btn.waves-effect.waves-light {
 }
 
 /* Icons styling */
-
 .fa-user-alt:before {
     border: 0.4rem solid #ffa726;
     border-radius: 0.5rem;
