@@ -150,8 +150,8 @@ span.added {
 /* Register/login/Add Guitar forms styling */
 .register-form.card-panel, 
 .login-form.card-panel,
-.add-guitar.card-panel,
-.edit-guitar.card-panel {
+.add-guitar-form.card-panel,
+.edit-guitar-form.card-panel {
     line-height: 2;
     border: 0.3rem solid #546e7a;
     border-radius: 0.8rem;
