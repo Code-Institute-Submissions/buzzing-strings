@@ -99,7 +99,6 @@ p.content-text {
 
 .redirect-buttons, 
 .shop-buttons {
-    text-align: center;
     line-height: 2;
 }
 
@@ -290,7 +289,7 @@ p.error-page {
 
 /* Footer styling */
 footer.web-footer {
-   position: relative;
+   position: absolute;
    width: 100%;
    margin: auto;
    bottom: 0;
