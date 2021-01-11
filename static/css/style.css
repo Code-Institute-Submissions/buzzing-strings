@@ -287,6 +287,13 @@ p.error-page {
     margin: 1.5rem;
 }
 
+/* Footer styling */
+.page-footer {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
 /* Social-media links styling */
 .social-media i {
     font-size: 2rem;
