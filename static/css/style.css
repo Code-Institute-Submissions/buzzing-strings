@@ -19,6 +19,8 @@ body {
     background-image: url('../images/guitars/background.jpg');
     background-position: bottom;
     background-size: cover;
+    display: flex;
+   
     margin-bottom: 0;
     width: 100vw;
     height: 100vh;
@@ -286,18 +288,6 @@ p.error-page {
 
 .homepage-return {
     margin: 1.5rem;
-}
-
-/* Footer styling */
-footer.web-footer {
-   position: absolute;
-   width: 100%;
-   margin: auto;
-   bottom: 0;
-}
-
-.social-media {
-    text-align: center;
 }
 
 /* Social-media links styling */
