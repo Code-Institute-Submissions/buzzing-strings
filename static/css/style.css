@@ -19,8 +19,6 @@ body {
     background-image: url('../images/guitars/background.jpg');
     background-position: bottom;
     background-size: cover;
-    display: flex;
-   
     margin-bottom: 0;
     width: 100vw;
     height: 100vh;
@@ -73,7 +71,6 @@ nav ul a {
 
 /* About page styling */
 .about.card-panel {
-    background-color: ;
     border: 0.2rem solid #37474f;
     border-radius: 2.5rem;
     margin: 3rem;
