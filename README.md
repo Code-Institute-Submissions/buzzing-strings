@@ -151,7 +151,7 @@ This option allows the user to successfully log out from the page.
 Basic footer with a copyright text and **Social Links** icons. Once the user clicks on **GitHub** icon it redirects to website host's 
 acccount where other projects can be viewed. Other two icons are disabled and will not redirect the user to external websites. 
 
-### Features Visible Only to Registered Users
+### Features Visible Only to Registered and/or Logged In Users
 
 #### All Guitars 
 
@@ -162,7 +162,7 @@ The user would also have an opportunity to update already existing content, usin
 
 #### Add Guitar 
 
-This option allows the registered/logged user to add a favourite guitar with a description. The user is required to fill in all fields in the form 
+This option allows the registered/logged user to add a favourite guitar with a description and image link. The user is required to fill in all fields in the form 
 provided before **Add Your Guitar** button is used.  No form can be submitted if there is a missing information. 
 
 ### Features to be implemented in the future

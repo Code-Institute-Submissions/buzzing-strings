@@ -16,7 +16,7 @@ html {
 
 body {
     background-attachment: fixed;
-    background-image: url('../images/guitars/background.jpg');
+    background-image: url('../images/background-img/background.jpg');
     background-position: bottom;
     background-size: cover;
     margin-bottom: 0;
@@ -124,6 +124,7 @@ p.guitar-type {
     font-size: 3rem;
     text-align: center;
 }
+
 p.guitar-name,
 p.guitar-shape,
 p.guitar-description,
