@@ -4,7 +4,6 @@
     <div class="col s12 m6">
         <div class="guitar-card blue-grey lighten-4 center-align">
             <!--guitar details-->
-            {% for guitar in guitars %}
             <p class="guitar-type">{{ guitar.guitar_type }}</p>
             <div class="divider"></div>
             <p class="guitar-name">Guitar Name:<span class="name">
@@ -23,7 +22,6 @@
             <div class="divider"></div>
             <p class="added-by">Created by:<span class="added">
                 {{ guitar.added_by }}</span></p>
-            {% endfor %}
             <div class="divider"></div>
             <!--edit and delete button-->
             <a href="{{ url_for('edit_guitar', guitar_id=guitar._id) }}"  

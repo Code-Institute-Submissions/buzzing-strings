@@ -133,8 +133,6 @@ p.added-by {
     text-align: center;
 }
 
-
-
 span.name,
 span.shape,
 span.description,
@@ -199,6 +197,7 @@ h4.flash-message {
     border: 0.3rem solid #546e7a;
     border-radius: 1rem;
     padding: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Buttons styling */
