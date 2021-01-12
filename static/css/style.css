@@ -129,8 +129,9 @@ p.guitar-shape,
 p.guitar-description,
 p.date-added,
 p.added-by {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
+    overflow: overlay;
 }
 
 span.name,
@@ -139,9 +140,10 @@ span.description,
 span.date,
 span.added {
     font-family: 'Special Elite', cursive;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     text-align: center;
     margin: 1rem;
+    overflow: overlay;
 }
 
 
