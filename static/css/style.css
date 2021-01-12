@@ -187,6 +187,7 @@ p.redirect-link {
 }
 
 h4.flash-message {
+    font-family: 'Special Elite', cursive;
     text-align: center;
     line-height: 2;
     padding: 0.5rem;
