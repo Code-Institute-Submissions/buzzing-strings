@@ -26,7 +26,7 @@
 - [Project database structure](#project-database-structure)
 
 - [Credits](#credits) 
-    - [Contents](#content)
+    - [Contents](#contents)
     - [Media](#media)
     - [Inspiration and motivation](#inspiration-and-motivation)
     - [Acknowledgements](#acknowledgements)
@@ -171,15 +171,15 @@ used it redirects the user to **All Guitars**.
 
 The following features might be applied to the website in the future:
 
-1. **Pagination**
+1. **Pagination.**
 
-2. **Allowing users to upload images instead of adding links**
+2. **Allowing users to upload images instead of adding links.**
 
-3. **Adding tutorial videos of how to learn basic guitar chords**
+3. **Adding tutorial videos of how to learn basic guitar chords.**
 
-4. **Adding simple users chat functionality**
+4. **Adding simple users chat functionality.**
 
-5. **Creating a user's list of favourite guitars**
+5. **Creating a user's list of favourite guitars.**
 
 [Back to top](#table-of-contents)
 
