@@ -163,7 +163,8 @@ The user would also have an opportunity to update already existing content, usin
 #### Add Guitar 
 
 This option allows the registered/logged user to add a favourite guitar with a description and image link. The user is required to fill in all fields in the form 
-provided before **Add Your Guitar** button is used.  No form can be submitted if there is a missing information. 
+provided before **Add Your Guitar** button is used.  No form can be submitted if there is a missing information. There is also **Cancel** button available and when 
+used it redirects the user to **All Guitars**.
 
 ### Features to be implemented in the future
 
