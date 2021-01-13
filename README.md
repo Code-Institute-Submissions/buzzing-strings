@@ -7,7 +7,7 @@
 
 - [User Goals](#user-goals)
 - [User Stories](#user-stories)
-- [Designer's Strategy](#designer's-strategy)
+- [Designer Strategy](#designer-strategy)
 - [Design Elements](#design-elements)
 - [Wireframes](#wireframes)
 
@@ -42,7 +42,7 @@ would like to gain more knowledge about this fantastic instrument.
 [Back to top](#table-of-contents)
 
 ## User Experience
-## User Goals
+### User Goals
 - I want the website to work properly on different type of devices such mobile phones, tablets, ipads and
   desktops
 - I want to have an easy access to dashboard where I can see the guitar I added
@@ -60,7 +60,7 @@ would like to gain more knowledge about this fantastic instrument.
 
 [Back to top](#table-of-contents)
 
-### Designer's Strategy
+### Designer Strategy
 - to create a website which will be a user-friendly and easy to navigate;
 
 - to deliver a website with easy to read, informative, concise text which will play a major role in search engine placement;
@@ -173,11 +173,13 @@ The following features might be applied to the website in the future:
 
 1. **Pagination**
 
-2. **Adding tutorial videos of how to learn basic guitar chords**
+2. **Allowing users to upload images instead of adding links**
 
-3. **Adding simple users chat functionality**
+3. **Adding tutorial videos of how to learn basic guitar chords**
 
-4. **Creating a user's list of favourite guitars**
+4. **Adding simple users chat functionality**
+
+5. **Creating a user's list of favourite guitars**
 
 [Back to top](#table-of-contents)
 
@@ -374,8 +376,8 @@ I used the following media platforms to complete this project:
 - [Traversy Media](https://www.traversymedia.com/)
 
 ### Inspiration and motivation 
-[Guitar Guitar](https://www.guitarguitar.co.uk/) and my friend Dawid, a fantastic guitarist, was my main inspration to build [buzzing-strings]() website. 
-I have always considered a guitar as one the most magical instruments in music history. I had a great opportunity to 
+[Guitar Guitar](https://www.guitarguitar.co.uk/) and my friend Dawid, a fantastic guitarist, was my main inspration to build [buzzing-strings](https://buzzing-strings.herokuapp.com/) 
+website. I have always considered a guitar as one the most magical instruments in music history. I had a great opportunity to 
 see some fantastic guitarists in my life and was able to admire how a sound connection can be built between an instrument and a human.
 My motivation was not only to highlight the fact how great this instrument is but also to give an opportunity to the website users to share
 their thoughts about their favourite guitars. I was also motivated to deliver some interesting facts/information to users who never played a guitar,
