@@ -4,9 +4,10 @@
 [Project Goal](#project-goal)
 
 [User Experience](#user-experience)
-- [User Goal](#user-goal)
-- [Users Stories](#users-stories)
-- [Designer Strategy](#designer-strategy)
+
+- [User Goals](#user-goals)
+- [User Stories](#user-stories)
+- [Designer's Strategy](#designer's-strategy)
 - [Design Elements](#design-elements)
 - [Wireframes](#wireframes)
 
@@ -41,7 +42,7 @@ would like to gain more knowledge about this fantastic instrument.
 [Back to top](#table-of-contents)
 
 ## User Experience
-### User Goals
+## User Goals
 - I want the website to work properly on different type of devices such mobile phones, tablets, ipads and
   desktops
 - I want to have an easy access to dashboard where I can see the guitar I added
