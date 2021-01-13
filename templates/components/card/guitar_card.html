@@ -1,7 +1,7 @@
 {% block card %}
 
     <!--guitar card-->
-    <div class="col s12 m6">
+    <div class="col s12 m8 offset-m2 py-2">
         <div class="guitar-card blue-grey lighten-4 center-align">
             <!--guitar details-->
             <p class="guitar-type">{{ guitar.guitar_type }}</p>
@@ -14,7 +14,8 @@
                 {{ guitar.guitar_description }}</span></p>
             <div class="divider"></div>
             <p class="guitar-image-url">Image URL:<span class="image-url">
-                <a href="{{ guitar.guitar_image }}">{{ guitar.guitar_image }}</a></span></p>
+                <a href="{{ guitar.guitar_image }}" target="_blank" aria-label="#">
+                {{ guitar.guitar_image }}</a></span></p>
             <div class="divider"></div>
             <p class="date-added"> Date Added:<span class="date">
                 {{ guitar.date_added }}</span></p>
