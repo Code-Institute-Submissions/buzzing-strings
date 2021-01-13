@@ -128,6 +128,7 @@ p.guitar-type {
 p.guitar-name,
 p.guitar-shape,
 p.guitar-description,
+p.guitar-image-url,
 p.date-added,
 p.added-by {
     font-size: 1.5rem;
@@ -138,6 +139,7 @@ p.added-by {
 span.name,
 span.shape,
 span.description,
+span.image-url,
 span.date,
 span.added {
     font-family: 'Special Elite', cursive;

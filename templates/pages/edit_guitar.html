@@ -68,8 +68,9 @@
                 <div class="col s12 m8 offset-m2 input-field">
                     <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
                     <input id="guitar_image" name="guitar_image" type="url" 
-                        value="{{ guitar.guitar_image }}" class="validate" required>
-                    <label for="guitar_image">Add Guitar Image (use small image):</label>
+                        placeholder="https://example.com" pattern="https://.*" 
+                        size="30" class="validate" required>
+                    <label for="guitar_image">Add Guitar Image (enter an https:// URL):</label>
                 </div>
             </div>
             <!--guitar added date picker-->
