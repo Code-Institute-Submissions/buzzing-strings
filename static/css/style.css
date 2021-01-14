@@ -292,6 +292,7 @@ p.error-page {
 
 /* Footer styling */
 footer.page-footer {
+    position: relative;
     width: 100%;
     height: auto;
     bottom: 0;

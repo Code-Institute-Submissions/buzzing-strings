@@ -138,7 +138,7 @@ def add_guitar():
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(
-            "pages/add_guitar.html",
+            "components/forms/add_guitar_form.html",
             guitar_categories=guitar_categories)
 
 
@@ -168,7 +168,7 @@ def edit_guitar(guitar_id):
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(
-            "pages/edit_guitar.html", guitar=guitar,
+            "components/forms/edit_guitar_form.html", guitar=guitar,
             guitar_categories=guitar_categories)
 
 
