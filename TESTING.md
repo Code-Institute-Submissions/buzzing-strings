@@ -97,9 +97,9 @@ sure the created content had no major defects:
 
 `R in CRUD - Reading/Viewing`
 
-**6.4 Test type:** The user clicks on guitar card. Does the image upload correctly (using url)?
+**6.4 Test type:** The user clicks on guitar card. Does the image link upload correctly (using url)?
 
-**Result:** Positive. The image uploads the way it should. Other details about the added guitar display too.
+**Result:** Positive. The link uploads the way it should, in a separate web tab. Other details about the added guitar display too.
 
 
 `U in CRUD - Updating`

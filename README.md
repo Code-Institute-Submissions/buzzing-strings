@@ -135,7 +135,7 @@ The following content will be seen by the user in this section:
 This option only allows already registered user to **Log In**. A warning text will display if the user submits a wrong username and/or
 password.
 
-#### Sign Up!
+#### Register/Sign Up page
 
 This section allows to register and use the available options on the website. Once registered, the new user would be able to view 
 a list of guitars, add a new guitar, update or delete the information. Sign up procedure only allows to register a username which does not 
@@ -158,7 +158,7 @@ acccount where other projects can be viewed. Other two icons are disabled and wi
 
 This section is only available to existing users. It displays a list of different type of guitars (classical, electric and bass) and also 
 provides detailed guitar description. If there are no guitars to display, the user can use a link provided which will redirect to **Add Guitar** page.
-The user would also have an opportunity to update already existing content, using **Edit** button (redirects to edit content form), and be able to remove it completely by using
+The user would also have an opportunity to update already existing content, using **Edit** button (redirects to edit guitar form), and be able to remove it completely by using
 **Delete** button (this action cannot be reversed, once used it deletes the content and redirects to All Guitars page). 
 
 #### Add Guitar 
@@ -166,6 +166,19 @@ The user would also have an opportunity to update already existing content, usin
 This option allows the registered/logged user to add a favourite guitar with a description and image link. The user is required to fill in all fields in the form 
 provided before **Add Your Guitar** button is used.  No form can be submitted if there is a missing information. There is also **Cancel** button available and when 
 used it redirects the user to **All Guitars**.
+
+#### Contact Page 
+
+The logged in user can successfully submit a message to the website host. All required information should be completed before a submit button is used. The user can 
+also use a **Cancel** button, which redirects to **About Us** page. 
+
+### Additional information 
+
+#### Error Page
+
+An error page has been included in case the user mistypes the website name. There is a **Back to Homepage** button, which redirects to **About Us** page.
+
+[Back to top](#table-of-contents)
 
 ### Features to be implemented in the future
 

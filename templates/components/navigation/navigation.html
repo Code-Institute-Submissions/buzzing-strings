@@ -1,39 +1,39 @@
-<!--top navbar-->
+<!--Top navbar-->
 <nav class="main-nav blue-grey darken-3">
     <div class="nav-wrapper">
       <a href="{{ url_for('about') }}" class="guitar brand-logo">
         <img src="{{ url_for('static', filename='images/logo/guitar-logo.png') }}" alt="guitar-logo" height="50"></a>
       <a href="#" data-target="mobile" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="{{ url_for('about') }}">About Us...</a></li>
+        <li><a href="{{ url_for('about') }}">About Us</a></li>
         {% if session.user %}
         <li><a href="{{ url_for('all_guitars') }}">All Guitars</a></li>
         <li><a href="{{ url_for('add_guitar') }}">Add Guitar!</a></li>
-        <li><a href="{{ url_for('contact') }}">Contact Us!</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
         <li><a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt orange-text text-lighten-1 tooltipped"
                  data-position="bottom" data-tooltip="Log Out!"></i></a></li>
         {% else %}
         <li><a href="{{ url_for('login') }}"><i class="fas fa-user-alt orange-text text-lighten-1 tooltipped" 
                 data-position="bottom" data-tooltip="Log In!"></i></a></li>
-        <li><a href="{{ url_for('register') }}">Sign Up!</a></li>
+        <li><a href="{{ url_for('register') }}">Sign Up</a></li>
         {% endif %}
       </ul>
     </div>
   </nav>
-  <!--mobile sidenav-->
+  <!--Mobile sidenav-->
   <ul class="sidenav blue-grey lighten-1" id="mobile">
     <h3 class="sidenav-text orange-text text-lighten-1">Buzzing Strings</h3>
     <li class="divider"></li>
-    <li><a href="{{ url_for('about') }}">About Us...</a></li>
+    <li><a href="{{ url_for('about') }}">About Us</a></li>
     {% if session.user %}
     <li><a href="{{ url_for('all_guitars') }}">All Guitars</a></li>
     <li><a href="{{ url_for('add_guitar') }}">Add Guitar</a></li>
-    <li><a href="{{ url_for('contact') }}">Contact Us!</a></li>
+    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
     <li><a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt orange-text text-lighten-1 tooltipped"
             data-position="bottom" data-tooltip="Log Out!"></i></a></li>
     {% else %}
     <li><a href="{{ url_for('login') }}"><i class="fas fa-user-alt orange-text text-lighten-1 tooltipped"
             data-position="bottom" data-tooltip="Log In!"></i></a></li>
-    <li><a href="{{ url_for('register') }}">Sign Up!</a></li>
+    <li><a href="{{ url_for('register') }}">Sign Up</a></li>
     {% endif %}
   </ul>
