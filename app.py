@@ -28,7 +28,7 @@ def about():
     return render_template("pages/about.html")
 
 
-# User Registration
+# User Registration page
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """
@@ -57,7 +57,7 @@ def register():
     return render_template("components/forms/register_form.html")
 
 
-# User Login
+# User Login page
 @app.route("/login", methods=["GET", "POST"])
 def login():
     """
@@ -93,7 +93,7 @@ def login():
     return render_template("components/forms/login_form.html")
 
 
-# User Log Out
+# User Log Out route
 @app.route("/logout")
 def logout():
     """
@@ -105,7 +105,7 @@ def logout():
     return redirect(url_for("about"))
 
 
-# All Guitars
+# All Guitars page
 @app.route("/all_guitars")
 def all_guitars():
     """
@@ -115,7 +115,7 @@ def all_guitars():
     return render_template("pages/all_guitars.html", guitars=guitars)
 
 
-# Add Guitar
+# Add Guitar page
 @app.route("/add_guitar", methods=["GET", "POST"])
 def add_guitar():
     """
@@ -142,7 +142,7 @@ def add_guitar():
             guitar_categories=guitar_categories)
 
 
-# Edit guitar
+# Edit guitar page
 @app.route("/edit_guitar/<guitar_id>", methods=["GET", "POST"])
 def edit_guitar(guitar_id):
     """
@@ -172,7 +172,7 @@ def edit_guitar(guitar_id):
             guitar_categories=guitar_categories)
 
 
-# Delete guitar
+# Delete guitar route
 @app.route("/delete_guitar/<guitar_id>")
 def delete_guitar(guitar_id):
     """
@@ -181,6 +181,20 @@ def delete_guitar(guitar_id):
     mongo.db.guitars.remove({"_id": ObjectId(guitar_id)})
     flash("Your Guitar was successfully deleted!")
     return redirect(url_for("all_guitars"))
+
+
+# Contact Us page
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    """
+    Renders Contact Us page,
+    allows the logged in user to submit the message
+    """
+    if request.method == "POST":
+        flash(
+            "Thanks {}, we have received your message! We'll be in touch with you shortly!".format(
+                request.form["name"]))
+    return render_template("pages/contact_us.html")
 
 
 # 404 error page

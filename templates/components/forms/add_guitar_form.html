@@ -1,12 +1,11 @@
 {% extends 'layout/base.html' %}
 {% block content %}
 
+<!--Add new guitar form-->
 <h3 class="all-guitars heading purple-text text-darken-4">Add your guitar!</h3>
-
-<!--add new guitar form-->
-<div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_guitar') }}">
-        <!--flash messages-->
+    <div class="row">
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_guitar') }}">
+            <!--Flash messages-->
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     {% for message in messages %}
@@ -16,87 +15,87 @@
                     {% endfor %}
                 {% endif %}
             {% endwith %}
-        <div class="add-guitar-form card-panel grey lighten-3 ">
-             <!--guitar category selection-->
-            <div class="row">
-                <div class="col s12 m8 offset-m2 input-field">
-                    <i class="fas fa-guitar prefix orange-text text-lighten-1"></i>
-                    <select id="guitar_type" name="guitar_type" class="validate" required>
-                        <option value="" disabled selected>Choose Guitar Type</option>
-                        {% for guitar_category in guitar_categories %}
-                        <option value="{{ guitar_category.guitar_type }}">{{ guitar_category.guitar_type }}</option>
-                        {% endfor %}
-                    </select>
-                    <label for="guitar_type">Guitar Type:</label>
+            <div class="add-guitar-form card-panel grey lighten-3 ">
+                <!--Guitar category selection-->
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 input-field">
+                        <i class="fas fa-guitar prefix orange-text text-lighten-1"></i>
+                        <select id="guitar_type" name="guitar_type" class="validate" required>
+                            <option value="" disabled selected>Choose Guitar Type</option>
+                            {% for guitar_category in guitar_categories %}
+                            <option value="{{ guitar_category.guitar_type }}">{{ guitar_category.guitar_type }}</option>
+                            {% endfor %}
+                        </select>
+                        <label for="guitar_type">Guitar Type:</label>
+                    </div>
+                </div>
+                <!--Guitar name-->
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 input-field">
+                        <i class="fas fa-pencil-alt prefix blue-grey-text text-darken-2"></i>
+                        <input id="guitar_name" name="guitar_name" type="text" 
+                            class="validate" required>
+                        <label for="guitar_name">Guitar Name:</label>
+                    </div>
+                </div>
+                <!--Guitar shape-->
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 input-field">
+                        <i class="fas fa-shapes prefix blue-grey-text text-darken-2"></i>
+                        <input id="guitar_shape" name="guitar_shape" type="text" 
+                            class="validate" required>
+                        <label for="guitar_shape">Guitar Shape (e.g.Auditorium/Les Paul/J-Bass/Fretless,etc.):</label>
+                    </div>
+                </div>
+                <!--Guitar description-->
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 input-field">
+                        <i class="fas fa-file-signature prefix blue-grey-text text-darken-2"></i>
+                        <textarea id="guitar_description" name="guitar_description" minlength="5" maxlength="200" 
+                            class="materialize-textarea validate" required></textarea>
+                        <label for="guitar_description">Guitar Description:</label>
+                    </div>
+                </div>
+                <!--Guitar image-->
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 input-field">
+                        <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
+                        <input id="guitar_image" name="guitar_image" type="url" 
+                            placeholder="https://example.com" pattern="https://.*" 
+                            size="30" class="validate" required>
+                        <label for="guitar_image">Add Guitar Image (enter an https:// URL):</label>
+                    </div>
+                </div>
+                <!--Guitar added date picker-->
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 input-field">
+                        <i class="fas fa-calendar-alt prefix blue-grey-text text-darken-2"></i>
+                        <input id="date_added" name="date_added" type="text" 
+                            class="datepicker validate" required>
+                        <label for="date_added">Date Added:</label>
+                    </div>
+                </div>
+                <!--Guitar added by-->
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 input-field">
+                        <i class="far fa-user prefix blue-grey-text text-darken-2"></i>
+                        <input id="added_by" name="added_by" type="text" 
+                            class="validate" required>
+                        <label for="added_by">Added By:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 center-align">
+                        <!--Add guitar button-->
+                        <button class="btn waves-effect waves-light" type="submit" name="action">
+                        Add Guitar<i class="far fa-plus-square right"></i></button>
+                        <!--Cancel button -->
+                        <a href="{{ url_for('all_guitars') }}" class="btn waves-effect waves-light">
+                        Cancel<i class="far fa-window-close right"></i></a>
+                    </div>
                 </div>
             </div>
-            <!--guitar name-->
-            <div class="row">
-                <div class="col s12 m8 offset-m2 input-field">
-                    <i class="fas fa-pencil-alt prefix blue-grey-text text-darken-2"></i>
-                    <input id="guitar_name" name="guitar_name" type="text" 
-                        class="validate" required>
-                    <label for="guitar_name">Guitar Name:</label>
-                </div>
-            </div>
-            <!--guitar shape-->
-            <div class="row">
-                <div class="col s12 m8 offset-m2 input-field">
-                    <i class="fas fa-shapes prefix blue-grey-text text-darken-2"></i>
-                    <input id="guitar_shape" name="guitar_shape" type="text" 
-                        class="validate" required>
-                    <label for="guitar_shape">Guitar Shape (e.g.Auditorium/Les Paul/J-Bass/Modern,etc.):</label>
-                </div>
-            </div>
-            <!--guitar description-->
-            <div class="row">
-                <div class="col s12 m8 offset-m2 input-field">
-                    <i class="fas fa-file-signature prefix blue-grey-text text-darken-2"></i>
-                    <textarea id="guitar_description" name="guitar_description" minlength="5" maxlength="200" 
-                        class="materialize-textarea validate" required></textarea>
-                    <label for="guitar_description">Guitar Description:</label>
-                </div>
-            </div>
-            <!--guitar image-->
-            <div class="row">
-                <div class="col s12 m8 offset-m2 input-field">
-                    <i class="fas fa-image prefix blue-grey-text text-darken-2"></i>
-                    <input id="guitar_image" name="guitar_image" type="url" 
-                        placeholder="https://example.com" pattern="https://.*" 
-                        size="30" class="validate" required>
-                    <label for="guitar_image">Add Guitar Image (enter an https:// URL):</label>
-                </div>
-            </div>
-            <!--guitar added date picker-->
-            <div class="row">
-                <div class="col s12 m8 offset-m2 input-field">
-                    <i class="fas fa-calendar-alt prefix blue-grey-text text-darken-2"></i>
-                    <input id="date_added" name="date_added" type="text" 
-                        class="datepicker validate" required>
-                    <label for="date_added">Date Added:</label>
-                </div>
-            </div>
-            <!--guitar added by-->
-            <div class="row">
-                <div class="col s12 m8 offset-m2 input-field">
-                    <i class="far fa-user prefix blue-grey-text text-darken-2"></i>
-                    <input id="added_by" name="added_by" type="text" 
-                        class="validate" required>
-                    <label for="added_by">Added By:</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m8 offset-m2 center-align">
-                    <!--add guitar button-->
-                    <button class="btn waves-effect waves-light" type="submit" name="action">
-                     Add Guitar<i class="far fa-plus-square right"></i></button>
-                    <!--cancel button -->
-                    <a href="{{ url_for('all_guitars') }}" class="btn waves-effect waves-light">
-                    Cancel<i class="far fa-window-close right"></i></a>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
+        </form>
+    </div>
 
 {% endblock %}

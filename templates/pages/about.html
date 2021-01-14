@@ -1,19 +1,20 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-    <!--flash messages-->
-            {% with messages = get_flashed_messages() %}
-                {% if messages %}
-                    {% for message in messages %}
-                        <div class="row-flashes">
-                            <h4 class="flash-message purple-text text-darken-4">{{ message }}</h4>
-                        </div>
-                    {% endfor %}
-                {% endif %}
-            {% endwith %}
-    <!--homepage-->
+
+<!--Flash messages-->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="row-flashes">
+                    <h4 class="flash-message purple-text text-darken-4">{{ message }}</h4>
+                </div>
+                {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <!--Homepage-->
     <div class="row">
         <div class="col s12 m8 offset-m2">
-            <!--website introduction-->
+            <!--Website introduction-->
             <div class="about card-panel grey lighten-3">
                 <h4 class="intro-heading purple-text text-darken-4">Hello and welcome to Buzzing Strings!</h4>
                     <div class="divider"></div>
@@ -29,7 +30,7 @@
     </div>
     <div class="row">
         <div class="col s12 m8 offset-m2">
-            <!--redirection links-->
+            <!--Redirection links-->
             <div class="about card-panel grey lighten-3">
                 <h4 class="intro-heading purple-text text-darken-4">Visit our Guitar List!</h4>
                 <div class="divider"></div>
@@ -42,7 +43,9 @@
                 </div>
                 <div class="divider"></div>
                 <div class="redirect-buttons center-align">
+                    <!--Register redirect button-->
                     <a href="{{ url_for('register') }}" class="btn waves-effect waves-light">All Guitars</a>
+                    <!--Log In redirect button-->
                     <a href="{{ url_for('login') }}" class="btn waves-effect waves-light">Log In<i class="fas fa-user right"></i></a>
                 </div>
             </div>
@@ -50,7 +53,7 @@
     </div>
     <div class="row">
         <div class="col s12 m8 offset-m2">
-            <!--guitar shop links-->
+            <!--Guitar shop links-->
             <div class="about card-panel grey lighten-3">
                 <h4 class="intro-heading purple-text text-darken-4">Check our partners' guitar shops!</h4>
                     <div class="divider"></div>
@@ -64,8 +67,10 @@
                 </div>
                 <div class="divider"></div>
                 <div class="shop-buttons center-align">
+                    <!--Guitar Guitar shop redirect button-->
                    <a href="https://www.guitarguitar.co.uk/" target="_blank" aria-label="#" 
                    class="btn waves-effect waves-light">Guitar Guitar</a>
+                   <!--Unique Guitar shop redirect button-->
                    <a href="https://www.uniqueguitar.co.uk/" target="_blank" aria-label="#"
                    class="btn waves-effect waves-light">Unique Guitar</a>
                 </div>

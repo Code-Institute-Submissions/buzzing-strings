@@ -1,13 +1,14 @@
 {% include 'layout/head.html' %}
 {% block content %}
-    <!--error page-->
+
+    <!--Error page-->
     <div class="error-page red lighten-2">
         <div class="error-page-message">
             <i class="far fa-sad-tear"></i>
             <p class="error-message-heading grey-text text-lighten-4">Sorry, this page doesn't exist!</p>
         <p>{{ error_message }} Please use the button below to return to homepage safely!</p>
             <div class="homepage-return">
-                <!--homepage redirect button-->
+                <!--Homepage redirect button-->
                 <a href="{{ url_for('about') }}" class="btn waves-effect waves-light">Back to Homepage
                 <i class="fas fa-home right"></i></a>
             </div>

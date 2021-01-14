@@ -1,31 +1,32 @@
-{% block card %}
+{% block content %}
 
-    <!--guitar card-->
+    <!--Guitar card-->
     <div class="col s12 m8 offset-m2 py-2">
         <div class="guitar-card blue-grey lighten-4 center-align">
-            <!--guitar details-->
+            <!--Guitar details-->
             <p class="guitar-type">{{ guitar.guitar_type }}</p>
-            <div class="divider"></div>
+                <div class="divider"></div>
             <p class="guitar-name">Guitar Name:<span class="name">
                 {{ guitar.guitar_name }}</span></p>
             <p class="guitar-shape">Guitar Shape:<span class="shape">
                 {{ guitar.guitar_shape }}</span></p>
             <p class="guitar-description">Description:<span class="description">
                 {{ guitar.guitar_description }}</span></p>
-            <div class="divider"></div>
+                <div class="divider"></div>
             <p class="guitar-image-url">Image URL:<span class="image-url">
                 <a href="{{ guitar.guitar_image }}" target="_blank" aria-label="#">
                 {{ guitar.guitar_image }}</a></span></p>
-            <div class="divider"></div>
+                <div class="divider"></div>
             <p class="date-added"> Date Added:<span class="date">
                 {{ guitar.date_added }}</span></p>
-            <div class="divider"></div>
+                <div class="divider"></div>
             <p class="added-by">Created by:<span class="added">
                 {{ guitar.added_by }}</span></p>
-            <div class="divider"></div>
-            <!--edit and delete button-->
+                <div class="divider"></div>
+            <!--Edit button-->
             <a href="{{ url_for('edit_guitar', guitar_id=guitar._id) }}"  
              class="btn waves-effect waves-light">Edit<i class="far fa-edit right"></i></a>
+            <!--Delete button-->
             <a href="{{ url_for('delete_guitar', guitar_id=guitar._id) }}"  
              class="btn waves-effect waves-light">Delete<i class="far fa-trash-alt right"></i></a>
         </div>

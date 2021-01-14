@@ -136,12 +136,12 @@ span.added {
     overflow: overlay;
 }
 
-
-/* Register/login/Add Guitar forms styling */
+/* Forms styling */
 .register-form.card-panel, 
 .login-form.card-panel,
 .add-guitar-form.card-panel,
-.edit-guitar-form.card-panel {
+.edit-guitar-form.card-panel,
+.contact-form.card-panel {
     line-height: 2;
     border: 0.3rem solid #546e7a;
     border-radius: 0.8rem;
@@ -155,8 +155,15 @@ label.guitar_name,
 label.guitar_shape,
 label.guitar_description,
 label.date_added,
-label.added_by {
-    font-size: 1.5rem;
+label.added_by,
+label.name,
+label.email, 
+label.message {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.8rem;
+    line-height: 0.5;
+    color: #311b92
+
 }
 
 p.pattern-user,
@@ -183,7 +190,8 @@ p.redirect-link {
 /* Headings styling */
 h3.register-heading,
 h3.login-heading,
-h3.all-guitars.heading {
+h3.all-guitars.heading, 
+h3.contact-heading {
     text-align: center;
     font-family: 'Special Elite', cursive;
     font-size: 2.5rem;
@@ -238,7 +246,10 @@ button.btn.waves-effect.waves-light {
 
 .fas.fa-user-cog:before,
 .fas.fa-user-plus:before,
-.fas.fa-user-lock:before {
+.fas.fa-user-lock:before,
+.fas.fa-user-tie::before,
+.fas.fa-at:before,
+.fas.fa-pen-fancy:before{
     font-size: 2.3rem;
 }
 
@@ -324,6 +335,7 @@ footer.page-footer {
     h3.register-heading,
     h3.login-heading,
     h3.all-guitars.heading,
+    h3.contact-heading,
     h4.intro-heading,
     h4.flash-message {
         font-size: 2rem;
@@ -349,6 +361,6 @@ footer.page-footer {
     span.image-url,
     span.date,
     span.added  {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 }
