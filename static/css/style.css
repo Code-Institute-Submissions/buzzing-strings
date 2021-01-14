@@ -28,15 +28,6 @@ body {
     font-weight: 700;
 }
 
-/* Heading styling */
-h3 {
-    text-align: center;
-    font-family: 'Special Elite', cursive;
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin: 3rem;
-}
-
 /* Navbar styling */
 nav.main-nav {
     position: relative;
@@ -76,12 +67,6 @@ nav ul a {
     border: 0.2rem solid #37474f;
     border-radius: 2.5rem;
     margin: 3rem;
-}
-
-h4.intro-heading {
-    text-align: center;
-    font-family: 'Special Elite', cursive;
-    font-weight: 800;
 }
 
 .introduction,
@@ -164,12 +149,6 @@ span.added {
     padding: 2rem;
 }
 
-h3.register-heading,
-h3.login-heading {
-    text-align: center;
-    font-family: 'Special Elite', cursive;
-}
-
 label.username,
 label.password,
 label.guitar_name,
@@ -193,19 +172,36 @@ p.redirect-link {
     font-size: 1.8rem;
 }
 
-h4.flash-message {
-    font-family: 'Special Elite', cursive;
-    text-align: center;
-    line-height: 2;
-    padding: 0.5rem;
-}
-
 .guitar-card {
     line-height: 2;
     border: 0.3rem solid #546e7a;
     border-radius: 1rem;
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+/* Headings styling */
+h3.register-heading,
+h3.login-heading,
+h3.all-guitars.heading {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 3rem;
+}
+
+h4.intro-heading {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-weight: 800;
+}
+
+h4.flash-message {
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    line-height: 2;
+    padding: 0.5rem;
 }
 
 /* Buttons styling */
@@ -320,4 +316,38 @@ footer.page-footer {
     text-align: center;
     font-family: 'Special Elite', cursive;
     font-size: 1.7rem;
+}
+
+/* Media Queries */
+@media (max-width: 575.98px) { 
+    h3.register-heading,
+    h3.login-heading,
+    h3.all-guitars.heading,
+    h4.intro-heading,
+    h4.flash-message {
+        font-size: 2rem;
+    }
+
+    p.redirect-link {
+        font-size: 1.3rem;
+    }
+
+    p.guitar-type {
+        font-size: 2rem;
+    }
+
+    p.guitar-name,
+    p.guitar-shape,
+    p.guitar-description,
+    p.guitar-image-url,
+    p.date-added,
+    p.added-by, 
+    span.name,
+    span.shape,
+    span.description,
+    span.image-url,
+    span.date,
+    span.added  {
+        font-size: 1.3rem;
+    }
 }
