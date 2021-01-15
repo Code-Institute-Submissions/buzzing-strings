@@ -382,14 +382,16 @@ I used the following media platforms to complete this project:
 
 - [Guitar Guitar](https://www.guitarguitar.co.uk/)
 
-- [Kenny's Music](https://www.kennysmusic.co.uk/)
+- [Unique Guitars](https://www.uniqueguitar.co.uk/)
 
-- [Gear4Music](www.gear4music.com)
+- [Kenny's Music](https://www.kennysmusic.co.uk/)
 
 - [Traversy Media](https://www.traversymedia.com/)
 
+[Back to top](#table-of-contents)
+
 ### Inspiration and motivation 
-[Guitar Guitar](https://www.guitarguitar.co.uk/) and my friend Dawid, a fantastic guitarist, was my main inspration to build [buzzing-strings](https://buzzing-strings.herokuapp.com/) 
+[Guitar Guitar](https://www.guitarguitar.co.uk/) and my friend Dawid, a fantastic guitarist, were my main inspirations to build [buzzing-strings](https://buzzing-strings.herokuapp.com/) 
 website. I have always considered a guitar as one the most magical instruments in music history. I had a great opportunity to 
 see some fantastic guitarists in my life and was able to admire how a sound connection can be built between an instrument and a human.
 My motivation was not only to highlight the fact how great this instrument is but also to give an opportunity to the website users to share
