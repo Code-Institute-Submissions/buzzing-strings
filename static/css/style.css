@@ -130,10 +130,11 @@ span.image-url,
 span.date,
 span.added {
     font-family: 'Special Elite', cursive;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     text-align: center;
     margin: 1rem;
     overflow: overlay;
+    color: #311b92;
 }
 
 /* Forms styling */
@@ -149,21 +150,23 @@ span.added {
     padding: 2rem;
 }
 
-label.username,
-label.password,
+label.guitar_type,
 label.guitar_name,
 label.guitar_shape,
 label.guitar_description,
+label.guitar_image.active,
 label.date_added,
 label.added_by,
+label.username,
+label.password,
 label.name,
 label.email, 
 label.message {
     font-family: 'Special Elite', cursive;
-    font-size: 1.8rem;
-    line-height: 0.5;
-    color: #311b92
-
+    color: #311b92;
+    font-size: 1.6rem;
+    line-height: 1;
+    padding: 0 1rem;
 }
 
 p.pattern-user,
@@ -362,5 +365,19 @@ footer.page-footer {
     span.date,
     span.added  {
         font-size: 1.4rem;
+    }
+    label.guitar_type,
+    label.guitar_name,
+    label.guitar_shape,
+    label.guitar_description,
+    label.guitar_image.active,
+    label.date_added,
+    label.added_by,
+    label.username,
+    label.password,
+    label.name,
+    label.email, 
+    label.message {
+        font-size: 1.5rem;
     }
 }

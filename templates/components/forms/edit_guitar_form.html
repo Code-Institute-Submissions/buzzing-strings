@@ -30,7 +30,7 @@
                                     {% endif %}
                                 {% endfor %}
                         </select>
-                        <label for="guitar_type">Guitar Type:</label>
+                        <label class="guitar_type" for="guitar_type">Guitar Type:</label>
                     </div>
                 </div>
                 <!--Guitar name-->
@@ -39,7 +39,7 @@
                         <i class="fas fa-pencil-alt prefix blue-grey-text text-darken-2"></i>
                         <input id="guitar_name" name="guitar_name" type="text" 
                             value="{{ guitar.guitar_name }}" class="validate" required>
-                        <label for="guitar_name">Guitar Name:</label>
+                        <label class="guitar_name" for="guitar_name">Guitar Name:</label>
                     </div>
                 </div>
                 <!--guitar shape-->
@@ -48,7 +48,7 @@
                         <i class="fas fa-shapes prefix blue-grey-text text-darken-2"></i>
                         <input id="guitar_shape" name="guitar_shape" type="text" 
                             value="{{ guitar.guitar_shape }}" class="validate" required>
-                        <label for="guitar_shape">Guitar Shape (e.g.Auditorium/Les Paul/J-Bass/Modern,etc.):</label>
+                        <label class="guitar_shape" for="guitar_shape">Guitar Shape (e.g.Les Paul/J-Bass/Modern,etc.):</label>
                     </div>
                 </div>
                 <!--Guitar description-->
@@ -59,7 +59,7 @@
                             class="materialize-textarea validate" required>
                             {{- guitar.guitar_description -}}
                         </textarea>
-                        <label for="guitar_description">Guitar Description:</label>
+                        <label class="guitar_description" for="guitar_description">Guitar Description:</label>
                     </div>
                 </div>
                 <!--Guitar image-->
@@ -69,7 +69,7 @@
                         <input id="guitar_image" name="guitar_image" type="url" 
                             placeholder="https://example.com" pattern="https://.*" 
                             size="30" class="validate" required>
-                        <label for="guitar_image">Add Guitar Image (enter an https:// URL):</label>
+                        <label class="guitar_image" for="guitar_image">Add Guitar Image (enter an https:// URL):</label>
                     </div>
                 </div>
                 <!--Guitar added date picker-->
@@ -78,7 +78,7 @@
                         <i class="fas fa-calendar-alt prefix blue-grey-text text-darken-2"></i>
                         <input id="date_added" name="date_added" type="text" 
                             value="{{ guitar.date_added }}" class="datepicker validate" required>
-                        <label for="date_added">Date Added:</label>
+                        <label class="date_added" for="date_added">Date Added:</label>
                     </div>
                 </div>
                 <!--Guitar added by-->
@@ -87,7 +87,7 @@
                         <i class="far fa-user prefix blue-grey-text text-darken-2"></i>
                         <input id="added_by" name="added_by" type="text" 
                             value="{{ guitar.added_by }}" class="validate" required>
-                        <label for="added_by">Added By:</label>
+                        <label class="added_by" for="added_by">Added By:</label>
                     </div>
                 </div>
                 <div class="row">
