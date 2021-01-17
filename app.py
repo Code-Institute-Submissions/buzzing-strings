@@ -53,7 +53,7 @@ def register():
 
         session["user"] = request.form.get("username").lower()
         flash("Your registration was successful!")
-        return redirect(url_for("guitars", username=session["user"]))
+        return redirect(url_for("user", username=session["user"]))
     return render_template("components/forms/register_form.html")
 
 
@@ -79,7 +79,7 @@ def login():
                    flash("Hello, {}".format(
                        request.form.get("username")))
                    return redirect(url_for(
-                       "guitars", username=session["user"]))
+                       "user", username=session["user"]))
             else:
                 # invalid password match
                 flash("Sorry, Your Username and/or Password is incorrect!")
@@ -103,6 +103,16 @@ def logout():
     flash("Sorry, You have been log out!")
     session.pop("user")
     return redirect(url_for("about"))
+
+
+# User's list page
+@app.route("/user")
+def user():
+    """
+    Renders user's list of guitars
+    """
+    guitars = list(mongo.db.guitars.find())
+    return render_template("pages/user_list.html", guitars=guitars)
 
 
 # All Guitars page
@@ -134,7 +144,7 @@ def add():
         }
         mongo.db.guitars.insert_one(guitar)
         flash("Well done, Your Guitar was successfully added!")
-        return redirect(url_for("guitars"))
+        return redirect(url_for("user"))
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(
@@ -162,7 +172,7 @@ def edit(guitar_id):
         }
         mongo.db.guitars.update({"_id": ObjectId(guitar_id)}, submit)
         flash("Well done, your guitar was successfully updated!")
-        return redirect(url_for("guitars"))
+        return redirect(url_for("user"))
 
     guitar = mongo.db.guitars.find_one({"_id": ObjectId(guitar_id)})
     guitar_categories = mongo.db.guitar_categories.find().sort(
@@ -180,7 +190,7 @@ def delete(guitar_id):
     """
     mongo.db.guitars.remove({"_id": ObjectId(guitar_id)})
     flash("Your Guitar was successfully deleted!")
-    return redirect(url_for("guitars"))
+    return redirect(url_for("user"))
 
 
 # Contact Us page

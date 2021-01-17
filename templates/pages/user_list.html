@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+
+<!--User's list-->
+<h3 class="user-guitars heading purple-text text-darken-4">Here is your list!</h3>
+<!--Flash messages-->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="row-flashes">
+                    <h4 class="flash-message purple-text text-darken-4">{{ message }}</h4>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <div class="guitars-list">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    {% for guitar in guitars %}
+                        {% include 'components/card/guitar_card.html' %}
+                        {% else %}
+                            <!--Info text and Add Guitar redirect button-->
+                            <p class="info-text">Sorry, but currently there are no guitars to display!
+                            <br>Please <a href="{{ url_for('add') }}" class="btn waves-effect waves-light">
+                            add<i class="far fa-plus-square right"></i></a> your favourite guitar now!</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

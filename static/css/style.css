@@ -49,6 +49,7 @@ nav ul a {
 
 /* Sidenav list styling */
 .sidenav li>a {
+    font-family: 'Special Elite', cursive;
     color: #f5f5f5;
     font-size: 1.8rem;
     font-weight: 800;
@@ -193,6 +194,7 @@ p.redirect-link {
 /* Headings styling */
 h3.register-heading,
 h3.login-heading,
+h3.user-guitars.heading,
 h3.all-guitars.heading, 
 h3.contact-heading {
     text-align: center;
@@ -236,6 +238,16 @@ button.btn.waves-effect.waves-light {
 .fa-user-alt:before {
     border: 0.4rem solid #ffa726;
     border-radius: 0.5rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.fa-address-card:before,
+.fa-envelope-square:before,
+.fa-sign-out-alt:before {
     padding: 0.4rem;
     cursor: pointer;
     -webkit-transition: all .4s ease-in-out;
