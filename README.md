@@ -157,9 +157,15 @@ acccount where other projects can be viewed. Other two icons are disabled and wi
 #### All Guitars 
 
 This section is only available to existing users. It displays a list of different type of guitars (classical, electric and bass) and also 
-provides detailed guitar description. If there are no guitars to display, the user can use a link provided which will redirect to **Add Guitar** page.
-The user would also have an opportunity to update already existing content, using **Edit** button (redirects to edit guitar form), and be able to remove it completely by using
-**Delete** button (this action cannot be reversed, once used it deletes the content and redirects to All Guitars page). 
+provides detailed guitar description. 
+
+#### User list
+
+Once the user is logged in, a new guitar can be added to an existing list of guitars. If there are no guitars to display, the user can use 
+a button **Add +**, which redirects to **Add Guitar** page. New registered user will be also able to use this option and create a new list.
+All added guitars will appear on **My List** and **All Guitars** page. The user has an opportunity to update existing content by using 
+**Edit** button (redirects to edit guitar form where all changes can be saved), and remove it completely by using **Delete** button 
+(this action cannot be reversed). The deleted guitars also will disappear from **All Guitars** page. 
 
 #### Add Guitar 
 
