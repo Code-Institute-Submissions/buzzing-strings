@@ -4,7 +4,7 @@
 <!--Add new guitar form-->
 <h3 class="all-guitars heading purple-text text-darken-4">Add your guitar!</h3>
     <div class="row">
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_guitar') }}">
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add') }}">
             <!--Flash messages-->
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
@@ -90,7 +90,7 @@
                         <button class="btn waves-effect waves-light" type="submit" name="action">
                         Add Guitar<i class="far fa-plus-square right"></i></button>
                         <!--Cancel button -->
-                        <a href="{{ url_for('all_guitars') }}" class="btn waves-effect waves-light">
+                        <a href="{{ url_for('guitars') }}" class="btn waves-effect waves-light">
                         Cancel<i class="far fa-window-close right"></i></a>
                     </div>
                 </div>

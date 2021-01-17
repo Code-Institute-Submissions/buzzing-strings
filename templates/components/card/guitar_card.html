@@ -24,10 +24,10 @@
                 {{ guitar.added_by }}</span></p>
                 <div class="divider"></div>
             <!--Edit button-->
-            <a href="{{ url_for('edit_guitar', guitar_id=guitar._id) }}"  
+            <a href="{{ url_for('edit', guitar_id=guitar._id) }}"  
              class="btn waves-effect waves-light">Edit<i class="far fa-edit right"></i></a>
             <!--Delete button-->
-            <a href="{{ url_for('delete_guitar', guitar_id=guitar._id) }}"  
+            <a href="{{ url_for('delete', guitar_id=guitar._id) }}"  
              class="btn waves-effect waves-light">Delete<i class="far fa-trash-alt right"></i></a>
         </div>
     </div>
