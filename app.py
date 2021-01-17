@@ -109,7 +109,8 @@ def logout():
 @app.route("/user")
 def user():
     """
-    Renders user's list of guitars
+    Renders user's list page,
+    displays all guitars added by the user
     """
     guitars = list(mongo.db.guitars.find())
     return render_template("pages/user_list.html", guitars=guitars)
@@ -119,7 +120,8 @@ def user():
 @app.route("/guitars")
 def guitars():
     """
-    Renders all guitars page
+    Renders all guitars page,
+    displays all guitars added by the users
     """
     guitars = list(mongo.db.guitars.find())
     return render_template("pages/guitars.html", guitars=guitars)
