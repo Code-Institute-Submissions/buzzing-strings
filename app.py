@@ -53,7 +53,7 @@ def register():
 
         session["user"] = request.form.get("username").lower()
         flash("Your registration was successful!")
-        return redirect(url_for("user_list", username=session["user"]))
+        return redirect(url_for("guitars", username=session["user"]))
     return render_template("components/forms/register_form.html")
 
 
@@ -79,7 +79,7 @@ def login():
                    flash("Hello, {}".format(
                        request.form.get("username")))
                    return redirect(url_for(
-                       "user_list", username=session["user"]))
+                       "guitars", username=session["user"]))
             else:
                 # invalid password match
                 flash("Sorry, Your Username and/or Password is incorrect!")
@@ -91,21 +91,6 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("components/forms/login_form.html")
-
-
-@app.route("/list/user/<username>", methods=["GET", "POST"])
-def user_list(username):
-    """
-    Grabs the session user's username from database,
-    displays the list of added guitars
-    """
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-
-    if session["user"]:
-        return render_template("pages/user_list.html", username=username)
-
-    return redirect(url_for("login"))
 
 
 # User Log Out route
@@ -150,7 +135,7 @@ def add_guitar():
         }
         mongo.db.guitars.insert_one(guitar)
         flash("Well done, Your Guitar was successfully added!")
-        return redirect(url_for("user_list"))
+        return redirect(url_for("guitars"))
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(
