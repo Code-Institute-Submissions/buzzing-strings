@@ -93,6 +93,20 @@ def login():
     return render_template("components/forms/login_form.html")
 
 
+@app.route("/list/user/<username>", methods=["GET", "POST"])
+def user_list(username):
+    # grab the session user's username from db
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    guitars = list(mongo.db.guitars.find())
+
+    if session["user"]:
+        return render_template(
+            "pages/user_list.html", username=username, guitars=guitars)
+
+    return redirect(url_for("login"))
+
+
 # User Log Out route
 @app.route("/logout")
 def logout():
@@ -135,7 +149,7 @@ def add_guitar():
         }
         mongo.db.guitars.insert_one(guitar)
         flash("Well done, Your Guitar was successfully added!")
-        return redirect(url_for("guitars"))
+        return redirect(url_for("user_list", username=session['user']))
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(
@@ -163,7 +177,7 @@ def edit_guitar(guitar_id):
         }
         mongo.db.guitars.update({"_id": ObjectId(guitar_id)}, submit)
         flash("Well done, your guitar was successfully updated!")
-        return redirect(url_for("guitars"))
+        return redirect(url_for("user_list", username=session['user']))
 
     guitar = mongo.db.guitars.find_one({"_id": ObjectId(guitar_id)})
     guitar_categories = mongo.db.guitar_categories.find().sort(
@@ -181,7 +195,7 @@ def delete_guitar(guitar_id):
     """
     mongo.db.guitars.remove({"_id": ObjectId(guitar_id)})
     flash("Your Guitar was successfully deleted!")
-    return redirect(url_for("guitars"))
+    return redirect(url_for("user_list", username=session['user']))
 
 
 # Contact Us page

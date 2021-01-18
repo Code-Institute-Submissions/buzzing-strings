@@ -8,6 +8,8 @@
         <li><a href="{{ url_for('about') }}">About Us</a></li>
         {% if session.user %}
         <li><a href="{{ url_for('guitars') }}">All Guitars</a></li>
+        <li><a href="{{ url_for('user_list', username=session['user']) }}"><i class="far fa-address-card orange-text 
+                text-lighten-1 tooltipped" data-position="bottom" data-tooltip="Your List!"></i></a></li>
         <li><a href="{{ url_for('add_guitar') }}">Add Guitar!</a></li>
         <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope-square orange-text text-lighten-1 tooltipped"
                 data-position="bottom" data-tooltip="Contact Us!"></i></a></li>
@@ -28,6 +30,8 @@
     <li><a href="{{ url_for('about') }}">About Us</a></li>
     {% if session.user %}
     <li><a href="{{ url_for('guitars') }}">All Guitars</a></li>
+    <li><a href="{{ url_for('user_list', username=session['user']) }}"><i class="far fa-address-card orange-text 
+                text-lighten-1 tooltipped" data-position="bottom" data-tooltip="Your List!"></i></a></li>
     <li><a href="{{ url_for('add_guitar') }}">Add Guitar</a></li>
     <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope-square orange-text text-lighten-1 tooltipped"
             data-position="bottom" data-tooltip="Contact Us!"></i></a></li>
