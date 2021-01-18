@@ -101,7 +101,7 @@ def user_list(username):
     """
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    guitars = list(mongo.db.guitars.find())
+    guitars = list(mongo.db.guitars.find({'added_by': username}))
 
     if session["user"]:
         return render_template(
