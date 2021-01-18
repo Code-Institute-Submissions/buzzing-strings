@@ -93,6 +93,7 @@ def login():
     return render_template("components/forms/login_form.html")
 
 
+# User's List of added guitars
 @app.route("/list/user/<username>", methods=["GET", "POST"])
 def user_list(username):
     """
@@ -101,7 +102,7 @@ def user_list(username):
     """
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    guitars = list(mongo.db.guitars.find({'added_by': username}))
+    guitars = list(mongo.db.guitars.find({"added_by": username}))
 
     if session["user"]:
         return render_template(
@@ -197,6 +198,7 @@ def delete_guitar(guitar_id):
     Allows the user to delete guitar content
     """
     mongo.db.guitars.remove({"_id": ObjectId(guitar_id)})
+
     flash("Your Guitar was successfully deleted!")
     return redirect(url_for("user_list", username=session['user']))
 
