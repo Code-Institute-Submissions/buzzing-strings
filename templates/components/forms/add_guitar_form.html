@@ -4,7 +4,7 @@
 <!--Add new guitar form-->
 <h3 class="all-guitars heading purple-text text-darken-4">Add your guitar!</h3>
     <div class="row">
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add') }}">
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_guitar') }}">
             <!--Flash messages-->
             {% with messages = get_flashed_messages() %}
                 {% if messages %}

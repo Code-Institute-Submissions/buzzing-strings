@@ -53,7 +53,7 @@ def register():
 
         session["user"] = request.form.get("username").lower()
         flash("Your registration was successful!")
-        return redirect(url_for("user", username=session["user"]))
+        return redirect(url_for("user_list", username=session["user"]))
     return render_template("components/forms/register_form.html")
 
 
@@ -79,7 +79,7 @@ def login():
                    flash("Hello, {}".format(
                        request.form.get("username")))
                    return redirect(url_for(
-                       "user", username=session["user"]))
+                       "user_list", username=session["user"]))
             else:
                 # invalid password match
                 flash("Sorry, Your Username and/or Password is incorrect!")
@@ -91,6 +91,21 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("components/forms/login_form.html")
+
+
+@app.route("/list/user/<username>", methods=["GET", "POST"])
+def user_list(username):
+    """
+    Grabs the session user's username from database,
+    displays the list of added guitars
+    """
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+
+    if session["user"]:
+        return render_template("pages/user_list.html", username=username)
+
+    return redirect(url_for("login"))
 
 
 # User Log Out route
@@ -105,17 +120,6 @@ def logout():
     return redirect(url_for("about"))
 
 
-# User's list page
-@app.route("/user")
-def user():
-    """
-    Renders user's list page,
-    displays all guitars added by the user
-    """
-    guitars = list(mongo.db.guitars.find())
-    return render_template("pages/user_list.html", guitars=guitars)
-
-
 # All Guitars page
 @app.route("/guitars")
 def guitars():
@@ -128,8 +132,8 @@ def guitars():
 
 
 # Add Guitar page
-@app.route("/add", methods=["GET", "POST"])
-def add():
+@app.route("/guitar/add", methods=["GET", "POST"])
+def add_guitar():
     """
     Enables the user to choose the guitar type,
     allows the user to add a new guitar
@@ -146,7 +150,7 @@ def add():
         }
         mongo.db.guitars.insert_one(guitar)
         flash("Well done, Your Guitar was successfully added!")
-        return redirect(url_for("user"))
+        return redirect(url_for("user_list"))
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(
@@ -155,8 +159,8 @@ def add():
 
 
 # Edit guitar page
-@app.route("/edit/<guitar_id>", methods=["GET", "POST"])
-def edit(guitar_id):
+@app.route("/guitar/edit/<guitar_id>", methods=["GET", "POST"])
+def edit_guitar(guitar_id):
     """
     Allows to edit guitar content added by the user,
     enables the user to submit the changes,
@@ -174,7 +178,7 @@ def edit(guitar_id):
         }
         mongo.db.guitars.update({"_id": ObjectId(guitar_id)}, submit)
         flash("Well done, your guitar was successfully updated!")
-        return redirect(url_for("user"))
+        return redirect(url_for("guitars"))
 
     guitar = mongo.db.guitars.find_one({"_id": ObjectId(guitar_id)})
     guitar_categories = mongo.db.guitar_categories.find().sort(
@@ -185,14 +189,14 @@ def edit(guitar_id):
 
 
 # Delete guitar route
-@app.route("/delete/<guitar_id>")
-def delete(guitar_id):
+@app.route("/guitar/delete/<guitar_id>")
+def delete_guitar(guitar_id):
     """
     Allows the user to delete guitar content
     """
     mongo.db.guitars.remove({"_id": ObjectId(guitar_id)})
     flash("Your Guitar was successfully deleted!")
-    return redirect(url_for("user"))
+    return redirect(url_for("guitars"))
 
 
 # Contact Us page
