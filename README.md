@@ -161,17 +161,18 @@ provides detailed guitar description.
 
 #### User list
 
-Once the user is logged in, a new guitar can be added to an existing list of guitars. If there are no guitars to display, the user can use 
-a button **Add +**, which redirects to **Add Guitar** page. New registered user will be also able to use this option and create a new list.
+Once the user is logged in, a new guitar can be added to an existing list of guitars. If there are no guitars to display, the user can
+click **Add +** which redirects to **Add Guitar** page. New registered user will be also able to use this option and create a new list.
 All added guitars will appear on **My List** and **All Guitars** page. The user has an opportunity to update existing content by using 
 **Edit** button (redirects to edit guitar form where all changes can be saved), and remove it completely by using **Delete** button 
-(this action cannot be reversed). The deleted guitars also will disappear from **All Guitars** page. 
+(this action cannot be reversed, the deleted guitars will disappear both from user's own list and **All Guitars** page). 
+**The user can only update/delete own list of guitars!**
 
 #### Add Guitar 
 
 This option allows the registered/logged user to add a favourite guitar with a description and image link. The user is required to fill in all fields in the form 
-provided before **Add Your Guitar** button is used.  No form can be submitted if there is a missing information. There is also **Cancel** button available and when 
-used it redirects the user to **All Guitars**.
+before hiting **Add Your Guitar** button  No form can be submitted if there is a missing information. There is also **Cancel** button available, if used, it redirects 
+the user to **All Guitars**.
 
 #### Contact Page 
 
