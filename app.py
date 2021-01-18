@@ -53,7 +53,7 @@ def register():
 
         session["user"] = request.form.get("username").lower()
         flash("Your registration was successful!")
-        return redirect(url_for("guitars", username=session["user"]))
+        return redirect(url_for("user_list", username=session["user"]))
     return render_template("components/forms/register_form.html")
 
 
@@ -79,7 +79,7 @@ def login():
                    flash("Hello, {}".format(
                        request.form.get("username")))
                    return redirect(url_for(
-                       "guitars", username=session["user"]))
+                       "user_list", username=session["user"]))
             else:
                 # invalid password match
                 flash("Sorry, Your Username and/or Password is incorrect!")
@@ -95,7 +95,10 @@ def login():
 
 @app.route("/list/user/<username>", methods=["GET", "POST"])
 def user_list(username):
-    # grab the session user's username from db
+    """
+     Grabs the session user's username from database,
+     displays the list of guitars added by the user
+    """
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     guitars = list(mongo.db.guitars.find())
@@ -145,7 +148,7 @@ def add_guitar():
             "guitar_description": request.form.get("guitar_description"),
             "guitar_image": request.form.get("guitar_image"),
             "date_added": request.form.get("date_added"),
-            "added_by": request.form.get("added_by")
+            "added_by": session["user"]
         }
         mongo.db.guitars.insert_one(guitar)
         flash("Well done, Your Guitar was successfully added!")
@@ -153,7 +156,7 @@ def add_guitar():
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(
-            "components/forms/add_guitar_form.html",
+            "pages/add_guitar.html",
             guitar_categories=guitar_categories)
 
 
@@ -183,7 +186,7 @@ def edit_guitar(guitar_id):
     guitar_categories = mongo.db.guitar_categories.find().sort(
             "guitar_type", 1)
     return render_template(
-            "components/forms/edit_guitar_form.html", guitar=guitar,
+            "pages/edit_guitar.html", guitar=guitar,
             guitar_categories=guitar_categories)
 
 
