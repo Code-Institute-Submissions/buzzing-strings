@@ -432,6 +432,7 @@ footer.page-footer {
     span.added  {
         font-size: 1.5rem;
     }
+
     label.guitar_type,
     label.guitar_name,
     label.guitar_shape,
@@ -445,5 +446,4 @@ footer.page-footer {
     label.message {
         font-size: 1.6rem;
     }
-}
 }
