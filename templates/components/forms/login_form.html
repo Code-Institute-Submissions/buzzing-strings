@@ -19,19 +19,17 @@
                 <!--Username-->
                 <div class="col s12 m8 offset-m2 input-field">
                     <i class="fas fa-user-cog prefix blue-grey-text text-darken-2"></i>
-                    <input id="username" name="username" type="text" minlength="5" 
-                    maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters (letters or numbers)!" class="validate" required>
+                    <input id="username" name="username" type="text"
+                        pattern="^[a-zA-Z0-9]{5,}$" title="Use minimum 5 characters (letters and/or numbers).
+                        No special characters!" class="validate" required>
                     <label class="username" for="username">Username</label>
-                    <p class="pattern-user">Please note only letters (either case) and numbers can be used. 
-                    No special characters!</p>
                 </div> 
                 <!--Password-->
                 <div class="col s12 m8 offset-m2 input-field">
                     <i class="fas fa-user-lock prefix blue-grey-text text-darken-2"></i>
-                    <input id="password" name="password" type="password" minlength="5"
-                    maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" title="Use min 5 characters!" class="validate" required>
+                    <input id="password" name="password" type="password" 
+                        pattern="^.{5,}$" title="Use min 5 characters!" class="validate" required>
                     <label class="password" for="password">Password</label>
-                    <p class="pattern-password">Password should have min 5 characters!</p>
                 </div>
                 <div class="row">
                     <div class="action-buttons center-align">
