@@ -176,7 +176,7 @@ def edit_guitar(guitar_id):
             "guitar_description": request.form.get("guitar_description"),
             "guitar_image": request.form.get("guitar_image"),
             "date_added": request.form.get("date_added"),
-            "added_by": request.form.get("added_by")
+            "added_by": session["user"]
         }
         mongo.db.guitars.update({"_id": ObjectId(guitar_id)}, submit)
         flash("Well done, your guitar was successfully updated!")
